@@ -3,7 +3,8 @@ class contact extends BaseController
 {
 	public function index()
 	{
-		return view('contact.html');
+		$data['title'] = 'Liên hệ';
+		echo view('contact', $data);
     }
 	
 	//--------------------------------------------------------------------

@@ -3,7 +3,8 @@ class about extends BaseController
 {
 	public function index()
 	{
-		return view('about.html');
+		$data['title'] = 'Giới thiệu';
+		echo view('about', $data);
     }
 	
 	//--------------------------------------------------------------------
