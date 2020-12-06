@@ -248,8 +248,13 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="bold">Giới tính</label>
-                                        <input type="radio" name="gender" value="Male">Nam
-                                        <input type="radio" name="gender" value="Female">Nữ
+                                        <select name="gender">
+                                            <option value="Male">Nam</option>
+                                            <option value="FeMale">Nữ</option>
+                                            <option value="Khác">Khác</option>
+                                        </select>
+                                        <!-- <input type="radio" name="gender" value="Male">Nam
+                                        <input type="radio" name="gender" value="Female">Nữ -->
                                     </div>
                                     <div class="form-group">
                                         <label class="bold">Ngày Sinh</label>
@@ -265,9 +270,8 @@
                                         <input type="text" required="" class="form-control" name="email" placeholder="Enter Your Email">
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" required="" type="password" name="password" placeholder="Password">
+                                        <input class="form-control" required="" minlength="8" type="password" name="password" placeholder="Password">
                                     </div>
-                                    
                                     <div class="form-group">
                                         <input class="form-control" required="" type="password" name="repassword" placeholder="Confirm Password">
                                     </div>
