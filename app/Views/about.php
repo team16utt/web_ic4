@@ -4,20 +4,23 @@
 <!-- STAT SECTION ABOUT -->
 <div class="section">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="about_img scene mb-4 mb-lg-0">
-                    <img src="public/assets/images/about_img.jpg" alt="about_img">
+        <?php foreach ($content as $row) :?>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about_img scene mb-4 mb-lg-0">
+                        <img src="<?= $row['image']?>">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="heading_s1">
-                    <h2>Who We are</h2>
+                <div class="col-lg-6">
+                    <div class="heading_s1">
+                        <h2><?= $row['title']?></h2>
+                    </div>
+                    <p><?= $row['content1']?></p>
+                    <p><?= $row['content2']?></p>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur quibusdam enim expedita sed nesciunt incidunt accusamus adipisci officia libero laboriosam!</p>
-                <p>Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Duis sed odio sit amet nibh vultate cursus a sit amet mauris.</p>
+                
             </div>
-        </div>
+        <?php endforeach; ?>
     </div>
 </div>
 <!-- END SECTION ABOUT -->
@@ -34,11 +37,32 @@
                 <div class="heading_s1 text-center">
                     <h2>Our Team Members</h2>
                 </div>
-                <p class="text-center leads">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <p class="text-center leads">Chúng tôi là những kĩ sư tài năng với niềm đam mê với gaming gear.</p>
             </div>
         </div>
         <div class="row justify-content-center">
+        <?php foreach ($admin as $row1) :?>
             <div class="col-lg-2 col-sm-6">
+                <div class="team_box team_style1">
+                    <div class="team_img">
+                        <img src="<?= $row1['image']?>" alt="team_img1">
+                        <ul class="social_icons social_style1">
+                            <li><a href="<?= $row1['facebook']?>"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="<?= $row1['twitter']?>"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="<?= $row1['gmail']?>"><i class="ion-social-googleplus"></i></a></li>
+                            <li><a href="<?= $row1['insta']?>"><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="team_content">
+                        <div class="team_title">
+                            <h5><?= $row1['fullname']?></h5>
+                            <span><?php if($row1['role_id'] == 1) {echo 'Admin';}?></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+            <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
                         <img src="public/assets/images/team_img1.jpg" alt="team_img1">
@@ -56,27 +80,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-                <div class="team_box team_style1">
-                    <div class="team_img">
-                        <img src="public/assets/images/team_img1.jpg" alt="team_img1">
-                        <ul class="social_icons social_style1">
-                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="team_content">
-                        <div class="team_title">
-                            <h5>John Muniz</h5>
-                            <span>Project Engineer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-sm-6">
+            </div> -->
+            <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
                         <img src="public/assets/images/team_img2.jpg" alt="team_img2">
@@ -94,8 +99,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-2 col-sm-6">
+            </div> -->
+            <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
                         <img src="public/assets/images/team_img3.jpg" alt="team_img3">
@@ -113,8 +118,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-2 col-sm-6">
+            </div> -->
+            <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
                         <img src="public/assets/images/team_img4.jpg" alt="team_img4">
@@ -132,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
