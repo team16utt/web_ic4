@@ -26,7 +26,7 @@ class contact extends BaseController
 			];
 			// $db->table('contact')->insert($data_insert);
 			// $status = 1;
-			// $this->session->set_flashdata('status', $status);\
+			// $this->session->set_flashdata('status', $status);
 			$status = '1';
 			return redirect()->to(base_url().'/contact?status='.$status); 
 			
