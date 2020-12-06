@@ -1,9 +1,13 @@
 <?php namespace App\Controllers;
 class contact extends BaseController
 {
-	public function index()
+	public function index($status = 0)
 	{
+		helper('url');
 		$data['title'] = 'Liên hệ';
+		if($status != 0){
+			$data['status'] == '1';
+		}
 		echo view('contact', $data);
     }
 	public function send(){
@@ -20,12 +24,12 @@ class contact extends BaseController
 					'content' => $content,
 					'created_on' => date('Y-m-d')
 			];
-			$db->table('contact')->insert($data_insert);
+			// $db->table('contact')->insert($data_insert);
 			// $status = 1;
 			// $this->session->set_flashdata('status', $status);\
-			$data['status'] = 'success';
+			$status = '1';
+			return redirect()->to(base_url().'/contact?status='.$status); 
 			
-			return redirect()->to(base_url().'/contact'); 
 			
 			
 

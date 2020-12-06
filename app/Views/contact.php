@@ -7,6 +7,9 @@
             <div class="container">
                 <div class="flex-w flex-tr">
                     <div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
+                    <?php if(isset($_GET['status'])){
+                        echo "<script>alert('Gửi thành công')</script>";
+                    }?>
                         <form action="contact/send" method="POST">
                             <h4 class="mtext-105 cl2 txt-center p-b-30">
                                 Liên hệ cho chúng tôi
