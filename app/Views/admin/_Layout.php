@@ -9,27 +9,27 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/public/admin/assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/public/client/public/admin/assets/images/favicon.png">
     <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
     <!-- This page CSS -->
     <!-- chartist CSS -->
-    <link href="<?= base_url() ?>/public/admin/assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/public/client/public/admin/assets/node_modules/morrisjs/morris.css" rel="stylesheet">
     <!--Toaster Popup message CSS -->
-    <link href="<?= base_url() ?>/public/admin/assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/public/client/public/admin/assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="<?= base_url() ?>/public/admin/crm/dist/css/style.min.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/public/client/public/admin/crm/dist/css/style.min.css" rel="stylesheet">
     <!-- Dashboard 1 Page CSS -->
-    <link href="<?= base_url() ?>/public/admin/crm/dist/css/pages/dashboard1.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/public/client/public/admin/crm/dist/css/pages/dashboard1.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!-- more CSS -->
     <link rel="stylesheet" type="text/css"
-        href="<?= base_url() ?>/public/admin/assets/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css">
+        href="<?= base_url() ?>/public/client/public/admin/assets/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css">
     <link rel="stylesheet" type="text/css"
-        href="<?= base_url() ?>/public/admin/assets/node_modules/datatables.net-bs4/css/responsive.dataTables.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/admin/crm/dist/css/duongCustomStyle.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/admin/assets/node_modules/dropify/dist/css/dropify.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/admin/crm/dist/css/duongCustomStyle.css">
+        href="<?= base_url() ?>/public/client/public/admin/assets/node_modules/datatables.net-bs4/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/public/admin/crm/dist/css/duongCustomStyle.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/public/admin/assets/node_modules/dropify/dist/css/dropify.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/public/admin/crm/dist/css/duongCustomStyle.css">
 </head>
 
 <body class="skin-default-dark fixed-layout">
@@ -53,16 +53,16 @@
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="<?= base_url() ?>/public/admin/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <img src="<?= base_url() ?>/public/client/public/admin/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
                             <!-- Light Logo icon -->
-                            <img src="<?= base_url() ?>/public/admin/assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                            <img src="<?= base_url() ?>/public/client/public/admin/assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text --><span>
                             <!-- dark Logo text -->
-                            <img src="<?= base_url() ?>/public/admin/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <img src="<?= base_url() ?>/public/client/public/admin/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
                             <!-- Light Logo text -->
-                            <img src="<?= base_url() ?>/public/admin/assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                            <img src="<?= base_url() ?>/public/client/public/admin/assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
                     </a>
                 </div>
                 <!-- ============================================================== -->
@@ -156,7 +156,7 @@
                 <!-- User Profile-->
                 <div class="user-profile">
                     <div class="user-pro-body">
-                        <div><img src="<?= base_url() ?>/public/admin/assets/images/users/2.jpg" alt="user-img" class="img-circle"></div>
+                        <div><img src="<?= base_url() ?>/public/client/public/admin/assets/images/users/2.jpg" alt="user-img" class="img-circle"></div>
                         <div class="dropdown">
                             <a href="javascript:void(0)" class="dropdown-toggle u-dropdown link hide-menu"
                                 data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Steave
@@ -347,36 +347,36 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap popper Core JavaScript -->
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/popper/popper.min.js"></script>
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/popper/popper.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="<?= base_url() ?>/public/admin/crm/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/crm/dist/js/perfect-scrollbar.jquery.min.js"></script>
     <!--Wave Effects -->
-    <script src="<?= base_url() ?>/public/admin/crm/dist/js/waves.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/crm/dist/js/waves.js"></script>
     <!--Menu sidebar -->
-    <script src="<?= base_url() ?>/public/admin/crm/dist/js/sidebarmenu.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/crm/dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
-    <script src="<?= base_url() ?>/public/admin/crm/dist/js/custom.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/crm/dist/js/custom.min.js"></script>
     <!-- ============================================================== -->
     <!-- This page plugins -->
     <!-- ============================================================== -->
     <!--morris JavaScript -->
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/raphael/raphael-min.js"></script>
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/morrisjs/morris.min.js"></script>
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/raphael/raphael-min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/morrisjs/morris.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
     <!-- Popup message jquery -->
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/toast-master/js/jquery.toast.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/toast-master/js/jquery.toast.js"></script>
 
     <!-- jQuery peity -->
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/peity/jquery.peity.min.js"></script>
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/peity/jquery.peity.init.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/peity/jquery.peity.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/peity/jquery.peity.init.js"></script>
 
     
     <!--JS import file -->
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/dropify/dist/js/dropify.min.js"></script>
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/dff/dff.js" type="text/javascript"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/dropify/dist/js/dropify.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/dff/dff.js" type="text/javascript"></script>
 
     <script>
         $(document).ready(function () {
@@ -424,8 +424,8 @@
 
 
     <!-- Js phan trang  -->
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="<?= base_url() ?>/public/admin/assets/node_modules/datatables.net-bs4/js/dataTables.responsive.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/public/admin/assets/node_modules/datatables.net-bs4/js/dataTables.responsive.min.js"></script>
   
 
     <script>
