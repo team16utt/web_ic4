@@ -1,13 +1,8 @@
 <?php namespace App\Controllers;
 class category extends BaseController
 {
-    public function index()
-    {
-        if (isset($_GET['cid'])) {
-			$cid = $_GET['cid'];
-		} else {
-			$cid = 1;
-        }
+    public function index($cid = 1)
+    {    
         if (isset($_GET['page'])) {
 			$page = $_GET['page'];
 		} else {

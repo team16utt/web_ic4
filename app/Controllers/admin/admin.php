@@ -12,7 +12,7 @@ class admin extends BaseController
         $adminModel = new adminModel();
 
         $data['title'] = 'admin';
-        $data['adminModel'] = $adminModel->findAll();
+        $data['user'] = $adminModel->findAll();
         echo view('admin/admin/index', $data);
         //--------------------------------------------------------------------
     }
