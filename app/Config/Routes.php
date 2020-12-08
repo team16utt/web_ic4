@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('admin', 'admin/dashboard::index');
 
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

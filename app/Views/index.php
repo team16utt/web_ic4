@@ -15,33 +15,33 @@
     <!-- SITE TITLE -->
     <title>Shopwise - eCommerce Bootstrap 4 HTML Template</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url() ?>/public/client//assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url() ?>/public/client/assets/images/favicon.png">
     <!-- Animation CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/animate.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/animate.css">
     <!-- Latest Bootstrap min CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/bootstrap/css/bootstrap.min.css">
     <!-- Google Font -->
-    <link href="<?= base_url() ?>/public/client//assets/css.css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
-    <link href="<?= base_url() ?>/public/client//assets/css-1.css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="<?= base_url() ?>/public/client/assets/css.css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="<?= base_url() ?>/public/client/assets/css-1.css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/all.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/ionicons.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/themify-icons.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/linearicons.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/flaticon.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/simple-line-icons.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/all.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/linearicons.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/flaticon.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/simple-line-icons.css">
     <!--- owl carousel CSS-->
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/owlcarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/owlcarousel/css/owl.theme.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/owlcarousel/css/owl.theme.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/owlcarousel/css/owl.theme.default.min.css">
     <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/magnific-popup.css">
     <!-- Slick CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/slick.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/slick-theme.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/slick.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/slick-theme.css">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/style.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/public/client//assets/css/responsive.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/responsive.css">
     
 
     <!-- Hotjar Tracking Code for bestwebcreator.com -->
@@ -108,7 +108,7 @@
                             </div>
                         </div>
                         <div class="col-sm-5">
-                            <div class="background_bg h-100" data-img-src="<?= base_url() ?>/public/client//assets/images/popup_img3.jpg"></div>
+                            <div class="background_bg h-100" data-img-src="<?= base_url() ?>/public/client/assets/images/popup_img3.jpg"></div>
                         </div>
                     </div>
                 </div>
@@ -124,8 +124,8 @@
             <div class="custom-container">
                 <div class="nav_block">
                     <a class="navbar-brand" href="index.html">
-                        <img class="logo_light" src="<?= base_url() ?>/public/client//assets/images/logo_light.png" alt="logo">
-                        <img class="logo_dark" src="<?= base_url() ?>/public/client//assets/images/logo_dark.png" alt="logo">
+                        <img class="logo_light" src="<?= base_url() ?>/public/client/assets/images/logo_light.png" alt="logo">
+                        <img class="logo_dark" src="<?= base_url() ?>/public/client/assets/images/logo_dark.png" alt="logo">
                     </a>
                     <div class="product_search_form rounded_input">
                         <form>
@@ -157,14 +157,14 @@
                                 <ul class="cart_list">
                                     <li>
                                         <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                        <a href="#"><img src="<?= base_url() ?>/public/client//assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable
+                                        <a href="#"><img src="<?= base_url() ?>/public/client/assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable
                                             product 001</a>
                                         <span class="cart_quantity"> 1 x <span class="cart_amount"> <span
                                                     class="price_symbole">$</span></span>78.00</span>
                                     </li>
                                     <li>
                                         <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                        <a href="#"><img src="<?= base_url() ?>/public/client//assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare
+                                        <a href="#"><img src="<?= base_url() ?>/public/client/assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare
                                             sed consequat</a>
                                         <span class="cart_quantity"> 1 x <span class="cart_amount"> <span
                                                     class="price_symbole">$</span></span>81.00</span>
@@ -287,7 +287,7 @@
                             data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active background_bg"
-                                    data-img-src="<?= base_url() ?>/public/client//assets/images/blog_img3.jpg">
+                                    data-img-src="<?= base_url() ?>/public/client/assets/images/blog_img3.jpg">
                                     <div class="banner_slide_content banner_content_inner">
                                         <div class="col-lg-7 col-10">
                                             <div class="banner_content3 overflow-hidden">
@@ -306,7 +306,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item background_bg" data-img-src="<?= base_url() ?>/public/client//assets/images/banner14.jpg">
+                                <div class="carousel-item background_bg" data-img-src="<?= base_url() ?>/public/client/assets/images/banner14.jpg">
                                     <div class="banner_slide_content banner_content_inner">
                                         <div class="col-lg-8 col-10">
                                             <div class="banner_content3 overflow-hidden">
@@ -325,7 +325,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item background_bg" data-img-src="<?= base_url() ?>/public/client//assets/images/banner15.jpg">
+                                <div class="carousel-item background_bg" data-img-src="<?= base_url() ?>/public/client/assets/images/banner15.jpg">
                                     <div class="banner_slide_content banner_content_inner">
                                         <div class="col-lg-8 col-10">
                                             <div class="banner_content3 overflow-hidden">
@@ -361,7 +361,7 @@
                                 <span>25% off</span>
                             </div>
                             <div class="el_img">
-                                <img src="<?= base_url() ?>/public/client//assets/images/shop_banner_img6.png" alt="shop_banner_img6">
+                                <img src="<?= base_url() ?>/public/client/assets/images/shop_banner_img6.png" alt="shop_banner_img6">
                             </div>
                         </a>
                     </div>
@@ -372,7 +372,7 @@
                                 <span><u>Shop Now</u></span>
                             </div>
                             <div class="el_img">
-                                <img src="<?= base_url() ?>/public/client//assets/images/shop_banner_img7.png" alt="shop_banner_img7">
+                                <img src="<?= base_url() ?>/public/client/assets/images/shop_banner_img7.png" alt="shop_banner_img7">
                             </div>
                         </a>
                     </div>
@@ -392,7 +392,7 @@
                     <div class="col-xl-3 d-none d-xl-block">
                         <div class="sale-banner">
                             <a class="hover_effect1" href="#">
-                                <img src="<?= base_url() ?>/public/client//assets/images/logitechtest.png" alt="shop_banner_img6">
+                                <img src="<?= base_url() ?>/public/client/assets/images/logitechtest.png" alt="shop_banner_img6">
                             </a>
                         </div>
                     </div>
@@ -418,7 +418,7 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img1.jpg" alt="el_img1">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img1.jpg" alt="el_img1">
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
@@ -443,7 +443,7 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img1.jpg" alt="el_img1">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img1.jpg" alt="el_img1">
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
@@ -468,7 +468,7 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img1.jpg" alt="el_img1">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img1.jpg" alt="el_img1">
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
@@ -493,7 +493,7 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img1.jpg" alt="el_img1">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img1.jpg" alt="el_img1">
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
@@ -518,7 +518,7 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img1.jpg" alt="el_img1">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img1.jpg" alt="el_img1">
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
@@ -543,7 +543,7 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img1.jpg" alt="el_img1">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img1.jpg" alt="el_img1">
                                                         </a>
                                                     </div>
                                                     <div class="product_info">
@@ -575,9 +575,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img7.jpg" alt="el_img7">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img7.jpg" alt="el_img7">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img7.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img7.jpg"
                                                                 alt="el_hover_img7">
                                                         </a>
                                                         <div class="product_action_box">
@@ -622,9 +622,9 @@
                                                     <span class="pr_flash bg-danger">Hot</span>
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img8.jpg" alt="el_img8">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img8.jpg" alt="el_img8">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img8.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img8.jpg"
                                                                 alt="el_hover_img8">
                                                         </a>
                                                         <div class="product_action_box">
@@ -669,9 +669,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img9.jpg" alt="el_img9">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img9.jpg" alt="el_img9">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img9.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img9.jpg"
                                                                 alt="el_hover_img9">
                                                         </a>
                                                         <div class="product_action_box">
@@ -716,9 +716,9 @@
                                                     <span class="pr_flash bg-success">Sale</span>
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img10.jpg" alt="el_img10">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img10.jpg" alt="el_img10">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img10.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img10.jpg"
                                                                 alt="el_hover_img10">
                                                         </a>
                                                         <div class="product_action_box">
@@ -763,9 +763,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img11.jpg" alt="el_img11">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img11.jpg" alt="el_img11">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img11.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img11.jpg"
                                                                 alt="el_hover_img11">
                                                         </a>
                                                         <div class="product_action_box">
@@ -810,9 +810,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img12.jpg" alt="el_img12">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img12.jpg" alt="el_img12">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img12.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img12.jpg"
                                                                 alt="el_hover_img12">
                                                         </a>
                                                         <div class="product_action_box">
@@ -865,9 +865,9 @@
                                                     <span class="pr_flash bg-danger">Hot</span>
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img8.jpg" alt="el_img8">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img8.jpg" alt="el_img8">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img8.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img8.jpg"
                                                                 alt="el_hover_img8">
                                                         </a>
                                                         <div class="product_action_box">
@@ -912,9 +912,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img4.jpg" alt="el_img4">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img4.jpg" alt="el_img4">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img4.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img4.jpg"
                                                                 alt="el_hover_img4">
                                                         </a>
                                                         <div class="product_action_box">
@@ -958,9 +958,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img11.jpg" alt="el_img11">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img11.jpg" alt="el_img11">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img11.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img11.jpg"
                                                                 alt="el_hover_img11">
                                                         </a>
                                                         <div class="product_action_box">
@@ -1005,9 +1005,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img1.jpg" alt="el_img1">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img1.jpg" alt="el_img1">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img1.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img1.jpg"
                                                                 alt="el_hover_img1">
                                                         </a>
                                                         <div class="product_action_box">
@@ -1051,9 +1051,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img7.jpg" alt="el_img7">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img7.jpg" alt="el_img7">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img7.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img7.jpg"
                                                                 alt="el_hover_img7">
                                                         </a>
                                                         <div class="product_action_box">
@@ -1098,9 +1098,9 @@
                                                     <span class="pr_flash bg-danger">Hot</span>
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img6.jpg" alt="el_img6">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img6.jpg" alt="el_img6">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img6.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img6.jpg"
                                                                 alt="el_hover_img6">
                                                         </a>
                                                         <div class="product_action_box">
@@ -1152,9 +1152,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img2.jpg" alt="el_img2">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img2.jpg" alt="el_img2">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img2.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img2.jpg"
                                                                 alt="el_hover_img2">
                                                         </a>
                                                         <div class="product_action_box">
@@ -1199,9 +1199,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img5.jpg" alt="el_img5">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img5.jpg" alt="el_img5">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img5.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img5.jpg"
                                                                 alt="el_hover_img5">
                                                         </a>
                                                         <div class="product_action_box">
@@ -1246,9 +1246,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img9.jpg" alt="el_img9">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img9.jpg" alt="el_img9">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img9.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img9.jpg"
                                                                 alt="el_hover_img9">
                                                         </a>
                                                         <div class="product_action_box">
@@ -1292,9 +1292,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img7.jpg" alt="el_img7">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img7.jpg" alt="el_img7">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img7.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img7.jpg"
                                                                 alt="el_hover_img7">
                                                         </a>
                                                         <div class="product_action_box">
@@ -1338,9 +1338,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img5.jpg" alt="el_img5">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img5.jpg" alt="el_img5">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img5.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img5.jpg"
                                                                 alt="el_hover_img5">
                                                         </a>
                                                         <div class="product_action_box">
@@ -1385,9 +1385,9 @@
                                                 <div class="product_wrap">
                                                     <div class="product_img">
                                                         <a href="shop-product-detail.html">
-                                                            <img src="<?= base_url() ?>/public/client//assets/images/el_img12.jpg" alt="el_img12">
+                                                            <img src="<?= base_url() ?>/public/client/assets/images/el_img12.jpg" alt="el_img12">
                                                             <img class="product_hover_img"
-                                                                src="<?= base_url() ?>/public/client//assets/images/el_hover_img12.jpg"
+                                                                src="<?= base_url() ?>/public/client/assets/images/el_hover_img12.jpg"
                                                                 alt="el_hover_img12">
                                                         </a>
                                                         <div class="product_action_box">
@@ -1454,7 +1454,7 @@
                     <div class="col-xl-3 d-none d-xl-block">
                         <div class="sale-banner">
                             <a class="hover_effect1" href="#">
-                                <img src="<?= base_url() ?>/public/client//assets/images/shop_banner_img10.jpg" alt="shop_banner_img10">
+                                <img src="<?= base_url() ?>/public/client/assets/images/shop_banner_img10.jpg" alt="shop_banner_img10">
                             </a>
                         </div>
                     </div>
@@ -1481,8 +1481,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img2.jpg" alt="el_img2">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img2.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img2.jpg" alt="el_img2">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img2.jpg"
                                                         alt="el_hover_img2">
                                                 </a>
                                                 <div class="product_action_box">
@@ -1520,8 +1520,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img5.jpg" alt="el_img5">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img5.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img5.jpg" alt="el_img5">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img5.jpg"
                                                         alt="el_hover_img5">
                                                 </a>
                                                 <div class="product_action_box">
@@ -1564,8 +1564,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img9.jpg" alt="el_img9">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img9.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img9.jpg" alt="el_img9">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img9.jpg"
                                                         alt="el_hover_img9">
                                                 </a>
                                                 <div class="product_action_box">
@@ -1608,8 +1608,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img7.jpg" alt="el_img7">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img7.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img7.jpg" alt="el_img7">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img7.jpg"
                                                         alt="el_hover_img7">
                                                 </a>
                                                 <div class="product_action_box">
@@ -1652,8 +1652,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img5.jpg" alt="el_img5">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img5.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img5.jpg" alt="el_img5">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img5.jpg"
                                                         alt="el_hover_img5">
                                                 </a>
                                                 <div class="product_action_box">
@@ -1696,9 +1696,9 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img12.jpg" alt="el_img12">
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img12.jpg" alt="el_img12">
                                                     <img class="product_hover_img"
-                                                        src="<?= base_url() ?>/public/client//assets/images/el_hover_img12.jpg" alt="el_hover_img12">
+                                                        src="<?= base_url() ?>/public/client/assets/images/el_hover_img12.jpg" alt="el_hover_img12">
                                                 </a>
                                                 <div class="product_action_box">
                                                     <ul class="list_none pr_action_btn">
@@ -1764,37 +1764,37 @@
                             data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "5"}, "1199":{"items": "6"}}'>
                             <div class="item">
                                 <div class="cl_logo">
-                                    <img src="<?= base_url() ?>/public/client//assets/images/cl_logo1.png" alt="cl_logo">
+                                    <img src="<?= base_url() ?>/public/client/assets/images/cl_logo1.png" alt="cl_logo">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="cl_logo">
-                                    <img src="<?= base_url() ?>/public/client//assets/images/cl_logo2.png" alt="cl_logo">
+                                    <img src="<?= base_url() ?>/public/client/assets/images/cl_logo2.png" alt="cl_logo">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="cl_logo">
-                                    <img src="<?= base_url() ?>/public/client//assets/images/cl_logo3.png" alt="cl_logo">
+                                    <img src="<?= base_url() ?>/public/client/assets/images/cl_logo3.png" alt="cl_logo">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="cl_logo">
-                                    <img src="<?= base_url() ?>/public/client//assets/images/cl_logo4.png" alt="cl_logo">
+                                    <img src="<?= base_url() ?>/public/client/assets/images/cl_logo4.png" alt="cl_logo">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="cl_logo">
-                                    <img src="<?= base_url() ?>/public/client//assets/images/cl_logo5.png" alt="cl_logo">
+                                    <img src="<?= base_url() ?>/public/client/assets/images/cl_logo5.png" alt="cl_logo">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="cl_logo">
-                                    <img src="<?= base_url() ?>/public/client//assets/images/cl_logo6.png" alt="cl_logo">
+                                    <img src="<?= base_url() ?>/public/client/assets/images/cl_logo6.png" alt="cl_logo">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="cl_logo">
-                                    <img src="<?= base_url() ?>/public/client//assets/images/cl_logo7.png" alt="cl_logo">
+                                    <img src="<?= base_url() ?>/public/client/assets/images/cl_logo7.png" alt="cl_logo">
                                 </div>
                             </div>
                         </div>
@@ -1830,7 +1830,7 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img2.jpg" alt="el_img2">
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img2.jpg" alt="el_img2">
                                                    
                                                 </a>
                                             </div>
@@ -1853,7 +1853,7 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img2.jpg" alt="el_img2">
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img2.jpg" alt="el_img2">
                                                    
                                                 </a>
                                             </div>
@@ -1876,7 +1876,7 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img2.jpg" alt="el_img2">
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img2.jpg" alt="el_img2">
                                                    
                                                 </a>
                                             </div>
@@ -1901,7 +1901,7 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img2.jpg" alt="el_img2">
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img2.jpg" alt="el_img2">
                                                    
                                                 </a>
                                             </div>
@@ -1924,7 +1924,7 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img2.jpg" alt="el_img2">
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img2.jpg" alt="el_img2">
                                                    
                                                 </a>
                                             </div>
@@ -1947,7 +1947,7 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img2.jpg" alt="el_img2">
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img2.jpg" alt="el_img2">
                                                    
                                                 </a>
                                             </div>
@@ -1994,8 +1994,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img5.jpg" alt="el_img5">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img5.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img5.jpg" alt="el_img5">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img5.jpg"
                                                         alt="el_hover_img5">
                                                 </a>
                                             </div>
@@ -2025,9 +2025,9 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img12.jpg" alt="el_img12">
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img12.jpg" alt="el_img12">
                                                     <img class="product_hover_img"
-                                                        src="<?= base_url() ?>/public/client//assets/images/el_hover_img12.jpg" alt="el_hover_img12">
+                                                        src="<?= base_url() ?>/public/client/assets/images/el_hover_img12.jpg" alt="el_hover_img12">
                                                 </a>
                                             </div>
                                             <div class="product_info">
@@ -2056,8 +2056,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img4.jpg" alt="el_img4">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img4.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img4.jpg" alt="el_img4">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img4.jpg"
                                                         alt="el_hover_img4">
                                                 </a>
                                             </div>
@@ -2090,8 +2090,8 @@
                                             <span class="pr_flash bg-danger">Hot</span>
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img6.jpg" alt="el_img6">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img6.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img6.jpg" alt="el_img6">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img6.jpg"
                                                         alt="el_hover_img6">
                                                 </a>
                                             </div>
@@ -2122,8 +2122,8 @@
                                             <span class="pr_flash bg-danger">Hot</span>
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img8.jpg" alt="el_img8">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img8.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img8.jpg" alt="el_img8">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img8.jpg"
                                                         alt="el_hover_img8">
                                                 </a>
                                             </div>
@@ -2154,9 +2154,9 @@
                                             <span class="pr_flash bg-success">Sale</span>
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img10.jpg" alt="el_img10">
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img10.jpg" alt="el_img10">
                                                     <img class="product_hover_img"
-                                                        src="<?= base_url() ?>/public/client//assets/images/el_hover_img10.jpg" alt="el_hover_img10">
+                                                        src="<?= base_url() ?>/public/client/assets/images/el_hover_img10.jpg" alt="el_hover_img10">
                                                 </a>
                                             </div>
                                             <div class="product_info">
@@ -2209,9 +2209,9 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img11.jpg" alt="el_img11">
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img11.jpg" alt="el_img11">
                                                     <img class="product_hover_img"
-                                                        src="<?= base_url() ?>/public/client//assets/images/el_hover_img11.jpg" alt="el_hover_img11">
+                                                        src="<?= base_url() ?>/public/client/assets/images/el_hover_img11.jpg" alt="el_hover_img11">
                                                 </a>
                                             </div>
                                             <div class="product_info">
@@ -2240,8 +2240,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img7.jpg" alt="el_img7">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img7.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img7.jpg" alt="el_img7">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img7.jpg"
                                                         alt="el_hover_img7">
                                                 </a>
                                             </div>
@@ -2274,8 +2274,8 @@
                                             <span class="pr_flash bg-danger">Hot</span>
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img8.jpg" alt="el_img8">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img8.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img8.jpg" alt="el_img8">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img8.jpg"
                                                         alt="el_hover_img8">
                                                 </a>
                                             </div>
@@ -2308,8 +2308,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img5.jpg" alt="el_img5">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img5.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img5.jpg" alt="el_img5">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img5.jpg"
                                                         alt="el_hover_img5">
                                                 </a>
                                             </div>
@@ -2339,8 +2339,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img9.jpg" alt="el_img9">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img9.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img9.jpg" alt="el_img9">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img9.jpg"
                                                         alt="el_hover_img9">
                                                 </a>
                                             </div>
@@ -2370,8 +2370,8 @@
                                         <div class="product_wrap">
                                             <div class="product_img">
                                                 <a href="shop-product-detail.html">
-                                                    <img src="<?= base_url() ?>/public/client//assets/images/el_img1.jpg" alt="el_img1">
-                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client//assets/images/el_hover_img1.jpg"
+                                                    <img src="<?= base_url() ?>/public/client/assets/images/el_img1.jpg" alt="el_img1">
+                                                    <img class="product_hover_img" src="<?= base_url() ?>/public/client/assets/images/el_hover_img1.jpg"
                                                         alt="el_hover_img1">
                                                 </a>
                                             </div>
@@ -2423,7 +2423,7 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="widget">
                             <div class="footer_logo">
-                                <a href="#"><img src="<?= base_url() ?>/public/client//assets/images/logo_dark.png" alt="logo"></a>
+                                <a href="#"><img src="<?= base_url() ?>/public/client/assets/images/logo_dark.png" alt="logo"></a>
                             </div>
                             <p class="mb-3">If you are going to use of Lorem Ipsum need to be sure there isn't anything
                                 hidden of text</p>
@@ -2492,11 +2492,11 @@
                     </div>
                     <div class="col-lg-4">
                         <ul class="footer_payment text-center text-lg-right">
-                            <li><a href="#"><img src="<?= base_url() ?>/public/client//assets/images/visa.png" alt="visa"></a></li>
-                            <li><a href="#"><img src="<?= base_url() ?>/public/client//assets/images/discover.png" alt="discover"></a></li>
-                            <li><a href="#"><img src="<?= base_url() ?>/public/client//assets/images/master_card.png" alt="master_card"></a></li>
-                            <li><a href="#"><img src="<?= base_url() ?>/public/client//assets/images/paypal.png" alt="paypal"></a></li>
-                            <li><a href="#"><img src="<?= base_url() ?>/public/client//assets/images/amarican_express.png" alt="amarican_express"></a>
+                            <li><a href="#"><img src="<?= base_url() ?>/public/client/assets/images/visa.png" alt="visa"></a></li>
+                            <li><a href="#"><img src="<?= base_url() ?>/public/client/assets/images/discover.png" alt="discover"></a></li>
+                            <li><a href="#"><img src="<?= base_url() ?>/public/client/assets/images/master_card.png" alt="master_card"></a></li>
+                            <li><a href="#"><img src="<?= base_url() ?>/public/client/assets/images/paypal.png" alt="paypal"></a></li>
+                            <li><a href="#"><img src="<?= base_url() ?>/public/client/assets/images/amarican_express.png" alt="amarican_express"></a>
                             </li>
                         </ul>
                     </div>
@@ -2509,35 +2509,35 @@
     <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
 
     <!-- Latest jQuery -->
-    <script src="<?= base_url() ?>/public/client//assets/js/jquery-1.12.4.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/jquery-1.12.4.min.js"></script>
     <!-- popper min js -->
-    <script src="<?= base_url() ?>/public/client//assets/js/popper.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/popper.min.js"></script>
     <!-- Latest compiled and minified Bootstrap -->
-    <script src="<?= base_url() ?>/public/client//assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- owl-carousel min js  -->
-    <script src="<?= base_url() ?>/public/client//assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/owlcarousel/js/owl.carousel.min.js"></script>
     <!-- magnific-popup min js  -->
-    <script src="<?= base_url() ?>/public/client//assets/js/magnific-popup.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/magnific-popup.min.js"></script>
     <!-- waypoints min js  -->
-    <script src="<?= base_url() ?>/public/client//assets/js/waypoints.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/waypoints.min.js"></script>
     <!-- parallax js  -->
-    <script src="<?= base_url() ?>/public/client//assets/js/parallax.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/parallax.js"></script>
     <!-- countdown js  -->
-    <script src="<?= base_url() ?>/public/client//assets/js/jquery.countdown.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/jquery.countdown.min.js"></script>
     <!-- imagesloaded js -->
-    <script src="<?= base_url() ?>/public/client//assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/imagesloaded.pkgd.min.js"></script>
     <!-- isotope min js -->
-    <script src="<?= base_url() ?>/public/client//assets/js/isotope.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/isotope.min.js"></script>
     <!-- jquery.dd.min js -->
-    <script src="<?= base_url() ?>/public/client//assets/js/jquery.dd.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/jquery.dd.min.js"></script>
     <!-- slick js -->
-    <script src="<?= base_url() ?>/public/client//assets/js/slick.min.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/slick.min.js"></script>
     <!-- elevatezoom js -->
-    <script src="<?= base_url() ?>/public/client//assets/js/jquery.elevatezoom.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/jquery.elevatezoom.js"></script>
 
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <!-- scripts js -->
-    <script src="<?= base_url() ?>/public/client//assets/js/scripts.js"></script>
+    <script src="<?= base_url() ?>/public/client/assets/js/scripts.js"></script>
 
 </body>
 
