@@ -28,4 +28,8 @@ class admin extends BaseController
         echo view('admin/admin/edit', $data);
         //--------------------------------------------------------------------
     }
+    public function delete(){
+        $data['title'] = 'admin';
+        echo view('admin/admin/index', $data);
+    }
 }
