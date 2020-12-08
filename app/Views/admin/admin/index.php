@@ -8,6 +8,7 @@
                                 <h6 class="card-subtitle">all projects Admin</h6>
                                 <div class="table-responsive">
                                     <table id="example23" class="table table-striped">
+                                        <?php var_dump($adminModel) ?>
                                         <thead>
                                             <tr>
                                                 <th>No</th>
