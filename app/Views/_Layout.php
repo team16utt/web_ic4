@@ -15,35 +15,35 @@
     <!-- SITE TITLE -->
     <title>Shopwise - eCommerce Bootstrap 4 HTML Template</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="public/assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url() ?>//assets/images/favicon.png">
     <!-- Animation CSS -->
-    <link rel="stylesheet" href="public/assets/css/animate.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/animate.css">
     <!-- Latest Bootstrap min CSS -->
-    <link rel="stylesheet" href="public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/bootstrap/css/bootstrap.min.css">
     <!-- Google Font -->
-    <link href="public/assets/css.css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
-    <link href="public/assets/css-1.css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="<?= base_url() ?>//assets/css.css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="<?= base_url() ?>//assets/css-1.css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="public/assets/css/all.min.css">
-    <link rel="stylesheet" href="public/assets/css/ionicons.min.css">
-    <link rel="stylesheet" href="public/assets/css/themify-icons.css">
-    <link rel="stylesheet" href="public/assets/css/linearicons.css">
-    <link rel="stylesheet" href="public/assets/css/flaticon.css">
-    <link rel="stylesheet" href="public/assets/css/simple-line-icons.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/all.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/themify-icons.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/linearicons.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/flaticon.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/simple-line-icons.css">
     <!--- owl carousel CSS-->
-    <link rel="stylesheet" href="public/assets/owlcarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="public/assets/owlcarousel/css/owl.theme.css">
-    <link rel="stylesheet" href="public/assets/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/owlcarousel/css/owl.theme.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/owlcarousel/css/owl.theme.default.min.css">
     <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="public/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/magnific-popup.css">
     <!-- jquery-ui CSS -->
-    <link rel="stylesheet" href="public/assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/jquery-ui.css">
     <!-- Slick CSS -->
-    <link rel="stylesheet" href="public/assets/css/slick.css">
-    <link rel="stylesheet" href="public/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/slick.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/slick-theme.css">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="public/assets/css/style.css">
-    <link rel="stylesheet" href="public/assets/css/responsive.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>//assets/css/responsive.css">
 
 </head>
 
@@ -69,7 +69,7 @@
                     </button>
                     <div class="row no-gutters">
                         <div class="col-sm-5">
-                            <div class="background_bg h-100" data-img-src="public/assets/images/popup_img.jpg"></div>
+                            <div class="background_bg h-100" data-img-src="<?= base_url() ?>//assets/images/popup_img.jpg"></div>
                         </div>
                         <div class="col-sm-7">
                             <div class="popup_content">
@@ -114,8 +114,8 @@
 
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand px-2" href="index.html">
-                        <img class="logo_light" src="public/assets/images/logo_light.png" alt="logo">
-                        <img class="logo_dark" src="public/assets/images/logo_dark.png" alt="logo">
+                        <img class="logo_light" src="<?= base_url() ?>//assets/images/logo_light.png" alt="logo">
+                        <img class="logo_dark" src="<?= base_url() ?>//assets/images/logo_dark.png" alt="logo">
                     </a>
                     <button class="navbar-toggler side_navbar_toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSidetoggle" aria-expanded="false">
@@ -195,14 +195,14 @@
                                 <ul class="cart_list">
                                     <li>
                                         <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                        <a href="#"><img src="public/assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable
+                                        <a href="#"><img src="<?= base_url() ?>//assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable
                                             product 001</a>
                                         <span class="cart_quantity"> 1 x <span class="cart_amount"> <span
                                                     class="price_symbole">$</span></span>78.00</span>
                                     </li>
                                     <li>
                                         <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                        <a href="#"><img src="public/assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare
+                                        <a href="#"><img src="<?= base_url() ?>//assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare
                                             sed consequat</a>
                                         <span class="cart_quantity"> 1 x <span class="cart_amount"> <span
                                                     class="price_symbole">$</span></span>81.00</span>
@@ -245,7 +245,7 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="widget">
                             <div class="footer_logo">
-                                <a href="#"><img src="public/assets/images/logo_dark.png" alt="logo"></a>
+                                <a href="#"><img src="<?= base_url() ?>//assets/images/logo_dark.png" alt="logo"></a>
                             </div>
                             <p class="mb-3">If you are going to use of Lorem Ipsum need to be sure there isn't anything
                                 hidden of text</p>
@@ -314,11 +314,11 @@
                     </div>
                     <div class="col-lg-4">
                         <ul class="footer_payment text-center text-lg-right">
-                            <li><a href="#"><img src="public/assets/images/visa.png" alt="visa"></a></li>
-                            <li><a href="#"><img src="public/assets/images/discover.png" alt="discover"></a></li>
-                            <li><a href="#"><img src="public/assets/images/master_card.png" alt="master_card"></a></li>
-                            <li><a href="#"><img src="public/assets/images/paypal.png" alt="paypal"></a></li>
-                            <li><a href="#"><img src="public/assets/images/amarican_express.png" alt="amarican_express"></a>
+                            <li><a href="#"><img src="<?= base_url() ?>//assets/images/visa.png" alt="visa"></a></li>
+                            <li><a href="#"><img src="<?= base_url() ?>//assets/images/discover.png" alt="discover"></a></li>
+                            <li><a href="#"><img src="<?= base_url() ?>//assets/images/master_card.png" alt="master_card"></a></li>
+                            <li><a href="#"><img src="<?= base_url() ?>//assets/images/paypal.png" alt="paypal"></a></li>
+                            <li><a href="#"><img src="<?= base_url() ?>//assets/images/amarican_express.png" alt="amarican_express"></a>
                             </li>
                         </ul>
                     </div>
@@ -331,37 +331,37 @@
     <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
 
     <!-- Latest jQuery -->
-    <script src="public/assets/js/jquery-1.12.4.min.js"></script>
+    <script src="<?= base_url() ?>//assets/js/jquery-1.12.4.min.js"></script>
     <!-- jquery-ui -->
-    <script src="public/assets/js/jquery-ui.js"></script>
+    <script src="<?= base_url() ?>//assets/js/jquery-ui.js"></script>
     <!-- popper min js -->
-    <script src="public/assets/js/popper.min.js"></script>
+    <script src="<?= base_url() ?>//assets/js/popper.min.js"></script>
     <!-- Latest compiled and minified Bootstrap -->
-    <script src="public/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= base_url() ?>//assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- owl-carousel min js  -->
-    <script src="public/assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="<?= base_url() ?>//assets/owlcarousel/js/owl.carousel.min.js"></script>
     <!-- magnific-popup min js  -->
-    <script src="public/assets/js/magnific-popup.min.js"></script>
+    <script src="<?= base_url() ?>//assets/js/magnific-popup.min.js"></script>
     <!-- waypoints min js  -->
-    <script src="public/assets/js/waypoints.min.js"></script>
+    <script src="<?= base_url() ?>//assets/js/waypoints.min.js"></script>
     <!-- parallax js  -->
-    <script src="public/assets/js/parallax.js"></script>
+    <script src="<?= base_url() ?>//assets/js/parallax.js"></script>
     <!-- countdown js  -->
-    <script src="public/assets/js/jquery.countdown.min.js"></script>
+    <script src="<?= base_url() ?>//assets/js/jquery.countdown.min.js"></script>
     <!-- imagesloaded js -->
-    <script src="public/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="<?= base_url() ?>//assets/js/imagesloaded.pkgd.min.js"></script>
     <!-- isotope min js -->
-    <script src="public/assets/js/isotope.min.js"></script>
+    <script src="<?= base_url() ?>//assets/js/isotope.min.js"></script>
     <!-- jquery.dd.min js -->
-    <script src="public/assets/js/jquery.dd.min.js"></script>
+    <script src="<?= base_url() ?>//assets/js/jquery.dd.min.js"></script>
     <!-- slick js -->
-    <script src="public/assets/js/slick.min.js"></script>
+    <script src="<?= base_url() ?>//assets/js/slick.min.js"></script>
     <!-- isotope-loadmore js -->
-    <script src="public/assets/js/isotope-loadmore.js"></script>
+    <script src="<?= base_url() ?>//assets/js/isotope-loadmore.js"></script>
     <!-- elevatezoom js -->
-    <script src="public/assets/js/jquery.elevatezoom.js"></script>
+    <script src="<?= base_url() ?>//assets/js/jquery.elevatezoom.js"></script>
     <!-- scripts js -->
-    <script src="public/assets/js/scripts.js"></script>
+    <script src="<?= base_url() ?>//assets/js/scripts.js"></script>
 
 </body>
 

@@ -25,6 +25,10 @@
                             <div>
                                 <label >Địa chỉ Email</label>
                                 <p><input type="text" class="txt" id="email" name="email" placeholder="Địa chỉ email của bạn"></p>
+
+                            <div class="bor8 m-b-20 how-pos4-parent">
+                                <input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Địa chỉ email của bạn">
+                                <img class="how-pos4 pointer-none" src="<?= base_url() ?>//assets/images/icons/icon-email.png" alt="ICON">
                             </div>
                             <div class="bor8 m-b-30">
                                 <label>Nội dung</label>
