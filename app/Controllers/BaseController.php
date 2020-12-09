@@ -42,7 +42,7 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// E.g.:
 		// $this->session = \Config\Services::session();
-		$this->$db = \Config\Database::connect();
+		$this->$db = db_connect();
 	}
 
 }

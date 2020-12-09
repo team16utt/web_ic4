@@ -1,8 +1,17 @@
 <?php namespace App\Controllers;
+
+use App\Models\categoryModel;
+use LocDau;
+
 class category extends BaseController
 {
-    public function index($cid = 1)
-    {    
+    public function index($cate = null)
+    {   
+        $categoryModel = new categoryModel();
+        $allCategory = $categoryModel->findAll();
+        $cates = array_column($allCategory, 'metaTitle');
+        $categoryIndex = array_search($cate, $cates);
+        $cid = $allCategory[$categoryIndex]['category_id'];
         if (isset($_GET['page'])) {
 			$page = $_GET['page'];
 		} else {
