@@ -8,7 +8,7 @@
                                 <h6 class="card-subtitle">all projects Admin</h6>
                                 <div class="table-responsive">
                                     <table id="example23" class="table table-striped">
-                                        <?php var_dump($adminModel) ?>
+                                    <!-- <?php echo base_url().'/admin/admin/delete?id='.$row['id']?> -->
                                         <thead>
                                             <tr>
                                                 <th>No</th>
@@ -44,8 +44,8 @@
                                                                 title="Edit"><i class="far fa-edit"></i> </a>
                                                         </div>
                                                         <div class="ac">
-                                                            <a href="#" data-toggle="tooltip" data-placement="bottom"
-                                                                title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                            <a href="<?php echo base_url().'/admin/admin/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
+                                                                title="Delete" onclick="return confirm('Are you sure?');"><i class="far fa-trash-alt"></i></a>
                                                         </div>
 
                                                     </div>

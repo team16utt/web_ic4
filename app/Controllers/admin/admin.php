@@ -3,16 +3,16 @@
 namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
-use App\Models\adminModel;
+use App\Models\UserModel;
 
 class admin extends BaseController
 {
     public function index()
     {
-        $adminModel = new adminModel();
+        $adminModel = new UserModel();
 
         $data['title'] = 'admin';
-        $data['adminModel'] = $adminModel->findAll();
+        $data['user'] = $adminModel->findAll();
         echo view('admin/admin/index', $data);
         //--------------------------------------------------------------------
     }
@@ -29,7 +29,13 @@ class admin extends BaseController
         //--------------------------------------------------------------------
     }
     public function delete(){
+        // echo '<script>confirm("Are you the boss?")</script>';
+        // die();
+        $id = $_GET['id'];
+        $adminModel = new UserModel();
+        $adminModel->where('id', $id)->delete();
         $data['title'] = 'admin';
+        $data['user'] = $adminModel->findAll();
         echo view('admin/admin/index', $data);
     }
 }
