@@ -38,4 +38,5 @@ class admin extends BaseController
         $data['user'] = $adminModel->findAll();
         echo view('admin/admin/index', $data);
     }
+    
 }

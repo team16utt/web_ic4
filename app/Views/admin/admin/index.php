@@ -8,7 +8,6 @@
                                 <h6 class="card-subtitle">all projects Admin</h6>
                                 <div class="table-responsive">
                                     <table id="example23" class="table table-striped">
-                                    <!-- <?php echo base_url().'/admin/admin/delete?id='.$row['id']?> -->
                                         <thead>
                                             <tr>
                                                 <th>No</th>
@@ -36,7 +35,7 @@
                                                     <div class="obj-action">
                                                         <div class="ac">
 
-                                                            <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                            <a href="<?php echo base_url().'/admin/profile?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
                                                                 title="Detail"><i class="fas fa-info-circle"></i></a>
                                                         </div>
                                                         <div class="ac">
@@ -44,7 +43,9 @@
                                                                 title="Edit"><i class="far fa-edit"></i> </a>
                                                         </div>
                                                         <div class="ac">
-                                                            <a href="<?php echo base_url().'/admin/admin/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
+                                                            <!-- <a href="<?php echo base_url().'/admin/admin/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
+                                                                title="Delete" onclick="return confirm('Are you sure?');"><i class="far fa-trash-alt"></i></a> -->
+                                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
                                                                 title="Delete" onclick="return confirm('Are you sure?');"><i class="far fa-trash-alt"></i></a>
                                                         </div>
 
