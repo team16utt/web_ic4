@@ -4,11 +4,8 @@ namespace App\Controllers;
 
 class product extends BaseController
 {
-    public function index()
-    {
-        if (isset($_GET['pid'])) {
-            $pid = $_GET['pid'];
-        }
+    public function index($pid = 1)
+    {    
         $args = explode('/', $_SERVER['QUERY_STRING']);
 
         $get_product_sql = "SELECT * FROM product WHERE product_id = $pid";

@@ -48,7 +48,7 @@
                                     </a>
                                 </div>
                                 <div class="product_info">
-                                    <h6 class="product_title"><a href="product?pid=<?= $item->product_id ?>"><?= $item->name ?></a></h6>
+                                    <h6 class="product_title"><a href="<?= base_url() ?>/product/<?= $item->product_id ?>"><?= $item->name ?></a></h6>
                                     <div class="product_price">
                                         <span class="price"><?= $item->price ?></span>
                                         <!-- <del>$99.00</del>
