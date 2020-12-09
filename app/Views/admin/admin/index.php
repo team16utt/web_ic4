@@ -46,7 +46,7 @@
                                                             <!-- <a href="<?php echo base_url().'/admin/admin/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
                                                                 title="Delete" onclick="return confirm('Are you sure?');"><i class="far fa-trash-alt"></i></a> -->
                                                                 <a href="#" data-toggle="tooltip" data-placement="bottom"
-                                                                title="Delete" onclick="return confirm('Are you sure?');"><i class="far fa-trash-alt"></i></a>
+                                                                id="sa-confirm" data-original-title="Delete"><i class="far fa-trash-alt"></i></a>
                                                         </div>
 
                                                     </div>
