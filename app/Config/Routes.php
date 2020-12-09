@@ -32,8 +32,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('admin', 'admin/dashboard::index');
-$routes->get('category/(:num)', 'category::index');
-$routes->get('product/(:num)', 'product::index');
+$routes->get('loai-hang/(:any)', 'category::index/$1');
+$routes->get('product/(:num)', 'product::index/$1');
 
 /**
  * --------------------------------------------------------------------

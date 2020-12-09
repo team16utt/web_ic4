@@ -63,6 +63,6 @@ class Autoload extends AutoloadConfig
 	 * @var array
 	 */
 	public $classmap = [
-		'Template' => APPPATH .'/Libraries/Template.php'
+		'LocDau' => APPPATH .'/Libraries/VN_to_STR.php'
 	];
 }

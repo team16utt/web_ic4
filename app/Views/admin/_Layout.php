@@ -208,9 +208,8 @@
                                 aria-expanded="false"><i class="fab fa-cuttlefish"></i><span
                                     class="hide-menu">Category</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">All Products</a></li>
-                                <li><a href="add-product.html">Add Product</a></li>
-                                <li><a href="#">Edit Prodcut</a></li>
+                                <li><a href="<?= base_url() ?>/admin/category">All Category</a></li>
+                                <li><a href="<?= base_url() ?>/admin/category/add">Add Category</a></li>
                             </ul>
                         </li>
 

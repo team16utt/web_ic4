@@ -11,61 +11,40 @@
                     <table id="example23" class="table table-striped">
                         <thead>
                             <tr>
-                                <th>No</th>
-                                <th>Name</th>
-                                <th>Password</th>
-                                <th>Student code</th>
-                                <th>Date</th>
-                                <th></th>
+                                <th>ID</th>
+                                <th>Tên</th>
+                                <th>Mô tả</th>
+                                <th>Ngày tạo</th>
+                                <th>Tạo bởi</th>
+                                <th align="center">Hành động</th>
                             </tr>
                         </thead>
 
                         <tbody>
-
+                            <?php foreach($category as $item): ?>
                             <tr class="obj-item">
-                                <td>70</td>
-                                <td>Shirley Freeman</td>
-                                <td>Oyonder</td>
-                                <td>sfreeman1x@dmoz.org</td>
-                                <td>63-(612)356-9955</td>
+                                <td><?= $item['category_id'] ?></td>
+                                <td><?= $item['name'] ?></td>
+                                <td><?= $item['description'] ?></td>
+                                <td><?= date("d-m-Y H:i:s", strtotime($item['createdDate'])) ?></td>
+                                <td><?= $item['createdBy'] ?></td>
                                 <td>
                                     <div class="obj-action">
-                                        <div class="ac">
+                                        <!-- <div class="ac">
 
                                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Detail"><i class="fas fa-info-circle"></i></a>
+                                        </div> -->
+                                        <div class="ac">
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Sửa"><i class="far fa-edit"></i> </a>
                                         </div>
                                         <div class="ac">
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><i class="far fa-edit"></i> </a>
-                                        </div>
-                                        <div class="ac">
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="far fa-trash-alt"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Xóa"><i class="far fa-trash-alt"></i></a>
                                         </div>
 
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="obj-item">
-                                <td>70</td>
-                                <td>Shirley Freeman</td>
-                                <td>Oyonder</td>
-                                <td>sfreeman1x@dmoz.org</td>
-                                <td>63-(612)356-9955</td>
-                                <td>
-                                    <div class="obj-action">
-                                        <div class="ac">
-
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Detail"><i class="fas fa-info-circle"></i></a>
-                                        </div>
-                                        <div class="ac">
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><i class="far fa-edit"></i> </a>
-                                        </div>
-                                        <div class="ac">
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="far fa-trash-alt"></i></a>
-                                        </div>
-
-                                    </div>
-                                </td>
-                            </tr>
+                            <?php endforeach; ?>                         
                         </tbody>
                     </table>
                 </div>
