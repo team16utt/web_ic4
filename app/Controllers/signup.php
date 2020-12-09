@@ -32,11 +32,12 @@ class signup extends BaseController
                 'username'=> $username,
                 'gender'=> $gender,
                 'birthday'=> $birthday,
-                'phonenumber' => $phonenumber,
+                'phone_number' => $phonenumber,
                 'email' => $email,
                 'address' => $address,
                 'password' => $pwd,
-                'country' => $country
+                'country' => $country,
+                'role_id' => '1'
             ];
             // $uppercase = preg_match('@[A-Z]@', $password);
             // $lowercase = preg_match('@[a-z]@', $password);
@@ -52,7 +53,7 @@ class signup extends BaseController
             //     $status = '1';
             //     return redirect()->to(base_url().'/signup?status='.$status);
             // }
-            $db->table('accounts')->insert($data_insert);
+            $db->table('users')->insert($data_insert);
             // $status = 1;
             // $this->session->set_flashdata('status', $status);
             $status = '1';
