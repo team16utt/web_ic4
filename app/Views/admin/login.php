@@ -37,15 +37,15 @@
         <div class="login-register" style="background-image:url(<?= base_url() ?>/public/admin/assets/images/background/login-register.jpg);">
             <div class="login-box card">
                 <div class="card-body">
-                    <form class="form-horizontal form-material" id="loginform" action="index.html">
+                    <form class="form-horizontal form-material" id="loginform" action="<?php echo base_url().'/admin/login'?>" method="POST">
                         <h3 class="text-center m-b-20">Sign In</h3>
                         <div class="form-group ">
                             <div class="col-xs-12">
-                                <input class="form-control" type="text" required="" placeholder="Username"> </div>
+                                <input class="form-control" type="text" required="" placeholder="Username" name="username" id="username"> </div>
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <input class="form-control" type="password" required="" placeholder="Password"> </div>
+                                <input class="form-control" type="password" required="" placeholder="Password" name="password" id="password"> </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-12">
