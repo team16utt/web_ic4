@@ -68,7 +68,48 @@ class admin extends BaseController
     }
     public function edit()
     {
+        $id = $_GET['id'];
+        $model = new UserModel();
+        $data['info'] = $model->where('id',$id)->findAll();
         $data['title'] = 'admin';
+        if($this->request->getMethod() == 'post'){
+            session_start();
+            $model = new UserModel();
+            $username = $this->request->getVar('username');
+            $password = $this->request->getVar('password');
+            $fullname = $this->request->getVar('fullname');
+            $birthday = $this->request->getVar('birthday');
+            $email = $this->request->getVar('email');
+            $gender = $this->request->getVar('gender');
+            $phone = $this->request->getVar('phone');
+            $address = $this->request->getVar('address');
+            $country = $this->request->getVar('country');
+            $facebook = $this->request->getVar('facebook');
+            $data_insert = [
+                'id' => $id,
+                'fullname'=> $fullname,
+                'username' => $username,
+                'password' => md5($password),
+                'birthday' => date('d/m/Y',strtotime($birthday)),
+                'gender' => $gender,
+                'phone_number' => $phone,
+                'email' => $email,
+                'address' => $address,
+                'status' => 1,
+                'role_id' => 1,
+                'country' => $country,
+                'created_on' => date('Y-m-d'),
+                'facebook' => $facebook,
+                'twitter' => $facebook,
+                'gmail' => $facebook,
+                'insta' => $facebook,
+                'createdDate' => date('Y-m-d'),
+                'modifiedDate' => date('Y-m-d'),
+                'createdBy' => "VUONG"
+        ];
+        $model->save($data_insert);
+        return redirect()->to(base_url().'/admin/admin');
+        }
         echo view('admin/admin/edit', $data);
         //--------------------------------------------------------------------
     }
