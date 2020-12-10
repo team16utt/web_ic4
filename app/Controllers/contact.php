@@ -24,7 +24,7 @@ class contact extends BaseController
 					'content' => $content,
 					'created_on' => date('Y-m-d')
 			];
-			// $db->table('contact')->insert($data_insert);
+			$db->table('contact')->insert($data_insert);
 			// $status = 1;
 			// $this->session->set_flashdata('status', $status);
 			$status = '1';

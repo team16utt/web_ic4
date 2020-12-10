@@ -8,12 +8,12 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Basic Information</h5>
-                                <form class="form-material form-horizontal m-t-30">
+                                <form class="form-material form-horizontal m-t-30" method='POST' action="<?php echo base_url().'/admin/admin/add'?>">
                                     <div class="form-group">
                                         <label class="col-md-12" for="example-text">User Name</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="text" id="example-text" name="UserName" class="form-control"
+                                            <input type="text" id="example-text" name="username" class="form-control"
                                                 placeholder="enter your username">
                                         </div>
                                     </div>
@@ -21,7 +21,7 @@
                                         <label class="col-md-12" for="password">Password</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="password" id="password" name="PassWord" class="form-control"
+                                            <input type="password" id="password" name="password" class="form-control"
                                                 placeholder="enter your password">
                                         </div>
                                     </div>
@@ -29,7 +29,7 @@
                                         <label class="col-md-12" for="fName">Full Name</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="text" id="fName" name="FullName" class="form-control"
+                                            <input type="text" id="fName" name="fullname" class="form-control"
                                                 placeholder="enter your full name">
                                         </div>
                                     </div>
@@ -37,14 +37,14 @@
                                         <label class="col-md-12" for="bdate">Date of Birth</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="text" id="bdate" name="bdate" class="form-control mydatepicker"
+                                            <input type="date" id="bdate" name="birthday" class="form-control mydatepicker"
                                                 placeholder="enter your birth date">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-sm-12">Gender</label>
                                         <div class="col-sm-12">
-                                            <select class="form-control">
+                                            <select class="form-control" name='gender'>
                                                 <option>Select Gender</option>
                                                 <option>Male</option>
                                                 <option>Female</option>
@@ -55,7 +55,7 @@
                                         <label class="col-md-12" for="email">Email</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="email" id="email" name="Email" class="form-control"
+                                            <input type="email" id="email" name="email" class="form-control"
                                                 placeholder="enter your email">
                                         </div>
                                     </div>
@@ -63,28 +63,35 @@
                                         <label class="col-md-12" for="phone">Phone</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="number" maxlength="11" id="phone" name="Phone"
+                                            <input type="number" maxlength="11" id="phone" name="phone"
                                                 class="form-control" placeholder="enter your phone">
                                         </div>
                                     </div>
                 
                                     <div class="form-group">
-                                        <label class="col-sm-12">Address</label>
-                                        <div class="col-md-12 d-flex justify-content-between">
-                                            <select class="form-control col-lg-3 col-md-12">
-                                                <option>Tỉnh</option>
-                
-                                            </select>
-                                            <select class="form-control col-lg-3 col-md-12">
-                                                <option>Huyện</option>
-                
-                                            </select>
-                                            <select class="form-control col-lg-3 col-md-12">
-                                                <option>Xã</option>
-                
-                                            </select>
+                                    <label class="col-md-12" for="phone">Address</span>
+                                        </label>
+                                        <div class="col-md-12">
+                                            <input type="text" maxlength="11" id="address" name="address"
+                                                class="form-control" placeholder="enter your address">
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                    <label class="col-md-12" for="phone">Country</span>
+                                        </label>
+                                        <div class="col-md-12">
+                                            <input type="text" maxlength="11" id="country" name="country"
+                                                class="form-control" placeholder="enter your country">
+                                        </div>
+                                    </div>
+                                    <label class="col-md-12" for="phone">Facebook</span>
+                                        </label>
+                                        <div class="col-md-12">
+                                            <input type="text" maxlength="11" id="facebook" name="facebook"
+                                                class="form-control" placeholder="enter your facebook">
+                                        </div>
+                                    </div>
+                                    
                 
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6">
