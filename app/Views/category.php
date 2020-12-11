@@ -57,7 +57,7 @@
                                     </div> -->
                                     </div>
                                     <div class="add-to-bag">
-                                        <a href="#"><i class="icon-basket-loaded"></i></a>
+                                    <a href="#" data-id="<?= $item->product_id ?>" onclick="addToCart(event, this)"><i class="icon-basket-loaded"></i></a>
                                     </div>
                                 </div>
                             </div>

@@ -1,0 +1,41 @@
+.scroll-cart{
+    animation: onfade .4s ease-in-out forwards;
+    bottom: 65px;
+}
+
+.scroll-cart-count{
+    position: absolute;
+    
+}
+
+@keyframes onfade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+     opacity: 1;
+    }
+  }
+
+.show-cart{
+    display: block !important;
+}
+
+.shake{
+    animation: shakeCart .4s ease-in-out forwards;
+}
+
+@keyframes shakeCart {
+    25% {
+      transform:translateX(6px)
+    }
+    50% {
+      transform:translateX(-4px);
+    }
+    75% {
+      transform:translateX(2px);
+    }
+    100% {
+      transform:translateX(0);
+    }
+  }

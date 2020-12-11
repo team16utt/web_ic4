@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\ProductModel;
+
 class product extends BaseController
 {
     public function index($pid = 1)
@@ -25,5 +27,17 @@ class product extends BaseController
             $data['relatedProduct'] = $relatedProduct;
         }
         echo view('product', $data);
+    }
+
+    public function getById()
+    {
+        if (isset($_GET['pid'])) {
+            $pid = $_GET['pid'];
+            $productDao = new ProductModel();
+            $product_info = $productDao->getProdcutbyId($pid);
+            header('Content-Type: application/json');
+            return json_encode(['status' => 200,'data' => $product_info]);
+        }
+        return json_encode(['status' => 400, 'data' => null]);
     }
 }

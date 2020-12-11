@@ -7,10 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="Anil z" name="author">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="Shopwise is Powerful features and You Can Use The Perfect Build this Template For Any eCommerce Website. The template is built for sell Fashion Products, Shoes, Bags, Cosmetics, Clothes, Sunglasses, Furniture, Kids Products, Electronics, Stationery Products and Sporting Goods.">
-    <meta name="keywords"
-        content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
+    <meta name="description" content="Shopwise is Powerful features and You Can Use The Perfect Build this Template For Any eCommerce Website. The template is built for sell Fashion Products, Shoes, Bags, Cosmetics, Clothes, Sunglasses, Furniture, Kids Products, Electronics, Stationery Products and Sporting Goods.">
+    <meta name="keywords" content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
 
     <!-- SITE TITLE -->
     <title>Shopwise - eCommerce Bootstrap 4 HTML Template</title>
@@ -45,67 +43,14 @@
     <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/responsive.css">
 
+    <!-- duong style -->
+    <link rel="stylesheet" href="<?= base_url() ?>/public/client/assets/css/dtd-custom-style.css">
+
 </head>
 
 <body>
 
-    <!-- LOADER -->
-    <!-- <div class="preloader">
-    <div class="lds-ellipsis">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</div> -->
-    <!-- END LOADER -->
 
-    <!-- Home Popup Section -->
-    <!-- <div class="modal fade subscribe_popup" id="onload-popup" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="ion-ios-close-empty"></i></span>
-                    </button>
-                    <div class="row no-gutters">
-                        <div class="col-sm-5">
-                            <div class="background_bg h-100" data-img-src="<?= base_url() ?>/public/client/assets/images/popup_img.jpg"></div>
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="popup_content">
-                                <div class="popup-text">
-                                    <div class="heading_s4">
-                                        <h4>Subscribe and Get 25% Discount!</h4>
-                                    </div>
-                                    <p>Subscribe to the newsletter to receive updates about new products.</p>
-                                </div>
-                                <form method="post">
-                                    <div class="form-group">
-                                        <input name="email" required="" type="email" class="form-control rounded-0"
-                                            placeholder="Enter Your Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="btn btn-fill-line btn-block text-uppercase rounded-0"
-                                            title="Subscribe" type="submit">Subscribe</button>
-                                    </div>
-                                </form>
-                                <div class="chek-form">
-                                    <div class="custome-checkbox">
-                                        <input class="form-check-input" type="checkbox" name="checkbox"
-                                            id="exampleCheckbox3" value="">
-                                        <label class="form-check-label" for="exampleCheckbox3"><span>Don't show this
-                                                popup again!</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End Screen Load Popup Section -->
- 
     <!-- START HEADER -->
     <header class="header_wrap fixed-top header_with_topbar">
 
@@ -117,8 +62,7 @@
                         <img class="logo_light" src="<?= base_url() ?>/public/client/assets/images/logo_light.png" alt="logo">
                         <img class="logo_dark" src="<?= base_url() ?>/public/client/assets/images/logo_dark.png" alt="logo">
                     </a>
-                    <button class="navbar-toggler side_navbar_toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSidetoggle" aria-expanded="false">
+                    <button class="navbar-toggler side_navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarSidetoggle" aria-expanded="false">
                         <span class="ion-android-menu"></span>
                     </button>
                     <!-- <div class="pr_search_icon">
@@ -175,44 +119,25 @@
                         </ul>
                     </div>
                     <ul class="navbar-nav attr-nav align-items-center">
-                        <li><a href="javascript:void(0);" class="nav-link search_trigger"><i
-                                    class="linearicons-magnifier"></i></a>
+                        <li><a href="javascript:void(0);" class="nav-link search_trigger"><i class="linearicons-magnifier"></i></a>
                             <div class="search_wrap">
                                 <span class="close-search"><i class="ion-ios-close-empty"></i></span>
                                 <form>
                                     <input type="text" placeholder="Search" class="form-control" id="search_input">
-                                    <button type="submit" class="search_icon"><i
-                                            class="ion-ios-search-strong"></i></button>
+                                    <button type="submit" class="search_icon"><i class="ion-ios-search-strong"></i></button>
                                 </form>
                             </div>
                             <div class="search_overlay"></div>
                         </li>
                         <li><a class="nav-link " href="login.html"><i class="ti-user"></i></a></li>
-                        <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#"
-                                data-toggle="dropdown"><i class="linearicons-cart"></i><span
-                                    class="cart_count">2</span></a>
+                        <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count"></span></a>
                             <div class="cart_box dropdown-menu dropdown-menu-right">
                                 <ul class="cart_list">
-                                    <li>
-                                        <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                        <a href="#"><img src="<?= base_url() ?>/public/client/assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable
-                                            product 001</a>
-                                        <span class="cart_quantity"> 1 x <span class="cart_amount"> <span
-                                                    class="price_symbole">$</span></span>78.00</span>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                        <a href="#"><img src="<?= base_url() ?>/public/client/assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare
-                                            sed consequat</a>
-                                        <span class="cart_quantity"> 1 x <span class="cart_amount"> <span
-                                                    class="price_symbole">$</span></span>81.00</span>
-                                    </li>
+
                                 </ul>
                                 <div class="cart_footer">
-                                    <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span
-                                                class="price_symbole">$</span></span>159.00</p>
-                                    <p class="cart_buttons"><a href="#" class="btn btn-fill-line view-cart">View
-                                            Cart</a><a href="#" class="btn btn-fill-out checkout">Checkout</a></p>
+                                    <p class="cart_total"></p>
+                                    <p class="cart_buttons"><a href="#" class="btn btn-fill-out checkout">Checkout</a></p>
                                 </div>
                             </div>
                         </li>
@@ -231,8 +156,8 @@
     <!-- START MAIN CONTENT -->
     <div class="main_content">
 
-     <?= $this->renderSection('content') ?>
-        
+        <?= $this->renderSection('content') ?>
+
 
     </div>
     <!-- END MAIN CONTENT -->
@@ -329,6 +254,7 @@
     <!-- END FOOTER -->
 
     <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
+    <a href="#" class="scrollup scroll-cart" style="display: none;" ><i class="linearicons-cart"></i></i><span class="cart_count scroll-cart-count"></span></a>
 
     <!-- Latest jQuery -->
     <script src="<?= base_url() ?>/public/client/assets/js/jquery-1.12.4.min.js"></script>
@@ -362,6 +288,9 @@
     <script src="<?= base_url() ?>/public/client/assets/js/jquery.elevatezoom.js"></script>
     <!-- scripts js -->
     <script src="<?= base_url() ?>/public/client/assets/js/scripts.js"></script>
+
+    <!-- cart js -->
+    <script src="<?= base_url() ?>/public/client/assets/js/cart-handler.js"></script>
 
 </body>
 

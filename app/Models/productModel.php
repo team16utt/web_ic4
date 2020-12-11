@@ -12,4 +12,9 @@ class ProductModel extends Model
     protected $allowedFields = ['product_id','category_id','name','price','link','image','productCode','featureData','createdDate','view','quantity','modifiedDate','createdBy'];
     // protected $createField = '';
     // protected $updatedField = '';
+
+    public function getProdcutbyId(int $id){
+        return $this->find($id);
+    }
+    
 }
