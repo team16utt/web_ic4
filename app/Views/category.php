@@ -57,7 +57,8 @@
                                     </div> -->
                                     </div>
                                     <div class="add-to-bag">
-                                    <a href="#" data-id="<?= $item->product_id ?>" onclick="addToCart(event, this)"><i class="icon-basket-loaded"></i></a>
+                                    <a href="#" data-id="<?= $item->product_id ?>" onclick="addToCart(event, this)"><i class="icon-basket-loaded"></i> </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +91,7 @@
     </div>
 </div>
 <!-- END SECTION SHOP -->
-<ul class="pagination">
+<!-- <ul class="pagination">
     <li><a href="?page=1">First</a></li>
     <li class="<?php if ($page <= 1) {
                     echo 'disabled';
@@ -111,5 +112,5 @@
                     } ?>">Next</a>
     </li>
     <li><a href="?page=<?php echo $total_pages; ?>">Last</a></li>
-</ul>
+</ul> -->
 <?= $this->endSection() ?>

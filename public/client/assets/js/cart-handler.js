@@ -12,6 +12,17 @@ addToCart = (event, element) => {
   }
 };
 
+deleteItem = (event, element) => {
+  event.preventDefault();
+  let pid = element.dataset.id;
+  getCart();
+  let allItem = [...cart];
+  let affterDelete = allItem.filter(e => e.id != pid );
+  cart = affterDelete;
+  setCart();
+  renderCart();
+}
+
 getProductById = (id) => {
   //get product from sv
   $.ajax({
@@ -90,7 +101,7 @@ function renderCart() {
     .reverse()
     .forEach((i) => {
       html += ` <li>
-    <a href="#" class="item_remove" data-id="${i.id}"><i class="ion-close"></i></a>
+    <a href="#" class="item_remove" data-id="${i.id}" onclick="deleteItem(event, this)"><i class="ion-close"></i></a>
     <a  href="product/${i.id}"><img src="${i.image}" alt="cart_thumb1">${i.name}</a>
     <span class="cart_quantity"> ${i.quantity} x <span class="cart_amount"> <span
                 class="price_symbole">$</span></span>${i.price}</span>
@@ -106,7 +117,7 @@ function renderCart() {
       let bef = i.price.replaceAll(".", "");
       var t = Number(bef);
       totalPrice += t;
-      console.log(totalPrice);
+      // console.log(totalPrice);
       return true;
     }
   });
