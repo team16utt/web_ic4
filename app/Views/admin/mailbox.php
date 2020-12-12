@@ -26,7 +26,7 @@
                                                             </td>
                                                             <td class="hidden-xs-down"><i class="far fa-star"></i></td>
                                                             <td class="hidden-xs-down"><?= $row['fullname']?></td>
-                                                            <td class="max-texts"><a href="app-email-detail.html"><span class="label label-success">Elite</span><?= $row['content']?></a></td>
+                                                            <td class="max-texts"><a href="<?php echo base_url().'/admin/mailbox/detail?id='.$row['id']?>"><span class="label label-success">Elite</span><?= $row['content']?></a></td>
                                                             <td class="text-right"><?= $row['state']?></td>
                                                             <td class="hidden-xs-down"><i class="fa fa-paperclip"></i></td>
                                                             <td class="text-right"><?= $row['created_on']?></td>

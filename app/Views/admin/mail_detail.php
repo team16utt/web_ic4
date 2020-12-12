@@ -10,7 +10,7 @@
                                     <div class="card-body p-t-0">
                                         <div class="card b-all shadow-none">
                                             <div class="card-body">
-                                                <h3 class="card-title m-b-0">Your message title goes here</h3>
+                                                <h3 class="card-title m-b-0">Contact from Client</h3>
                                             </div>
                                             <div>
                                                 <hr class="m-t-0">
@@ -29,7 +29,7 @@
                                             <div>
                                                 <hr class="m-t-0">
                                             </div>
-                                            <div class="card-body">
+                                            <!-- <div class="card-body">
                                                 <h4><i class="fa fa-paperclip m-r-10 m-b-10"></i> Attachments <span>(3)</span></h4>
                                                 <div class="row">
                                                     <div class="col-md-2">
@@ -45,7 +45,7 @@
                                                 <div class="b-all m-t-20 p-20">
                                                     <p class="p-b-20">click here to <a href="javascript:void(0)">Reply</a> or <a href="javascript:void(0)">Forward</a></p>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
