@@ -8,12 +8,12 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Basic Information</h5>
-                                <form class="form-material form-horizontal m-t-30">
+                                <form class="form-material form-horizontal m-t-30" action="<?= base_url().'/admin/product/add'?>" method='POST' enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label class="col-md-12" for="example-text">Product Name</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="text" id="example-text" name="pName" class="form-control"
+                                            <input type="text" id="text" name="product_name" class="form-control"
                                                 placeholder="enter product name">
                                         </div>
                                     </div>
@@ -21,7 +21,7 @@
                                         <label class="col-md-12" for="price">Price</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="password" id="price" name="price" class="form-control"
+                                            <input type="text" id="price" name="price" class="form-control"
                                                 placeholder="enter product price">
                                         </div>
                                     </div>
@@ -29,30 +29,37 @@
                                         <label class="col-md-12" for="quantity">Quantity</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="text" id="quantity" name="" class="form-control"
+                                            <input type="text" id="quantity" name="quantity" class="form-control"
                                                 placeholder="enter quantity">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-md-12" for="color">Color</span>
+                                        <label class="col-md-12" for="color">Product Code</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="text" id="color" name="color" class="form-control "
-                                                placeholder="color">
+                                            <input type="text" id="color" name="code" class="form-control "
+                                                placeholder="Product code">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-sm-12">Category</label>
                                         <div class="col-sm-12">
-                                            <select class="form-control">
-                                                <option>Select</option>
+                                            <select class="form-control" name='category'>
+                                                <!-- <option>Select</option> -->
+                                                <?php use App\Models\categoryModel;
+                                                    $model = new categoryModel();
+                                                    $data = $model->findAll();
+                                                    foreach ($data as $item){
+                                                        echo '<option>'.$item['name'].'</option>';
+                                                    }
+                                                ?>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-sm-12">Provider</label>
                                         <div class="col-sm-12">
-                                            <select class="form-control">
+                                            <select class="form-control" name='provider'>
                                                 <option>Select</option>
                                             </select>
                                         </div>
@@ -63,7 +70,7 @@
                                                 <div class="card-body">
                                                     <h4 class="card-title">Thumnail</h4>
                                                     <label for="input-file-now">Choose a image</label>
-                                                    <input type="file" id="input-file-now" class="dropify" />
+                                                    <input type="file" id="input-file-now" class="dropify" name='fileToUpload'/>
                                                 </div>
                                             </div>
                                         </div>
@@ -72,7 +79,7 @@
                                                 <div class="card-body">
                                                     <h4 class="card-title">Upload More Image</h4>
                                                     <label for="input-file-now-custom-1">More Image</label>
-                                                    <input type="file" id="input-file-now-custom-1" class="dropify" multiple />
+                                                    <input type="file" id="input-file-now-custom-1" class="dropify" name ='image_more[]' multiple />
                                                 </div>
                                             </div>
                                         </div>
