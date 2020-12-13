@@ -6,8 +6,9 @@
                             <div class="row">                             
                                 <div class="col-lg-12  bg-light border-left">
                                     <div class="card-body">
-                                        <div class="btn-group m-b-10 m-r-10" role="group" aria-label="Button group with nested dropdown">
-                                            <button type="button" class="btn btn-secondary font-18"><i class="mdi mdi-delete"></i></button>
+                                    <form action="<?php echo base_url().'/admin/mailbox'?>" method='POST'>    
+                                    <div class="btn-group m-b-10 m-r-10" role="group" aria-label="Button group with nested dropdown">
+                                            <button type="submit" class="btn btn-secondary font-18"><i class="mdi mdi-delete"></i></button>
                                         </div>
                                        
                                     </div>
@@ -20,8 +21,8 @@
                                                         <tr>
                                                             <td>
                                                                 <div class="custom-control custom-checkbox mr-sm-2">
-                                                                    <input type="checkbox" class="custom-control-input" name="arrDelete[]" id="<?= $row['id']?>" value="<?= $row['fullname']?>">
-                                                                    <label class="custom-control-label" for="<?= $row['id']?>"></label>
+                                                                    <input type="checkbox" name="arrDelete[]" id="<?= $row['id']?>" value="<?= $row['id']?>">
+                                                                    <!-- <label class="custom-control-label" for="<?= $row['id']?>"></label> -->
                                                                 </div>
                                                             </td>
                                                             <td class="hidden-xs-down"><i class="far fa-star"></i></td>
@@ -37,6 +38,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
