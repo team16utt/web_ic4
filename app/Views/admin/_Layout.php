@@ -190,8 +190,8 @@
                                 aria-expanded="false"><i class="icon-people"></i><span
                                     class="hide-menu">Admin</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="list-admin.html">All Admin</a></li>
-                                <li><a href="add-admin.html">Add Admin</a></li>
+                                <li><a href="<?= base_url() ?>/admin/admin">All Admin</a></li>
+                                <li><a href="<?= base_url() ?>/admin/admin/add">Add Admin</a></li>
                                 <li><a href="#">Edit Leads</a></li>
                             </ul>
                         </li>
@@ -334,7 +334,7 @@
         <!-- footer -->
         <!-- ============================================================== -->
         <footer class="footer">
-            © 2020 Eliteadmin by themedesigner.in
+          © 2020 tình yêu là duy tâm hay là duy vật
         </footer>
         <!-- ============================================================== -->
         <!-- End footer -->
@@ -478,6 +478,15 @@
         });
 
     </script>
+
+     <!-- js-comfirm-delete -->
+     <script src="<?= base_url() ?>/public/admin/assets/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="<?= base_url() ?>/public/admin/assets/node_modules/sweetalert2/sweet-alert.init.js"></script>
+
+
+    <!-- js-toast -->
+    <script src="<?= base_url() ?>/public/admin/assets/node_modules/toast-master/js/jquery.toast.js"></script>
+    <script src="<?= base_url() ?>/public/admin/crm/dist/js/pages/toastr.js"></script>
 </body>
 
 </html>

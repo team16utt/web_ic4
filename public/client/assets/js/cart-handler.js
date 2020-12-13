@@ -139,11 +139,7 @@ function renderCart() {
     e.innerHTML = cart.length;
   });
 
-  // let scroll_cart = document.querySelector(".scroll-cart");
-  // scroll_cart.classList.add("shake");
-  // setTimeout(() => {
-  //   scroll_cart.classList.remove("shake");
-  // }, 1000);
+
 
   cartTotal.innerHTML = totalPricehtml;
 

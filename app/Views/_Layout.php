@@ -137,7 +137,7 @@
                                 </ul>
                                 <div class="cart_footer">
                                     <p class="cart_total"></p>
-                                    <p class="cart_buttons"><a href="#" class="btn btn-fill-out checkout">Checkout</a></p>
+                                    <p class="cart_buttons"><a href="<?= base_url() ?>/checkout" class="btn btn-fill-out checkout">Checkout</a></p>
                                 </div>
                             </div>
                         </li>
