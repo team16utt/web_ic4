@@ -35,7 +35,7 @@
                                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Detail"><i class="fas fa-info-circle"></i></a>
                                         </div> -->
                                         <div class="ac">
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Sửa"><i class="far fa-edit"></i> </a>
+                                            <a href="<?= base_url().'/admin/category/edit?id='.$item['category_id']?>" data-toggle="tooltip" data-placement="bottom" title="Sửa"><i class="far fa-edit"></i> </a>
                                         </div>
                                         <div class="ac">
                                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Xóa"><i class="far fa-trash-alt"></i></a>

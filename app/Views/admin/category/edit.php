@@ -7,12 +7,17 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Basic Information</h5>
-                <form class="form-material form-horizontal m-t-30">
+                <form class="form-material form-horizontal m-t-30" action='<?= base_url().'/admin/category/edit?id='.$item['category_id']?>' method='POST'>
                     <div class="form-group">
-                        <label class="col-md-12" for="example-text">Category Name</span>
+                        <label class="col-md-12" for="example-text">Tên loại hàng</span>
                         </label>
                         <div class="col-md-12">
-                            <input type="text" id="example-text" name="cName" class="form-control" placeholder="enter product name">
+                            <input type="text" id="example-text" name="cName" class="form-control" placeholder="Nhập tên loại hàng" value='<?= $item['name']?>'>
+                        </div>
+                        <label class="col-md-12" for="example-text">Mô tả</span>
+                        </label>
+                        <div class="col-md-12">
+                            <input type="text" id="example-text" name="cDesription" class="form-control" placeholder="Nhập mô tả" value='<?= $item['description']?>'>
                         </div>
                     </div>
 

@@ -9,11 +9,19 @@ class admin extends BaseController
 {
     public function index()
     {
-        $adminModel = new UserModel();
-
-        $data['title'] = 'admin';
-        $data['user'] = $adminModel->findAll();
-        echo view('admin/admin/index', $data);
+        session_start();
+        if(isset($_SESSION['user']) != ''){
+            // echo view('admin/login');
+            $adminModel = new UserModel();
+            // echo $_SESSION['user']['fullname'];
+            // die();
+            $data['title'] = 'admin';
+            $data['user'] = $adminModel->findAll();
+            echo view('admin/admin/index', $data);
+            // session_destroy();
+        }
+        echo view('admin/login');
+        
         //--------------------------------------------------------------------
     }
     public function add()
