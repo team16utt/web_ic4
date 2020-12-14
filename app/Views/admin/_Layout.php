@@ -156,17 +156,17 @@
                 <!-- User Profile-->
                 <div class="user-profile">
                     <div class="user-pro-body">
+                        <?php session_start();?>
                         <div><img src="<?= base_url() ?>/public/admin/assets/images/users/2.jpg" alt="user-img" class="img-circle"></div>
                         <div class="dropdown">
                             <a href="javascript:void(0)" class="dropdown-toggle u-dropdown link hide-menu"
-                                data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Steave
-                                Gection <span class="caret"></span></a>
+                                data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['user']['fullname']?><span class="caret"></span></a>
                             <div class="dropdown-menu animated flipInY">
                                 <!-- text-->
-                                <a href="javascript:void(0)" class="dropdown-item"><i class="ti-user"></i> My
+                                <a href="<?php echo base_url().'/admin/profile?id='.$_SESSION['user']['id'];?>" class="dropdown-item"><i class="ti-user"></i> My
                                     Profile</a>
                                 <!-- text-->
-                                <a href="pages-login.html" class="dropdown-item"><i class="fas fa-power-off"></i>
+                                <a href="<?= base_url() ?>/admin/logout" class="dropdown-item"><i class="fas fa-power-off"></i>
                                     Logout</a>
                                 <!-- text-->
                             </div>
@@ -178,10 +178,15 @@
                     <ul id="sidebarnav">
                         <li class="nav-small-cap">--- MAIN MENU</li>
                         <li>
-                            <a class="waves-effect waves-dark" href="index.html" aria-expanded="false">
+                            <a class="waves-effect waves-dark" href="<?= base_url() ?>/admin" aria-expanded="false">
                                 <i class="icon-speedometer"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="<?= base_url() ?>/admin/mailbox"
+                                aria-expanded="false"><i class="icon-envelope"></i><span
+                                    class="hide-menu">Mailbox</span></a>
+                            
                         </li>
 
                         <li class="nav-small-cap">--- QUẢN LÝ</li>
@@ -192,16 +197,15 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?= base_url() ?>/admin/admin">All Admin</a></li>
                                 <li><a href="<?= base_url() ?>/admin/admin/add">Add Admin</a></li>
-                                <li><a href="#">Edit Leads</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false"><i class="icon-docs"></i><span
                                     class="hide-menu">Products</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">All Category</a></li>
-                                <li><a href="add-product.html">Add Category</a></li>
-                                <li><a href="#">Edit Prodcut</a></li>
+                                <li><a href="<?= base_url() ?>/admin/product">All Product</a></li>
+                                <li><a href="<?= base_url() ?>/admin/product/add">Add Product</a></li>
+                                
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
