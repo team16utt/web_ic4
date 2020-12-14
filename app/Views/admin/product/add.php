@@ -50,7 +50,7 @@
                                                     $model = new categoryModel();
                                                     $data = $model->findAll();
                                                     foreach ($data as $item){
-                                                        echo '<option>'.$item['name'].'</option>';
+                                                        echo '<option value="'.$item['category_id'].'">'.$item['name'].'</option>';
                                                     }
                                                 ?>
                                             </select>
@@ -60,7 +60,7 @@
                                         <label class="col-sm-12">Provider</label>
                                         <div class="col-sm-12">
                                             <select class="form-control" name='provider'>
-                                                <option>Select</option>
+                                                <option >Select</option>
                                             </select>
                                         </div>
                                     </div>                                  

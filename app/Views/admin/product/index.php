@@ -29,7 +29,12 @@
                                 <td><?=$row['supplier_id']?></td>
                                 <td><?=$row['quantity']?></td>
                                 <td><?=$row['price']?></td>
-                                <td><img src="<?=$row['image']?>" alt="" width="50" height="50"></td>
+                                <td><img src=" <?php if($row['image'][0] == 'h'){
+                                    echo $row['image'];}
+                                    else {
+                                        echo base_url() . $row['image'];
+                                    }
+                                ?>" alt="" width="50" height="50"></td>
                                 <!-- <td>63-(612)356-9955</td> -->
                                 <td>
                                     <div class="obj-action">
