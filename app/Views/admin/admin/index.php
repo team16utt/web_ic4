@@ -48,39 +48,15 @@
                                                         <div class="ac">
                                                             <!-- <a href="<?php echo base_url().'/admin/admin/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
                                                                 title="Delete" onclick="return confirm('Are you sure?');"><i class="far fa-trash-alt"></i></a> -->
-                                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
-                                                                id="sa-confirm" data-original-title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                                <a href="<?php echo base_url().'/admin/admin/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
+                                                                class="sa-confirm" data-original-title="Delete"><i class="far fa-trash-alt"></i></a>
                                                         </div>
 
                                                     </div>
                                                 </td>
                                             </tr>
                                             <?php endforeach; ?>
-                                            <!-- <tr class="obj-item">
-                                                <td>70</td>
-                                                <td>Shirley Freeman</td>
-                                                <td>Oyonder</td>
-                                                <td>sfreeman1x@dmoz.org</td>
-                                                <td>63-(612)356-9955</td>
-                                                <td>
-                                                    <div class="obj-action">
-                                                        <div class="ac">
-
-                                                            <a href="#" data-toggle="tooltip" data-placement="bottom"
-                                                                title="Detail"><i class="fas fa-info-circle"></i></a>
-                                                        </div>
-                                                        <div class="ac">
-                                                            <a href="#" data-toggle="tooltip" data-placement="bottom"
-                                                                title="Edit"><i class="far fa-edit"></i> </a>
-                                                        </div>
-                                                        <div class="ac">
-                                                            <a href="#" data-toggle="tooltip" data-placement="bottom"
-                                                                title="Delete"><i class="far fa-trash-alt"></i></a>
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                            </tr> -->
+                                            
                                         </tbody>
                                     </table>
                                 </div>

@@ -23,6 +23,7 @@ deleteItem = (event, element) => {
   renderCart();
 }
 
+
 getProductById = (id) => {
   //get product from sv
   $.ajax({
@@ -48,6 +49,7 @@ getProductById = (id) => {
         cart.push(product);
         setCart();
         renderCart();
+        
       }
     },
   });

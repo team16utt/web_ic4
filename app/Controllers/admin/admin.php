@@ -10,7 +10,7 @@ class admin extends BaseController
     public function index()
     {
         session_start();
-        if(isset($_SESSION['user']) != ''){
+        // if(isset($_SESSION['user']) != ''){
             // echo view('admin/login');
             $adminModel = new UserModel();
             // echo $_SESSION['user']['fullname'];
@@ -19,7 +19,7 @@ class admin extends BaseController
             $data['user'] = $adminModel->findAll();
             echo view('admin/admin/index', $data);
             // session_destroy();
-        }
+        // }
         echo view('admin/login');
         
         //--------------------------------------------------------------------
