@@ -17,12 +17,11 @@ deleteItem = (event, element) => {
   let pid = element.dataset.id;
   getCart();
   let allItem = [...cart];
-  let affterDelete = allItem.filter(e => e.id != pid );
+  let affterDelete = allItem.filter((e) => e.id != pid);
   cart = affterDelete;
   setCart();
   renderCart();
-}
-
+};
 
 getProductById = (id) => {
   //get product from sv
@@ -49,7 +48,6 @@ getProductById = (id) => {
         cart.push(product);
         setCart();
         renderCart();
-        
       }
     },
   });
@@ -141,11 +139,26 @@ function renderCart() {
     e.innerHTML = cart.length;
   });
 
-
-
   cartTotal.innerHTML = totalPricehtml;
 
   list.innerHTML = html;
 }
 
 renderCart();
+
+rendetListProductCheckOut = () => {
+  let list = document.querySelector(".checkout-cart");
+  if (list != null) {
+    getCart();
+    html = "";
+    cart.forEach((e) => {
+      html += ` <tr>
+      <td>${e.name} <span class="product-qty">x ${e.quantity}</span></td>
+      <td>$${e.price}</td>
+  </tr>`;
+    });
+    list.innerHTML = html;
+  }
+};
+
+rendetListProductCheckOut();

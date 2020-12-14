@@ -132,7 +132,7 @@
                                     <th>Total</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="checkout-cart">
                                 <tr>
                                     <td>Blue Dress For Woman <span class="product-qty">x 2</span></td>
                                     <td>$90.00</td>
