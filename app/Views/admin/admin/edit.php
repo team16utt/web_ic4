@@ -10,7 +10,7 @@
                                 <h5 class="card-title">Basic Information</h5>
                                 <?php foreach ($info as $user) :?>
 
-                                <form class="form-material form-horizontal m-t-30" method="POST" action="#">
+                                <form class="form-material form-horizontal m-t-30" method="POST" action="#" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label class="col-md-12" for="example-text">User Name</span>
                                         </label>
@@ -86,6 +86,7 @@
                                                 class="form-control" placeholder="enter your country">
                                         </div>
                                     </div>
+                                    <div class="form-group">
                                     <label class="col-md-12" for="phone">Facebook</span>
                                         </label>
                                         <div class="col-md-12">
@@ -93,17 +94,13 @@
                                                 class="form-control" placeholder="enter your facebook">
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Avatar</h4>
-                                                    <label for="input-file-now">Choose a image</label>
-                                                    <input type="file" id="input-file-now" class="dropify" />
-                                                </div>
-                                            </div>
+                                    <div class="form-group">
+                                    <label class="col-md-12" for="phone">Avatar</span>
+                                        </label>
+                                        <div class="col-md-12">
+                                            <label for="input-file-now">Choose a image</label>
+                                            <input type="file" id="input-file-now" name="file" class="dropify">
                                         </div>
-                                    
                                     </div>
                                     <?php endforeach; ?>
                 
@@ -124,6 +121,7 @@
                                     <button type="button" onclick="window.history.back();"
                                         class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                 </form>
+                                
                             </div>
                         </div>
                     </div>

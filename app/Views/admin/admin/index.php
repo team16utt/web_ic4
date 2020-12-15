@@ -48,8 +48,13 @@
                                                         <div class="ac">
                                                             <!-- <a href="<?php echo base_url().'/admin/admin/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
                                                                 title="Delete" onclick="return confirm('Are you sure?');"><i class="far fa-trash-alt"></i></a> -->
+<<<<<<< HEAD
                                                                 <a href="<?php echo base_url().'/admin/admin/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
                                                                 class="sa-confirm" data-original-title="Delete"><i class="far fa-trash-alt"></i></a>
+=======
+                                                                <a href="<?php echo base_url().'/admin/admin/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom" onclick="return confirm('Are you sure?');"
+                                                                id="sa-confirm" data-original-title="Delete"><i class="far fa-trash-alt"></i></a>
+>>>>>>> 2fcab2adbdbe14364895e3050025885a4361b609
                                                         </div>
 
                                                     </div>
