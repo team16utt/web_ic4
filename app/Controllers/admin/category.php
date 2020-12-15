@@ -41,6 +41,7 @@ class category extends BaseController
     }
     public function edit()
     {
+        session_start();
         $id = $_GET['id'];
         $model = new categoryModel();
         $locDau = new LocDau();
@@ -63,6 +64,14 @@ class category extends BaseController
         }
         echo view('admin/category/edit', $data);
         //--------------------------------------------------------------------
+    }
+    public function delete(){
+        $id = $_GET['id'];
+        $Model = new categoryModel();
+        $Model->where('category_id', $id)->delete();
+        $data['title'] = 'category';
+        $data['user'] = $Model->findAll();
+        return redirect()->to(base_url().'/admin/category');
     }
 }
 

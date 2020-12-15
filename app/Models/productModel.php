@@ -9,7 +9,7 @@ class ProductModel extends Model
     protected $primaryKey = 'product_id';
 
     protected $returnType     = 'array';
-    protected $allowedFields = ['product_id','category_id','name','price','link','image','productCode','featureData','createdDate','view','quantity','modifiedDate','createdBy'];
+    protected $allowedFields = ['product_id','category_id','supplier_id','name','price','link','image','productCode','featureData','createdDate','view','quantity','modifiedDate','createdBy'];
     // protected $createField = '';
     // protected $updatedField = '';
 

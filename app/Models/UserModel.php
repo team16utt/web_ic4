@@ -9,7 +9,7 @@ class UserModel extends Model
     protected $primaryKey = 'id';
 
     protected $returnType     = 'array';
-    protected $allowedFields = ['username', 'email','password','fullname','birthday','gender','phone_number','email','address','status','country','role_id','created_on','facebook','createdDate','modifiedDate','createdBy'];
+    protected $allowedFields = ['username','image', 'email','password','fullname','birthday','gender','phone_number','email','address','status','country','role_id','created_on','facebook','createdDate','modifiedDate','createdBy'];
     // protected $createField = '';
     // protected $updatedField = '';
 }

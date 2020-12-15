@@ -4,6 +4,7 @@ namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
 use App\Models\UserModel;
+use RuntimeException;
 
 class admin extends BaseController
 {
@@ -27,6 +28,9 @@ class admin extends BaseController
     public function add()
     {
         session_start();
+        helper('file');
+        helper('form');
+
         $data['title'] = 'admin';
         if ($this->request->getMethod() == 'post'){
             $model = new UserModel();
@@ -40,8 +44,16 @@ class admin extends BaseController
             $address = $this->request->getVar('address');
             $country = $this->request->getVar('country');
             $facebook = $this->request->getVar('facebook');
+            $file = $this->request->getFile('file');
+            if ($file->isValid() && !$file->hasMoved()){
+                $newName = $file->getRandomName();
+                $path = $file->move("./public/client/assets/product/",$newName);                
+            }
+            
+            
+            $url_avatar = "/public/client/assets/product/".$newName;
             $data_insert = [
-                'image' => '',
+                'image' => $url_avatar,
                 'fullname'=> $fullname,
                 'username' => $username,
                 'password' => md5($password),
@@ -60,7 +72,7 @@ class admin extends BaseController
                 'insta' => $facebook,
                 'createdDate' => date('Y-m-d'),
                 'modifiedDate' => date('Y-m-d'),
-                'createdBy' => "VUONG"
+                'createdBy' => $_SESSION['user']['fullname']
         ];
         $model->insert($data_insert);
         
@@ -93,8 +105,20 @@ class admin extends BaseController
             $address = $this->request->getVar('address');
             $country = $this->request->getVar('country');
             $facebook = $this->request->getVar('facebook');
+            $file = $this->request->getFile('file');
+            if ($file){
+                if ($file->isValid() && !$file->hasMoved()){
+                    $newName = $file->getRandomName();
+                    $path = $file->move("./public/client/assets/product/",$newName);
+                    $url_avatar = "/public/client/assets/product/".$newName;                
+                }
+                else {
+                    $url_avatar = '';
+                }
+            }
             $data_insert = [
                 'id' => $id,
+                'image' => $url_avatar,
                 'fullname'=> $fullname,
                 'username' => $username,
                 'password' => md5($password),
@@ -129,7 +153,7 @@ class admin extends BaseController
         $adminModel->where('id', $id)->delete();
         $data['title'] = 'admin';
         $data['user'] = $adminModel->findAll();
-        echo view('admin/admin/index', $data);
+        return redirect()->to(base_url().'/admin/admin');
     }
     
 }

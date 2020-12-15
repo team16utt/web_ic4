@@ -6,7 +6,7 @@
                     <div class="col-lg-6 ">
                         <div class="card">
                             <div class="card-body">
-                                <center class="m-t-30"> <img src="<?= $user['image']?>" class="img-circle"
+                                <center class="m-t-30"> <img src="<?php echo base_url().$user['image']?>" class="img-circle"
                                         width="150">
                                     <h4 class="card-title m-t-10"><?= $user['fullname'] ?></h4>
                                     <h6 class="card-subtitle"><?php if ($user['role_id']=='1'){echo 'Admin';} else {echo 'User';}?></h6>

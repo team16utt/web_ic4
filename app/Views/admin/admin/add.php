@@ -8,7 +8,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Basic Information</h5>
-                                <form class="form-material form-horizontal m-t-30" method='POST' action="<?php echo base_url().'/admin/admin/add'?>">
+                                <form action="<?php echo base_url().'/admin/admin/add'?>" class="form-material form-horizontal m-t-30" enctype="multipart/form-data" method='POST' >
                                     <div class="form-group">
                                         <label class="col-md-12" for="example-text">User Name</span>
                                         </label>
@@ -46,8 +46,8 @@
                                         <div class="col-sm-12">
                                             <select class="form-control" name='gender'>
                                                 <option>Select Gender</option>
-                                                <option>Male</option>
-                                                <option>Female</option>
+                                                <option value="Nam">Male</option>
+                                                <option value="Nu">Female</option>
                                             </select>
                                         </div>
                                     </div>
@@ -84,6 +84,7 @@
                                                 class="form-control" placeholder="enter your country">
                                         </div>
                                     </div>
+                                    <div class="form-group">
                                     <label class="col-md-12" for="phone">Facebook</span>
                                         </label>
                                         <div class="col-md-12">
@@ -91,20 +92,28 @@
                                                 class="form-control" placeholder="enter your facebook">
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                    <label class="col-md-12" for="phone">Avatar</span>
+                                        </label>
+                                        <div class="col-md-12">
+                                            <label for="input-file-now">Choose a image</label>
+                                            <input type="file" id="input-file-now" name="file" class="dropify">
+                                        </div>
+                                    </div>
                                     
                 
-                                    <div class="row">
+                                    <!-- <div class="row">
                                         <div class="col-lg-6 col-md-6">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <h4 class="card-title">Avatar</h4>
                                                     <label for="input-file-now">Choose a image</label>
-                                                    <input type="file" id="input-file-now" class="dropify" />
+                                                    <input type="file" id="input-file-now" class="dropify" name='file'/>
                                                 </div>
                                             </div>
                                         </div>
                                     
-                                    </div>
+                                    </div> -->
                 
                 
                 
