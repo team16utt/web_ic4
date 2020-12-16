@@ -42,6 +42,7 @@ $RECYCLE.BIN/
 # These should never be under version control,
 # as it poses a security risk.
 public/php_web-master/
+public/admin/crm/
 .env
 .vagrant
 Vagrantfile

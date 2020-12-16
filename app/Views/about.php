@@ -65,7 +65,7 @@
             <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
-                        <img src="public/assets/images/team_img1.jpg" alt="team_img1">
+                        <img src="<?= base_url() ?>/public/client/assets/images/team_img1.jpg" alt="team_img1">
                         <ul class="social_icons social_style1">
                             <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                             <li><a href="#"><i class="ion-social-twitter"></i></a></li>
@@ -84,7 +84,7 @@
             <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
-                        <img src="public/assets/images/team_img2.jpg" alt="team_img2">
+                        <img src="<?= base_url() ?>/public/client/assets/images/team_img2.jpg" alt="team_img2">
                         <ul class="social_icons social_style4">
                             <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                             <li><a href="#"><i class="ion-social-twitter"></i></a></li>
@@ -103,7 +103,7 @@
             <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
-                        <img src="public/assets/images/team_img3.jpg" alt="team_img3">
+                        <img src="<?= base_url() ?>/public/client/assets/images/team_img3.jpg" alt="team_img3">
                         <ul class="social_icons social_style4">
                             <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                             <li><a href="#"><i class="ion-social-twitter"></i></a></li>
@@ -122,7 +122,7 @@
             <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
-                        <img src="public/assets/images/team_img4.jpg" alt="team_img4">
+                        <img src="<?= base_url() ?>/public/client/assets/images/team_img4.jpg" alt="team_img4">
                         <ul class="social_icons social_style4">
                             <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                             <li><a href="#"><i class="ion-social-twitter"></i></a></li>
