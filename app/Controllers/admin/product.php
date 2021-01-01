@@ -10,6 +10,9 @@ class product extends BaseController
 {
     public function index()
     {
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         $adminModel = new ProductModel();
 
         $data['title'] = 'product';
@@ -19,6 +22,9 @@ class product extends BaseController
     }
     public function add()
     {
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         session_start();
         $data['title'] = 'product';
         if($this->request->getMethod() == 'post'){
@@ -96,6 +102,9 @@ class product extends BaseController
     }
     public function edit()
     {   $id = $_GET['id'];
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         session_start();
         $model = new ProductModel();
         $data['product'] = $model->find($id);
@@ -171,6 +180,9 @@ class product extends BaseController
         //--------------------------------------------------------------------
     }
     public function delete(){
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         $id = $_GET['id'];
         $Model = new ProductModel();
         $Model->where('product_id', $id)->delete();

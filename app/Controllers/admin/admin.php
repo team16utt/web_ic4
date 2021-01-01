@@ -11,6 +11,9 @@ class admin extends BaseController
     public function index()
     {
         session_start();
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         // if(isset($_SESSION['user']) != ''){
             // echo view('admin/login');
             $adminModel = new UserModel();
@@ -21,12 +24,15 @@ class admin extends BaseController
             echo view('admin/admin/index', $data);
             // session_destroy();
         // }
-        echo view('admin/login');
+        
         
         //--------------------------------------------------------------------
     }
     public function add()
     {
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         session_start();
         helper('file');
         helper('form');
@@ -88,6 +94,9 @@ class admin extends BaseController
     }
     public function edit()
     {
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         $id = $_GET['id'];
         $model = new UserModel();
         $data['info'] = $model->where('id',$id)->findAll();
@@ -148,6 +157,9 @@ class admin extends BaseController
     public function delete(){
         // echo '<script>confirm("Are you the boss?")</script>';
         // die();
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         $id = $_GET['id'];
         $adminModel = new UserModel();
         $adminModel->where('id', $id)->delete();

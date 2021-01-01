@@ -9,6 +9,9 @@ class mailbox extends BaseController
 {
     public function index()
     {
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         $model = new mailboxModel();
         // if($_POST['delete']){
         //     echo var_dump($_POST['delete']);
@@ -26,6 +29,9 @@ class mailbox extends BaseController
         //--------------------------------------------------------------------
     }
     public function detail(){
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         if(isset($_GET['id'])){
             $model = new mailboxModel();
             $data['mail'] = $model->find($_GET['id']);

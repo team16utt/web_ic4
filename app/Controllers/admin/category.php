@@ -10,6 +10,9 @@ class category extends BaseController
 {
     public function index()
     {
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         $categoryModel = new categoryModel();
         $allCategory = $categoryModel->findAll();
         $data['category'] = $allCategory;
@@ -19,6 +22,9 @@ class category extends BaseController
     }
     public function add()
     {   
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         session_start();
         $data['title'] = 'Category';
         $locDau = new LocDau();
@@ -41,6 +47,9 @@ class category extends BaseController
     }
     public function edit()
     {
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         session_start();
         $id = $_GET['id'];
         $model = new categoryModel();
@@ -66,6 +75,9 @@ class category extends BaseController
         //--------------------------------------------------------------------
     }
     public function delete(){
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         $id = $_GET['id'];
         $Model = new categoryModel();
         $Model->where('category_id', $id)->delete();

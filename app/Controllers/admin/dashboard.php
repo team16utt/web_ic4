@@ -8,6 +8,9 @@ class dashboard extends BaseController
 {
     public function index()
     {
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         $data['title'] = 'Trang chủ';
         echo view('admin/dashboard', $data);
 
