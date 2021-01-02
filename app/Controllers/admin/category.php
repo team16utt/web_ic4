@@ -6,10 +6,13 @@ use App\Controllers\BaseController;
 use App\Models\categoryModel;
 use LocDau;
 
+
 class category extends BaseController
 {
     public function index()
     {
+        session_start();
+
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }
@@ -22,10 +25,11 @@ class category extends BaseController
     }
     public function add()
     {   
+        session_start();
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }
-        session_start();
+        
         $data['title'] = 'Category';
         $locDau = new LocDau();
         if($this->request->getMethod() == 'post'){
@@ -47,10 +51,11 @@ class category extends BaseController
     }
     public function edit()
     {
+        session_start();
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }
-        session_start();
+        
         $id = $_GET['id'];
         $model = new categoryModel();
         $locDau = new LocDau();
@@ -75,6 +80,7 @@ class category extends BaseController
         //--------------------------------------------------------------------
     }
     public function delete(){
+        session_start();
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }

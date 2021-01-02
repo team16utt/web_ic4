@@ -30,10 +30,11 @@ class admin extends BaseController
     }
     public function add()
     {
+        session_start();
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }
-        session_start();
+        
         helper('file');
         helper('form');
 
@@ -94,6 +95,7 @@ class admin extends BaseController
     }
     public function edit()
     {
+        session_start();
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }
@@ -102,7 +104,7 @@ class admin extends BaseController
         $data['info'] = $model->where('id',$id)->findAll();
         $data['title'] = 'admin';
         if($this->request->getMethod() == 'post'){
-            session_start();
+            
             $model = new UserModel();
             $username = $this->request->getVar('username');
             $password = $this->request->getVar('password');
@@ -157,6 +159,7 @@ class admin extends BaseController
     public function delete(){
         // echo '<script>confirm("Are you the boss?")</script>';
         // die();
+        session_start();
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }

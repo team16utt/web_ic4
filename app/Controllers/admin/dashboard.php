@@ -8,6 +8,8 @@ class dashboard extends BaseController
 {
     public function index()
     {
+        session_start();
+
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }

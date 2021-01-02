@@ -6,114 +6,73 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Information</h5>
-                <form class="form-horizontal m-t-30">
+                <form class="form-horizontal m-t-30" method='POST' >
 
                     <div class="form-group">
                         <label class="col-md-12" for="example-text3">Client Name</span>
                         </label>
                         <div class="col-md-12">
-                            <input type="text" id="example-text3" name="example-text" class="form-control" placeholder="">
+                            <input type="text" id="example-text3" name="client_name" class="form-control" placeholder="">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-12" for="example-text3">Phone Number</span>
                         </label>
                         <div class="col-md-12">
-                            <input type="number" id="example-text3" name="example-text" class="form-control" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-12" for="example-text3">Email</span>
-                        </label>
-                        <div class="col-md-12">
-                            <input type="text" id="example-text3" name="example-text" class="form-control" placeholder="">
+                            <input type="number" id="example-text3" name="phone" class="form-control" placeholder="">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-12" for="example-text3">Address</span>
                         </label>
                         <div class="col-md-12">
-                            <input type="text" id="example-text3" name="example-text" class="form-control" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-12" for="bdate">Date of Created</span>
-                        </label>
-                        <div class="col-md-12">
-                            <input type="text" id="bdate" name="bdate" class="form-control mydatepicker" placeholder="">
+                            <input type="text" id="example-text3" name="address" class="form-control" placeholder="">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="col-sm-12">Status</label>
                         <div class="col-sm-12">
-                            <select class="form-control">
-                                <option>Select Gender</option>
-                                <option>New</option>
-                                <option>Guarantee</option>
+                            <select class="form-control" name="status">
+                                <option value="0">Have Not Paid</option>
+                                <option value="1">Have Paid</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-12">Delivery Method</label>
-                        <div class="col-sm-12">
-                            <select class="form-control">
-                                <option>Select Method</option>
-                                <option>Online</option>
-                                <option>Offline</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-12" for="example-text2">Product ID</span>
-                        </label>
+                        <label class="col-sm-12">Cart</label>
                         <div class="col-md-12">
-                            <input type="text" id="example-text2" name="example-text" class="form-control" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-12" for="example-text2">Product Name
-                        </label>
-                        <div class="col-md-12">
-                            <input type="text" id="example-text2" name="example-text" class="form-control" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-12" for="example-text2">Unit</span>
-                        </label>
-                        <div class="col-md-12">
-                            <input type="text" id="example-text2" name="example-text" class="form-control" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-12">Cart</label>
-                        <div class="card">
-                            <div class="card-body">
-                                <div id="education_fields">
-                                    <!-- foreach here >>>>>>>>>>>>>>>>>>>>>>>>>>>>                                                     -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div id="education_fields"></div>
                                     <div class="row">
-                                        <div class="col-sm-3 px-0 nopadding">
+                                        <div class="col-sm-3 nopadding">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" name="pName[]" value="" placeholder="Name">
+                                                <!-- <input type="text" class="form-control" id="Schoolname" name="name[]" value="" placeholder="Name"> -->
+                                                <select name="name[]" class='form-control'>
+                                                <?php foreach($product as $row):?>
+                                                    <option value="<?= $row['product_id'] ?>"><?= $row['name']?></option>
+                                                <?php endforeach;?>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-sm-3 nopadding">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" name="pCount[]" value="" placeholder="so luong">
+                                                <input type="text" class="form-control" id="Major" name="value[]" value="" placeholder="value">
                                             </div>
                                         </div>
-
                                         <div class="input-group-append" style="height: 40px;">
-                                            <button class="btn btn-danger" type="button"> <i class="fa fa-minus"></i> </button>
+                                            <button class="btn btn-success" type="button" onclick="education_1fields();"><i class="fa fa-plus"></i></button>
                                         </div>
-
+                                        
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label class="col-md-12" for="example-text4">Amount</span>
                         </label>
                         <div class="col-md-12">
@@ -141,7 +100,7 @@
                         <div class="col-md-12">
                             <input type="number" id="example-text4" name="example-text" class="form-control" placeholder="">
                         </div>
-                    </div>
+                    </div> -->
 
 
 
@@ -154,9 +113,9 @@
                                         </div>
                                     </div> -->
                     <div class="form-group">
-                        <label class="col-md-12">Description</label>
+                        <label class="col-md-12">Note</label>
                         <div class="col-md-12">
-                            <textarea class="form-control" rows="3"></textarea>
+                            <textarea class="form-control" rows="3" name='note'></textarea>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-info waves-effect waves-light m-r-10">Submit</button>

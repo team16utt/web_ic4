@@ -380,7 +380,7 @@
     <!--JS import file -->
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/dropify/dist/js/dropify.min.js"></script>
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/dff/dff.js" type="text/javascript"></script>
-
+    <script src="<?= base_url() ?>/public/admin/assets/node_modules/dff/test.js" type="text/javascript"></script>
     <script>
         $(document).ready(function () {
             // Basic
@@ -491,6 +491,7 @@
     <!-- js-toast -->
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/toast-master/js/jquery.toast.js"></script>
     <script src="<?= base_url() ?>/public/admin/crm/dist/js/pages/toastr.js"></script>
+    
 </body>
 
 </html>

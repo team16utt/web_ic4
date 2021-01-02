@@ -1,5 +1,6 @@
 ﻿<?= $this->extend('_Layout') ?>
 <?= $this->Section('content') ?>
+<?php session_Start()?>
 <!-- START SECTION SHOP -->
 
 <div class="section">
@@ -21,42 +22,25 @@
                 </div>
                 <form method="post">
                     <div class="form-group">
-                        <input type="text" required="" class="form-control" name="fname" placeholder="Họ và tên *">
+                        <input type="text" required="" class="form-control" name="fname" placeholder="Họ và tên *" value="<?php if($_SESSION['customer']) echo $_SESSION['customer']['fullname']?>">
                     </div>
                     <div class="form-group">
-                        <input type="number" required="" class="form-control" name="fname"
+                        <input type="number" required="" class="form-control" name="fname" value="<?php if($_SESSION['customer']) echo $_SESSION['customer']['phone_number']?>"
                             placeholder="Số điện thoại *">
                     </div>
                     <div class="form-group">
-                        <input type="email" required="" class="form-control" name="fname" placeholder="Email *">
+                        <input type="email" required="" class="form-control" name="fname" placeholder="Email *" value="<?php if($_SESSION['customer']) echo $_SESSION['customer']['email']?>" >
                     </div>
                     <div class="form-group">
-                        <div class="custom_select">
-                            <select class="form-control">
-                                <option value="">Tỉnh...</option>
-                            </select>
-                        </div>
+                        <input type="email" required="" class="form-control" name="fname" placeholder="Địa chỉ" value="<?php if($_SESSION['customer']) echo $_SESSION['customer']['address']?>">
                     </div>
-                    <div class="form-group">
-                        <div class="custom_select">
-                            <select class="form-control">
-                                <option value="">Huyện...</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="custom_select">
-                            <select class="form-control">
-                                <option value="">Xã...</option>
-                            </select>
-                        </div>
-                    </div>
+                    
                     <div class="form-group">
                         <input type="text" class="form-control" name="billing_address" required=""
-                            placeholder="Địa chỉ chi tiết">
+                            placeholder="Ghi chú">
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <div class="chek-form">
                             <div class="custome-checkbox">
                                 <input class="form-check-input" type="checkbox" name="checkbox" id="createaccount">
@@ -67,55 +51,9 @@
                     </div>
                     <div class="form-group create-account">
                         <input class="form-control" required="" type="password" placeholder="Password" name="password">
-                    </div>
-                    <div class="ship_detail">
-                        <div class="form-group">
-                            <div class="chek-form">
-                                <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox"
-                                        id="differentaddress">
-                                    <label class="form-check-label label_info" for="differentaddress"><span>Giao
-                                            hàng ở địa chỉ khác</span></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="different_address">
-                            <div class="form-group">
-                                <input type="text" required="" class="form-control" name="fname"
-                                    placeholder="Họ và tên *">
-                            </div>
-                            <div class="form-group">
-                                <input type="number" required="" class="form-control" name="fname"
-                                    placeholder="Số điện thoại *">
-                            </div>
-                            <div class="form-group">
-                                <div class="custom_select">
-                                    <select class="form-control">
-                                        <option value="">Tỉnh...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="custom_select">
-                                    <select class="form-control">
-                                        <option value="">Huyện...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="custom_select">
-                                    <select class="form-control">
-                                        <option value="">Xã...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="billing_address" required=""
-                                    placeholder="Địa chỉ chi tiết">
-                            </div>
-
-                        </div>
-                    </div>
+                    </div> -->
+                    
+                    
                     <button class="btn btn-fill-out btn-block">Thanh toán</button>
                 </form>
             </div>

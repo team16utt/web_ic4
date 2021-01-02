@@ -10,6 +10,7 @@ class product extends BaseController
 {
     public function index()
     {
+        session_start();
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }
@@ -22,6 +23,8 @@ class product extends BaseController
     }
     public function add()
     {
+        session_start();
+
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }
@@ -102,6 +105,8 @@ class product extends BaseController
     }
     public function edit()
     {   $id = $_GET['id'];
+        session_start();
+
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }
@@ -180,6 +185,8 @@ class product extends BaseController
         //--------------------------------------------------------------------
     }
     public function delete(){
+        session_start();
+
         if(empty($_SESSION['user'])){
             return redirect()->to(base_url().'/admin/login');
         }
