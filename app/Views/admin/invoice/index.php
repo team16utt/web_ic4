@@ -37,11 +37,11 @@
                                                                 title="Detail"><i class="fas fa-info-circle"></i></a>
                                                         </div>
                                                         <div class="ac">
-                                                            <a href="<?php echo base_url().'/admin/profile/detail?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
+                                                            <a href="<?php echo base_url().'/admin/invoice/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
                                                                 title="Edit"><i class="far fa-edit"></i> </a>
                                                         </div>
                                                         <div class="ac">
-                                                            <a href="<?php echo base_url().'/admin/profile/detail?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
+                                                            <a href="<?php echo base_url().'/admin/invoice/delete?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
                                                                 title="Delete"><i class="far fa-trash-alt"></i></a>
                                                         </div>
 

@@ -5,6 +5,7 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use App\Models\invoiceModel;
 use App\Models\ProductModel;
+use App\Models\invoiceDetailModel;
 class invoice extends BaseController
 {
     public function index()
@@ -24,6 +25,7 @@ class invoice extends BaseController
     {
         $model = new invoiceModel();
         $product_model = new ProductModel();
+        $orderDetail_model = new invoiceDetailModel();
         if($this->request->getMethod() == 'post'){
             $name = $this->request->getVar('client_name');
             $phone = $this->request->getVar('phone');
@@ -33,15 +35,33 @@ class invoice extends BaseController
             $data_insert = [
                 'fullname' => $name,
                 'phone' => $phone,
-                'paid_status' =>$paid,
+                'paid_status' =>(int)$paid,
                 'note' => $note,
                 'create_on' => date("Y-m-d"),
+                'shipping_status' => 'Đang chờ shipper',
                 'bill_address' => $address
-
-
             ];
-            var_dump($data_insert);
-            die();
+            // var_dump($data_insert);
+            $product_var = $this->request->getVar('name');
+            $product_amount = $this->request->getVar('value');
+            $id = $model->insert($data_insert);
+            echo $id;
+            for ($i = 0; $i < count($product_var); $i++){
+                // echo $product_var[$i].'  ';
+                // echo $product_amount[$i].'\n';
+                $price = str_replace(".","",$product_model->find($product_var[$i])['price']);
+                $total = (int)$price * (int) $product_amount[$i];
+                // echo $total;
+                $data_order_insert = [
+                    'order_id' => $id,
+                    'product_id' => (int) $product_var[$i],
+                    'total_price' => (int) $total,
+                    'product_amount' => (int) $product_amount[$i]
+                ];
+                var_dump($data_order_insert);
+                $orderDetail_model->insert($data_order_insert);
+            }
+            return redirect()->to(base_url().'/admin/invoice');
         }
         $data['title'] = 'invoice';
         $data['product'] = $product_model->findAll();
@@ -55,7 +75,13 @@ class invoice extends BaseController
         //--------------------------------------------------------------------
     }
     public function delete(){
-        echo view('admin/invoice/index');
+        $id = $_GET['id'];
+        $model = new invoiceModel();
+        $model_detail = new invoiceDetailModel();
+        $model_detail->delete('order_id',(int)$id);
+        $model->delete($id);
+        return redirect()->to(base_url().'/admin/invoice');
+        
     }
     public function detail(){
         $db = db_connect();

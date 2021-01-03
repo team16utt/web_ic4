@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php session_start()?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -157,7 +157,7 @@
                 <div class="user-profile">
                     <div class="user-pro-body">
                         <?php session_start();?>
-                        <div><img src="<?= base_url() ?>/public/admin/assets/images/users/2.jpg" alt="user-img" class="img-circle"></div>
+                        <div><img src="<?= base_url().$_SESSION['user']['image'] ?>" alt="user-img" class="img-circle"></div>
                         <div class="dropdown">
                             <a href="javascript:void(0)" class="dropdown-toggle u-dropdown link hide-menu"
                                 data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['user']['fullname']?><span class="caret"></span></a>
@@ -221,9 +221,9 @@
                                 aria-expanded="false"><i class="ti-receipt"></i><span
                                     class="hide-menu">Invoice</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">All new Invoice</a></li>
-                                <li><a href="#">Edit Invoice</a></li>
-                                <li><a href="#">History</a></li>
+                                <li><a href="<?= base_url() ?>/admin/invoice">All new Invoice</a></li>
+                                <li><a href="<?= base_url() ?>/admin/invoice/add">Add Invoice</a></li>
+                                <!-- <li><a href="#">History</a></li> -->
                             </ul>
                         </li>
 
