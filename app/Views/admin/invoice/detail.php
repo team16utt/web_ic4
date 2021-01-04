@@ -60,7 +60,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="pull-right m-t-30 text-right">
-                                            
+                                            <h4>Note: <?= $user_detail['note']?></h4>
                                             <h3><b>Total :</b> <?=$total?>  VND</h3>
                                         </div>
                                         <div class="clearfix"></div>

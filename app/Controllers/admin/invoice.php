@@ -70,11 +70,31 @@ class invoice extends BaseController
     }
     public function edit()
     {
+        session_start();
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
+        $id = $_GET['id'];
+        $product_model = new ProductModel();
+        $data['product'] = $product_model->findAll();
+        $model = new invoiceModel();
+        $model_detail = new invoiceDetailModel();
+        $test = $model->find($id);
+        $product_order = $model_detail->where('order_id',$id)->findAll();
+        $data['product_order'] = $product_order;
+        // var_dump($product_order);
+        // // var_dump($test);
+        // die();
+        $data['info'] = $test;
         $data['title'] = 'invoice';
-        echo view('admin/invoice/edit', $data);
+        return view('admin/invoice/edit', $data);
         //--------------------------------------------------------------------
     }
     public function delete(){
+        session_start();
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         $id = $_GET['id'];
         $model = new invoiceModel();
         $model_detail = new invoiceDetailModel();
@@ -84,6 +104,10 @@ class invoice extends BaseController
         
     }
     public function detail(){
+        session_start();
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
         $db = db_connect();
         $id = $_GET['id'];
         $model = new invoiceModel();
