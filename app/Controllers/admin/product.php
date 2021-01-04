@@ -197,4 +197,19 @@ class product extends BaseController
         $data['user'] = $Model->findAll();
         return redirect()->to(base_url().'/admin/product');
     }
+    public function detail(){
+        session_start();
+        if(empty($_SESSION['user'])){
+            return redirect()->to(base_url().'/admin/login');
+        }
+        $id = $_GET['id'];
+        $Model = new ProductModel();
+        $product = $Model->find($id);
+        $image_model = new imageModel();
+        $image = $image_model->where('product_id',$product['product_id'])->findAll();
+        $data['title'] = 'product_detail';
+        $data['product'] = $product;
+        $data['image'] = $image;
+        return view('admin/product/detail',$data);
+    }
 }

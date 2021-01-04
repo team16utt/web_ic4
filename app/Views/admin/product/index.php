@@ -40,7 +40,7 @@
                                     <div class="obj-action">
                                         <div class="ac">
 
-                                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Detail"><i class="fas fa-info-circle"></i></a>
+                                            <a href="<?php echo base_url().'/admin/product/detail?id='.$row['product_id']?>" data-toggle="tooltip" data-placement="bottom" title="Detail"><i class="fas fa-info-circle"></i></a>
                                         </div>
                                         <div class="ac">
                                             <a href="<?php echo base_url().'/admin/product/edit?id='.$row['product_id']?>" data-toggle="tooltip" data-placement="bottom" title="Edit"><i class="far fa-edit"></i> </a>
