@@ -38,51 +38,55 @@
                     </div>
                 </div>
                 <div class="row shop_container">
-                    <?php foreach ($products as $item) : ?>
-                        <div class="col-lg-3 col-md-4 col-6 grid_item">
-                            <div class="product">
-                                <!-- <span class="pr_flash bg-success">Sale</span> -->
-                                <div class="product_img">
-                                    <a href="<?= $item->link ?>">
-                                        <img src="<?= $item->image ?>" alt="<?= $item->name ?>">
+                    <?php if (count($products) != 0) : ?>
+                        <?php foreach ($products as $item) : ?>
+                            <div class="col-lg-3 col-md-4 col-6 grid_item">
+                                <div class="product">
+                                    <!-- <span class="pr_flash bg-success">Sale</span> -->
+                                    <a href="<?= base_url() ?>/product/<?= $item['product_id'] ?>">
+                                        <div class="product_img">
+
+                                            <img src="<?= $item['image'] ?>" alt="<?= $item['name'] ?>">
+
+                                        </div>
                                     </a>
-                                </div>
-                                <div class="product_info">
-                                    <h6 class="product_title"><a href="<?= base_url() ?>/product/<?= $item->product_id ?>"><?= $item->name ?></a></h6>
-                                    <div class="product_price">
-                                        <span class="price"><?= $item->price ?></span>
-                                        <!-- <del>$99.00</del>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="<?= base_url() ?>/product/<?= $item['product_id'] ?>"><?= $item['name'] ?></a></h6>
+                                        <div class="product_price">
+                                            <span class="price"><?= $item['price'] ?></span>
+                                            <!-- <del>$99.00</del>
                                     <div class="on_sale">
                                         <span>20% Off</span>
                                     </div> -->
-                                    </div>
-                                    <div class="add-to-bag">
-                                    <a href="#" data-id="<?= $item->product_id ?>" onclick="addToCart(event, this)"><i class="icon-basket-loaded"></i> </a>
+                                        </div>
+                                        <div class="add-to-bag">
+                                            <a href="#" data-id="<?= $item['product_id'] ?>" onclick="addToCart(event, this)"><i class="icon-basket-loaded"></i> </a>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
+                    <?php else : ?>
+                        <div>Không có sản phẩm</div>
+                    <?php endif; ?>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <ul class="pagination mt-3 justify-content-center pagination_style1">
                             <?php
-                            $args = explode('/', $_SERVER['QUERY_STRING']);          
-                                for ($i = 1 ; $i < $total_pages + 1; $i++){
-                                    if ($page == $i){
-                                        echo "<li class='page-item active'><a class='page-link' href='#'>".$i."</a></li>";
-                                    }
-                                    else {
-                                        echo "<li class='page-item'><a class='page-link' href='?cid=".$cid."&page=".$i."'>".$i."</a></li>";
-                                    }                                    
+                            for ($i = 1; $i < $total_pages + 1; $i++) {
+                                if ($page == $i) {
+                                    echo "<li class='page-item active'><a class='page-link' href='#'>" . $i . "</a></li>";
+                                } else {
+                                    echo "<li class='page-item'><a class='page-link' href='?cid=" . $cid . "&page=" . $i . "'>" . $i . "</a></li>";
                                 }
+                            }
                             ?>
                             <!-- <li class="page-item active"><a class="page-link" href="#">1</a></li>
 
                             <li class="page-item"><a class="page-link" href="#">3</a></li> -->
-                            <li class="page-item"><a class="page-link" href="?cid=<?= $cid."&page=".++$page ?>"><i class="linearicons-arrow-right"></i></a></li>
+                            <li class="page-item"><a class="page-link" href="?cid=<?= $cid . "&page=" . ++$page ?>"><i class="linearicons-arrow-right"></i></a></li>
                         </ul>
                     </div>
                 </div>

@@ -4,12 +4,23 @@ addToCart = (event, element) => {
   //ham add
   event.preventDefault();
   //   console.log(element.dataset.id);
+  var pathArray = window.location.pathname.split('/');
   let pid = element.dataset.id;
+  if (!pid) pid = pathArray[pathArray.length - 1];
   let check = countProductInCart(pid); //kiem tra mat hang da ton tai trong cart hay chua, neu ton tai thi quantity++
   if (check == -1) {
     //truong hop k ton tai
     getProductById(pid);
   }
+  $.toast({
+    heading: 'Đã thêm vào giỏ hàng',
+    text: '<a href="http://localhost:8080/web_ic4/checkout">Xem giỏ hàng</a>',
+    showHideTransition: 'slide',
+    icon: 'success',
+    position: 'top-right',
+    hideAfter: 3000,
+    loaderBg: '#9EC600'
+  })
 };
 
 deleteItem = (event, element) => {
@@ -17,7 +28,7 @@ deleteItem = (event, element) => {
   let pid = element.dataset.id;
   getCart();
   let allItem = [...cart];
-  let affterDelete = allItem.filter(e => e.id != pid );
+  let affterDelete = allItem.filter(e => e.id != pid);
   cart = affterDelete;
   setCart();
   renderCart();
@@ -78,12 +89,12 @@ countProductInCart = (pid) => {
 };
 
 function setCart() {
-  sessionStorage.setItem("cart", JSON.stringify(cart));
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 function getCart() {
-  if (sessionStorage.getItem("cart") != null) {
-    cart = JSON.parse(sessionStorage.getItem("cart"));
+  if (localStorage.getItem("cart") != null) {
+    cart = JSON.parse(localStorage.getItem("cart"));
   }
 }
 
@@ -92,7 +103,7 @@ function renderCart() {
   getCart();
   let list = document.querySelector(".cart_list");
   let cartTotal = document.querySelector(".cart_total");
-  html = "";
+  let html = "";
 
   var totalPrice = 0;
 

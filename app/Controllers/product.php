@@ -2,27 +2,29 @@
 
 namespace App\Controllers;
 
+use App\Models\imageModel;
 use App\Models\ProductModel;
 
 class product extends BaseController
 {
     public function index($pid = 1)
-    {    
-        $args = explode('/', $_SERVER['QUERY_STRING']);
-
-        $get_product_sql = "SELECT * FROM product WHERE product_id = $pid";
-        $get_images_sql = "SELECT * FROM image WHERE product_id = $pid";
-        $product_result = $this->$db->query($get_product_sql);
-        $images_result = $this->$db->query($get_images_sql);
+    {
+        $productModel = new ProductModel();
+        $imageModel = new imageModel();
+        $product_result = $productModel->find($pid);
+        $productDetail = $product_result;
+        $images_result = $imageModel->getImagebyPID($pid);
         if (!$product_result || !$images_result) {
             $data['error'] = $this->db->error();
         } else {
-            $productDetail = $product_result->getRow();
-            $get_related_product_sql = "SELECT * FROM product WHERE product_id <> $pid
-            AND category_id = $productDetail->category_id LIMIT 0,6";
-            $related_product_result = $this->$db->query($get_related_product_sql);
-            $relatedProduct = $related_product_result->getResult();
-            $productDetail->images = $images_result->getResult();
+            $totalView = $productDetail['totalView'];
+            $totalView += 1;
+            $data = [
+                'totalView' => $totalView
+            ];
+            $productModel->update($pid, $data);
+            $relatedProduct = $productModel->getRelatedProduct($pid, $productDetail['category_id']);
+            $productDetail['images'] = $images_result;
             $data['productDetail'] = $productDetail;
             $data['relatedProduct'] = $relatedProduct;
         }
@@ -36,7 +38,7 @@ class product extends BaseController
             $productDao = new ProductModel();
             $product_info = $productDao->getProdcutbyId($pid);
             header('Content-Type: application/json');
-            return json_encode(['status' => 200,'data' => $product_info]);
+            return json_encode(['status' => 200, 'data' => $product_info]);
         }
         return json_encode(['status' => 400, 'data' => null]);
     }
