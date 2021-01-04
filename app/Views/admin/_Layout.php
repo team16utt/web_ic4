@@ -157,7 +157,7 @@
                 <div class="user-profile">
                     <div class="user-pro-body">
                         <?php session_start();?>
-                        <div><img src="<?= base_url().$_SESSION['user']['image'] ?>" alt="user-img" class="img-circle"></div>
+                        <div><img src="<?php if($_SESSION['user']['image'][0] =='h'){echo $_SESSION['user']['image'];} else echo base_url().$_SESSION['user']['image'] ?>" alt="user-img" class="img-circle"></div>
                         <div class="dropdown">
                             <a href="javascript:void(0)" class="dropdown-toggle u-dropdown link hide-menu"
                                 data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['user']['fullname']?><span class="caret"></span></a>

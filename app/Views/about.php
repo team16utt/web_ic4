@@ -45,7 +45,7 @@
             <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
-                        <img src="<?= $row1['image']?>" alt="team_img1">
+                        <img src="<?php if($row1['image'][0] =='h'){ echo $row1['image'];} else echo base_url().$row1['image'];?>" alt="team_img1">
                         <ul class="social_icons social_style1">
                             <li><a href="<?= $row1['facebook']?>"><i class="ion-social-facebook"></i></a></li>
                             <li><a href="<?= $row1['twitter']?>"><i class="ion-social-twitter"></i></a></li>
