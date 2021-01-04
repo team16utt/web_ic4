@@ -228,12 +228,21 @@
                         </li>
 
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
+                                aria-expanded="false"><i class="ti-receipt"></i><span
+                                    class="hide-menu">Supplier</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="<?= base_url() ?>/admin/supplier">All Supplier</a></li>
+                                <li><a href="<?= base_url() ?>/admin/supplier/add">Add Supplier</a></li>
+                                <!-- <li><a href="#">History</a></li> -->
+                            </ul>
+                        </li>
+                        <!-- <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false"><i class="ti-receipt"></i><span class="hide-menu">About
                                     page</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="#">Curent</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false"><i class="ti-settings"></i><span
