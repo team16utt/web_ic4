@@ -54,14 +54,15 @@
                                             <div class="form-group">
                                             <select name="name[]" class='form-control'>
                                                 <?php foreach($product as $row):?>
-                                                    <option value="<?= $row['product_id'] ?>"><?= $row['name']?></option>
-                                                <?php endforeach;?>
+                                                    <option value="<?= $row['product_id'] ?>" <?php if($test['product_id'] == $row['product_id']): echo "selected"; endif;?>><?= $row['name']?></option>
+                                                    <?php endforeach;?>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-sm-3 nopadding">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="Major" name="value[]" value="" placeholder="Value">
+                                                <input type="text" class="form-control" id="Major" name="value[]" value="<?php echo $test['product_amount']?>" placeholder="Value">
+                                                
                                             </div>
                                         </div>
                                         <div class="input-group-append" style="height: 40px;">
