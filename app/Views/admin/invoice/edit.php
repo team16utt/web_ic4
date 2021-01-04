@@ -6,7 +6,7 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Information</h5>
-                <form class="form-horizontal m-t-30">
+                <form class="form-horizontal m-t-30" method='POST'>
 
                 <div class="form-group">
                         <label class="col-md-12" for="example-text3">Client Name</span>
@@ -46,7 +46,8 @@
                             <?php $run = 99;?>
                                 <div id="education_fields">
                                 <?php if (count($product_order)>0):
-                                    foreach($product_order as $test): $run-=1;
+                                    // foreach($product_order as $test): $run-=1;
+                                    for($i=1; $i<count($product_order); $i++): $run-=1;
                                 ?>
                                     <div class='<?php echo "form-group removeclass".(string) $run;?>'>
                                     <div class="row">
@@ -54,14 +55,14 @@
                                             <div class="form-group">
                                             <select name="name[]" class='form-control'>
                                                 <?php foreach($product as $row):?>
-                                                    <option value="<?= $row['product_id'] ?>" <?php if($test['product_id'] == $row['product_id']): echo "selected"; endif;?>><?= $row['name']?></option>
+                                                    <option value="<?= $row['product_id'] ?>" <?php if($test['product_id'] == $product_order[$i]['product_id']): echo "selected"; endif;?>><?= $row['name']?></option>
                                                     <?php endforeach;?>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-sm-3 nopadding">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="Major" name="value[]" value="<?php echo $test['product_amount']?>" placeholder="Value">
+                                                <input type="text" class="form-control" id="Major" name="value[]" value="<?php echo $product_order[$i]['product_amount']?>" placeholder="Value">
                                                 
                                             </div>
                                         </div>
@@ -71,7 +72,7 @@
                                     
                                     </div>
                                     </div>
-                                <?php endforeach; endif;?>
+                                <?php endfor; endif;?>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-3 nopadding">
@@ -79,14 +80,14 @@
                                             <!-- <input type="text" class="form-control" id="Schoolname" name="name[]" value="" placeholder="Name"> -->
                                             <select name="name[]" class='form-control'>
                                             <?php foreach($product as $row):?>
-                                                <option value="<?= $row['product_id'] ?>"><?= $row['name']?></option>
+                                                <option value="<?= $row['product_id'] ?>" <?php if($row['product_id'] == $product_order[0]['product_id']): echo "selected"; endif;?>><?= $row['name']?></option>
                                             <?php endforeach;?>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-sm-3 nopadding">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="Major" name="value[]" value="" placeholder="value">
+                                            <input type="text" class="form-control" id="Major" name="value[]" value="<?= $product_order[0]['product_amount']?>" placeholder="value">
                                         </div>
                                     </div>
                                     <div class="input-group-append" style="height: 40px;">

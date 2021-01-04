@@ -82,9 +82,45 @@ class invoice extends BaseController
         $test = $model->find($id);
         $product_order = $model_detail->where('order_id',$id)->findAll();
         $data['product_order'] = $product_order;
-        // var_dump($product_order);
-        // // var_dump($test);
-        // die();
+        if($this->request->getMethod() == 'post'){
+            $name = $this->request->getVar('client_name');
+            $phone = $this->request->getVar('phone');
+            $address = $this->request->getVar('address');
+            $note = $this->request->getVar('note');
+            $paid = $this->request->getVar('status');
+            $data_insert = [
+                'id' => (int) $id,
+                'fullname' => $name,
+                'phone' => $phone,
+                'paid_status' =>(int)$paid,
+                'note' => $note,
+                'create_on' => date("Y-m-d"),
+                'shipping_status' => 'Đang chờ shipper',
+                'bill_address' => $address
+            
+            ];
+            $check = $model->save($data_insert);
+            $model_detail->where('order_id',$id)->delete();
+            $product_var = $this->request->getVar('name');
+            $product_amount = $this->request->getVar('value');
+            for ($i = 0; $i < count($product_var); $i++){
+                // echo $product_var[$i].'  ';
+                // echo $product_amount[$i].'\n';
+                $price = str_replace(".","",$product_model->find($product_var[$i])['price']);
+                $total = (int)$price * (int) $product_amount[$i];
+                // echo $total;
+                $data_order_insert = [
+                    'order_id' => $id,
+                    'product_id' => (int) $product_var[$i],
+                    'total_price' => (int) $total,
+                    'product_amount' => (int) $product_amount[$i]
+                ];
+                var_dump($data_order_insert);
+                $model_detail->insert($data_order_insert);
+            }
+            return redirect()->to(base_url().'/admin/invoice');
+        }
+        
         $data['info'] = $test;
         $data['title'] = 'invoice';
         return view('admin/invoice/edit', $data);
