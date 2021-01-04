@@ -46,7 +46,9 @@
                                     <a href="<?= base_url() ?>/product/<?= $item['product_id'] ?>">
                                         <div class="product_img">
 
-                                            <img src="<?= $item['image'] ?>" alt="<?= $item['name'] ?>">
+                                            <img src="<?php if($item['image'][0] == 'h'){ echo $item['image'];} else echo base_url(). $item['image']?>" alt="<?php if($item['image'][0] == 'h'){ echo $item['image'];} else echo base_url(). $item['image']?>">
+
+                                            
 
                                         </div>
                                     </a>

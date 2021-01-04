@@ -8,7 +8,9 @@
                 <div class="product-image">
 
                     <div class="product_img_box">
-                        <img id="product_img" src='<?= $productDetail['images'][0]['imageThumb'] ?>' data-zoom-image="<?= $productDetail['images'][0]['imageThumb'] ?>" alt="<?= $productDetail['name'] ?>">
+                        <img id="product_img" src="<?php if($productDetail['images'][0]['imageThumb'][0]=='h'){ echo $productDetail['images'][0]['imageThumb']; } else echo base_url().$productDetail['images'][0]['imageThumb']; ?>" data-zoom-image="<?php if($productDetail['images'][0]['imageThumb'][0]=='h'){ echo $productDetail['images'][0]['imageThumb']; } else echo base_url().$productDetail['images'][0]['imageThumb']; ?>" alt="<?= $productDetail['name'] ?>">
+                        <!-- <img id="product_img" src='<?= $productDetail['images'][0]['imageThumb'] ?>' data-zoom-image="<?= $productDetail['images'][0]['imageThumb'] ?>" alt="<?= $productDetail['name'] ?>"> -->
+
                         <a href="#" class="product_img_zoom" title="Zoom">
                             <span class="linearicons-zoom-in"></span>
                         </a>
@@ -17,7 +19,7 @@
                         <?php foreach ($productDetail['images'] as $image) : ?>
                             <div class="item">
                                 <a href="#" class="product_gallery_item" data-image="<?= $image['imageThumb'] ?>" data-zoom-image="<?= $image['imageThumb'] ?>">
-                                    <img src="<?= $image['imageThumb'] ?>" alt="<?= $productDetail['name'] ?>" />
+                                    <img src="<?php if($image['imageSmall'][0]=='h'){ echo $image['imageSmall'];} else echo base_url().$image['imageSmall']; ?>" alt="<?= $productDetail['name'] ?>" />
                                 </a>
                             </div>
                         <?php endforeach; ?>
