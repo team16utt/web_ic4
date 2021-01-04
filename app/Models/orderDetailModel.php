@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class supplierModel extends Model
+class OrderDetailModel extends Model
 {
     // protected $DBGroup = 'gear16';
-    protected $table      = 'supplier';
+    protected $table      = 'order_detail';
     protected $primaryKey = 'id';
 
     protected $returnType     = 'array';
-    protected $allowedFields = ['id', 'company_name', 'image', 'weburl', 'product_type', 'telephone', 'email', 'country', 'address'];
+    protected $allowedFields = ['id', 'order_id', 'product_id', 'total_price', 'product_amount'];
     // protected $createField = '';
     // protected $updatedField = '';
-    public function getAllSupplier()
+    public function getAll()
     {
         return $this->findAll();
     }

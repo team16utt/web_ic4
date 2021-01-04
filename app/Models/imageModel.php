@@ -1,4 +1,6 @@
-<?php namespace App\Models;
+<?php
+
+namespace App\Models;
 
 use CodeIgniter\Model;
 
@@ -9,7 +11,11 @@ class imageModel extends Model
     protected $primaryKey = 'id';
 
     protected $returnType     = 'array';
-    protected $allowedFields = ['id','product_id','imageThumb','imageSmall','createdDate','modifiedDate','createdBy'];
+    protected $allowedFields = ['id', 'product_id', 'imageThumb', 'imageSmall', 'createdDate', 'modifiedDate', 'createdBy'];
     // protected $createField = '';
     // protected $updatedField = '';
+    public function getImagebyPID($pid)
+    {
+        return $this->where('product_id', $pid)->findAll();
+    }
 }
