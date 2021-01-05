@@ -2,10 +2,11 @@
 <?= $this->section('content_Admin') ?>
 
  <!-- start  main content -->
-                
+<?php session_start() ?>
  <div class="row">
                     <div class="col-12">
                         <div class="card">
+                        
                             <div class="card-body">
                                 <h5 class="card-title">Basic Information</h5>
                                 <form class="form-material form-horizontal m-t-30" enctype="multipart/form-data" method='POST' >
@@ -13,15 +14,15 @@
                                         <label class="col-md-12" for="example-text">Company Name</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="text" id="example-text" name="companyname" class="form-control"
-                                                placeholder="enter company name">
+                                            <input type="text" id="example-text" name="companyname" class="form-control" value="<?= $supplier['company_name'];?>" 
+                                                placeholder="enter company name" >
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-12" for="fName">Url website</span>
                                         </label>
                                         <div class="col-md-12">
-                                            <input type="text" id="fName" name="url" class="form-control"
+                                            <input type="text" id="fName" name="url" class="form-control" value="<?= $supplier['weburl'];?>"
                                                 placeholder="enter url website">
                                         </div>
                                     </div>
@@ -33,10 +34,10 @@
                                                 <?php use App\Models\categoryModel;
                                                     $model = new categoryModel();
                                                     $data = $model->findAll();
-                                                    foreach ($data as $item){
-                                                        echo '<option value="'.$item['category_id'].'">'.$item['name'].'</option>';
-                                                    }
-                                                ?>
+                                                    foreach ($data as $item):?>
+                                                        <option value="<?= $item['category_id']?>" <?php if($supplier["product_type"] == $item['category_id']) echo " selected"; ?>><?= $item['name']?></option>
+                                                    
+                                                <?php endforeach;?>
                                             </select>
                                         </div>
                                     </div>
@@ -45,7 +46,7 @@
                                         </label>
                                         <div class="col-md-12">
                                             <input type="email" id="email" name="email" class="form-control"
-                                                placeholder="enter your email">
+                                                placeholder="enter your email" value="<?= $supplier['email'];?>">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -53,7 +54,7 @@
                                         </label>
                                         <div class="col-md-12">
                                             <input type="number" maxlength="11" id="phone" name="phone"
-                                                class="form-control" placeholder="enter your phone">
+                                                class="form-control" placeholder="enter your phone" value="<?= $supplier['telephone'];?>">
                                         </div>
                                     </div>
                 
@@ -62,7 +63,7 @@
                                         </label>
                                         <div class="col-md-12">
                                             <input type="text" maxlength="11" id="address" name="address"
-                                                class="form-control" placeholder="enter your address">
+                                                class="form-control" placeholder="enter your address" value="<?= $supplier['address'];?>">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -70,7 +71,7 @@
                                         </label>
                                         <div class="col-md-12">
                                             <input type="text" maxlength="11" id="country" name="country"
-                                                class="form-control" placeholder="enter your country">
+                                                class="form-control" placeholder="enter your country" value="<?= $supplier['country'];?>">
                                         </div>
                                     </div>
                                     <label class="col-md-12" for="phone">Avatar</span>

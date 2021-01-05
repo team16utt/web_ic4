@@ -44,7 +44,7 @@
                                                     <div class="obj-action">
                                                         <div class="ac">
 
-                                                            <a href="<?php echo base_url().'/admin/supplier?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
+                                                            <a href="<?php echo base_url().'/admin/supplier/detail?id='.$row['id']?>" data-toggle="tooltip" data-placement="bottom"
                                                                 title="Detail"><i class="fas fa-info-circle"></i></a>
                                                         </div>
                                                         <div class="ac">

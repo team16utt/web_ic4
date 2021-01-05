@@ -64,7 +64,35 @@ class supplier extends BaseController{
         $detail = $model->find($id);
         $data['supplier'] = $detail;
         $data['title'] = 'supplier';
-        return view('admin/supplier/add',$data);
+        if($this->request->getMethod() == 'post'){
+            $company_name = $this->request->getVar('companyname');
+            $url = $this->request->getVar('url');
+            $type = $this->request->getVar('type');
+            $email = $this->request->getVar('email');
+            $phone = $this->request->getVar('phone');
+            $address = $this->request->getVar('address');
+            $country = $this->request->getVar('country');
+            $file = $this->request->getFile('file');
+            if ($file->isValid() && !$file->hasMoved()){
+                $newName = $file->getRandomName();
+                $path = $file->move("./public/client/assets/images/",$newName);
+                $url_avatar = base_url()."/public/client/assets/images/".$newName;              
+            }
+            $data_insert = [
+                'company_name' => $company_name,
+                'image' => $url_avatar,
+                'weburl' => $url,
+                'product_type' => $type,
+                'telephone' => $phone,
+                'email' => $email,
+                'country' => $country,
+                'address' => $address
+            ];
+            
+            $model->update($id,$data_insert);
+            return redirect()->to(base_url().'/admin/supplier');
+        }
+        return view('admin/supplier/edit',$data);
     }
     public function delete(){
         session_start();
@@ -75,5 +103,12 @@ class supplier extends BaseController{
         $model = new supplierModel();
         $model->delete($id);
         return redirect()->to(base_url().'/admin/supplier');
+    }
+    public function detail(){
+        $id = $_GET['id'];
+        $model = new supplierModel();
+        $save = $model->find($id);
+        $data['info'] = $save;
+        return view('admin/supplier/detail',$data);
     }
 }
