@@ -11,7 +11,7 @@ class contact extends BaseController
 			$name = isset($_POST['name']) ? $_POST['name'] : "";
 			$phone = isset($_POST['phone']) ? $_POST['phone'] : "";
 			$email = isset($_POST['email']) ? $_POST['email'] : "";
-			$content = isset($_POST['content']) ? $_POST['message'] : "";
+			$content = isset($_POST['message']) ? $_POST['message'] : "";
 			$data_insert = [
 				'fullname' => $name,
 				'phone' => $phone,
