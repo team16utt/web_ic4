@@ -86,7 +86,7 @@
                                 <span> Hoặc</span>
                             </div>
 
-                            <div class="form-note text-center">Đã có tài khoản? <a href="login.html">Đăng nhập</a></div>
+                            <div class="form-note text-center">Đã có tài khoản? <a href="<?= base_url() ?>/login">Đăng nhập</a></div>
                         </div>
                     </div>
                 </div>

@@ -160,7 +160,7 @@
                                 <tfoot>
                                     <tr>
                                         <th>Tổng tiền</th>
-                                        <td class="product-subtotal" id="subtotal">$349.00</td>
+                                        <td class="product-subtotal" id="subtotal">0</td>
                                     </tr>
                                     <tr>
                                         <th>Giao hàng</th>
@@ -168,7 +168,7 @@
                                     </tr>
                                     <tr>
                                         <th>Thanh toán</th>
-                                        <td class="product-subtotal">$349.00</td>
+                                        <td class="product-subtotal">0</td>
                                     </tr>
                                 </tfoot>
                             </table>

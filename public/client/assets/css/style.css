@@ -1110,10 +1110,12 @@ button:focus {
 .logo_light,
 .logo_dark {
   display: none;
+  height: 125px;
 }
 .dark_skin .logo_dark,
 .light_skin .logo_light {
   display: block;
+  height: 125px;
 }
 .light_skin .navbar-nav a,
 .light_skin .navbar-toggler,
