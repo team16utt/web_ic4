@@ -233,7 +233,15 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?= base_url() ?>/admin/supplier">All Supplier</a></li>
                                 <li><a href="<?= base_url() ?>/admin/supplier/add">Add Supplier</a></li>
-                                <!-- <li><a href="#">History</a></li> -->
+                            </ul>
+                        </li>
+
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
+                                aria-expanded="false"><i class="ti-receipt"></i><span
+                                    class="hide-menu">Comment</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="<?= base_url() ?>/admin/comment">All Comment</a></li>
+                                <li><a href="<?= base_url() ?>/admin/comment/add">Add comment</a></li>
                             </ul>
                         </li>
                         <!-- <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
@@ -243,7 +251,7 @@
                                 <li><a href="#">Curent</a></li>
                             </ul>
                         </li> -->
-
+<!-- 
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false"><i class="ti-settings"></i><span
                                     class="hide-menu">Widgets</span></a>
@@ -252,7 +260,7 @@
                                 <li><a href="widget-apps.html">Apps Widgets</a></li>
                                 <li><a href="widget-charts.html">Charts Widgets</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
 
 
