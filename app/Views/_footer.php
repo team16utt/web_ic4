@@ -1,7 +1,7 @@
 <!-- START FOOTER -->
 <footer class="footer_dark">
 
-    <div class="footer_top small_pt pb_20">      
+    <div class="footer_top small_pt pb_20">
         <div class="custom-container">
             <div class="row justify-content-around">
                 <div class="col-lg-4 col-md-12 col-sm-12">
@@ -30,16 +30,16 @@
                         <h6 class="widget_title">Thông tin</h6>
                         <ul class="widget_links">
                             <li><a href="<?= base_url() ?>/about">Giới thiệu</a></li>
-                            <li><a href="<?= base_url() ?>/faq">FAQ</a></li>
+                            <!-- <li><a href="<?= base_url() ?>/faq">FAQ</a></li> -->
                             <li><a href="<?= base_url() ?>/contact">Liên hệ</a></li>
-                            <li><a href="<?= base_url() ?>/cskh">Chăm sóc khách hàng</a></li>
+                            <!-- <li><a href="<?= base_url() ?>/cskh">Chăm sóc khách hàng</a></li> -->
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="bottom_footer border-top-tran">
         <div class="custom-container">
             <div class="row">

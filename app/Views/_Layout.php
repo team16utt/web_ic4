@@ -107,11 +107,11 @@
     <script src="<?= base_url() ?>/public/client/assets/js/jquery.elevatezoom.js"></script>
     <!-- toast js -->
     <script src="<?= base_url() ?>/public/client/assets/js/jquery.toast.min.js"></script>
+    <?= $this->renderSection('_maps') ?>
     <!-- scripts js -->
     <script src="<?= base_url() ?>/public/client/assets/js/scripts.js"></script>
 
     <!-- cart js -->
-
     <script src="<?= base_url() ?>/public/client/assets/js/cart-handler.js"></script>
     <?= $this->renderSection('_script') ?>
 </body>

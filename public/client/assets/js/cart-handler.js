@@ -17,7 +17,7 @@ addToCart = (event, element) => {
     text: '<a href="http://localhost:8080/web_ic4/checkout">Xem giỏ hàng</a>',
     showHideTransition: 'slide',
     icon: 'success',
-    position: 'top-right',
+    position: 'bottom-right',
     hideAfter: 3000,
     loaderBg: '#9EC600'
   })

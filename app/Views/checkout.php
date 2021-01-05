@@ -1,6 +1,6 @@
 ﻿<?= $this->extend('_Layout') ?>
 <?= $this->Section('content') ?>
-<?php session_Start()?>
+<?php session_Start() ?>
 <!-- START SECTION SHOP -->
 
 <div class="section">
@@ -18,6 +18,9 @@
             </div>
             <div class="row">
                 <?php if ($message == "success") : ?>
+                    <script>
+                        localStorage.removeItem('cart');
+                    </script>
                     <div class="alert alert-success">
                         <strong>Đặt hàng thành công !</strong> Vui lòng liên hệ email CSKH@gear16.com hoặc số điện thoại 0981173413 để thêm thông tin.
                     </div>

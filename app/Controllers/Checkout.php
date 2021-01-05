@@ -32,10 +32,12 @@ class Checkout extends BaseController
             // var_dump($productsCheckout);
             $orderModel = new OrdersModel();
             $order_detailModel = new OrderDetailModel();
-            $billDetail = $cName . "\n" . $cPhone . "\n" . $cEmail . "\n" . $notes;
             $data_insert = [
                 'user_id' => 0,
-                'note' => $billDetail,
+                'fullname' => $cName,
+                'phone' => $cPhone,
+                'email' => $cEmail,
+                'note' => $notes,
                 'paid_status' => 0,
                 'create_on' => date("Y-m-d H:i:s"),
                 'shipping_status' => 0,
@@ -53,7 +55,7 @@ class Checkout extends BaseController
             }
             if ($newOrderDetail > 0) {
                 $data['message'] = 'success';
-                echo view("checkout", $data);
+                return view("checkout", $data);
             } else {
                 $data['message'] = 'fail';
                 echo view("checkout", $data);

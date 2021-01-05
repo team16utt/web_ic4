@@ -1,94 +1,106 @@
 <?= $this->extend('_Layout') ?>
 <?= $this->section('content') ?>
 
+<!-- START MAIN CONTENT -->
+<div class="main_content">
 
-        <!-- Content page -->
-        <section class="bg0 p-t-104 p-b-116">
-            <div class="container">
-                <div class="flex-w flex-tr">
-                    <div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
-                    <?php if(isset($_GET['status'])){
-                        echo "<script>alert('Gửi thành công')</script>";
-                    }?>
-                        <form action="contact/send" method="POST">
-                            <h4 class="mtext-105 cl2 txt-center p-b-30">
-                                Liên hệ cho chúng tôi
-                            </h4>
-                            <div>
-                                <label >Họ tên</label>
-                                <p><input type="text" class="txt" id="name" name="name"></p>
-                            </div>
-                            <div>
-                                <label >Số điện thoại</label>
-                                <p><input type="text" class="txt" id="phone" name="phone"></p>
-                            </div>
-                            <div>
-                                <label >Địa chỉ Email</label>
-                                <p><input type="text" class="txt" id="email" name="email" placeholder="Địa chỉ email của bạn"></p>
-
-                            <div class="bor8 m-b-20 how-pos4-parent">
-                                <input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Địa chỉ email của bạn">
-                                <img class="how-pos4 pointer-none" src="<?= base_url() ?>/public/client/assets/images/icons/icon-email.png" alt="ICON">
-                            </div>
-                            <div class="bor8 m-b-30">
-                                <label>Nội dung</label>
-                                <p><textarea class="txt" name="content" placeholder="Chúng tôi có thể giúp gì cho bạn?"></textarea></p>
-                            </div>
-
-                            <input type="submit" class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer" name="send" value='Gửi'>
-                        </form>
+    <!-- START SECTION CONTACT -->
+    <div class="section pb_70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="contact_wrap contact_style3">
+                        <div class="contact_icon">
+                            <i class="linearicons-map2"></i>
+                        </div>
+                        <div class="contact_text">
+                            <span>Địa chỉ</span>
+                            <p>54 Triều Khúc, Thanh Xuân Nam, Hà Nội</p>
+                        </div>
                     </div>
-
-                    <!-- <div class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
-                        <div class="flex-w w-full p-b-42">
-                            <span class="fs-18 cl5 txt-center size-211">
-							<span class="lnr lnr-map-marker"></span>
-                            </span>
-
-                            <div class="size-212 p-t-2">
-                                <span class="mtext-110 cl2">
-								Địa chỉ
-							</span>
-
-                                <p class="stext-115 cl6 size-213 p-t-18">
-                                    16uttTeam - 54 Triều Khúc, Thanh Xuân, Hà Nội
-                                </p>
-                            </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="contact_wrap contact_style3">
+                        <div class="contact_icon">
+                            <i class="linearicons-envelope-open"></i>
                         </div>
-
-                        <div class="flex-w w-full p-b-42">
-                            <span class="fs-18 cl5 txt-center size-211">
-							<span class="lnr lnr-phone-handset"></span>
-                            </span>
-
-                            <div class="size-212 p-t-2">
-                                <span class="mtext-110 cl2">
-								Gọi cho chúng tôi
-							</span>
-
-                                <p class="stext-115 cl1 size-213 p-t-18">
-                                    012 345 678
-                                </p>
-                            </div>
+                        <div class="contact_text">
+                            <span>Địa chỉ email</span>
+                            <a href="mailto:info@sitename.com">CSKH@gear16.com</a>
                         </div>
-
-                        <div class="flex-w w-full">
-                            <span class="fs-18 cl5 txt-center size-211">
-							<span class="lnr lnr-envelope"></span>
-                            </span>
-
-                            <div class="size-212 p-t-2">
-                                <span class="mtext-110 cl2">
-								Hỗ trợ
-							</span>
-
-                                <p class="stext-115 cl1 size-213 p-t-18">
-                                    16uttteam@contact.com
-                                </p>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="contact_wrap contact_style3">
+                        <div class="contact_icon">
+                            <i class="linearicons-tablet2"></i>
                         </div>
-                    </div> -->
+                        <div class="contact_text">
+                            <span>Điện thoại</span>
+                            <p>0981 173 413</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-<?= $this->endSection() ?>
+        </div>
+    </div>
+    <!-- END SECTION CONTACT -->
+
+    <!-- START SECTION CONTACT -->
+    <div class="section pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="heading_s1">
+                        <h2>Liên hệ</h2>
+                    </div>
+                    <p class="leads">Hãy chia sẻ với chúng tôi.</p>
+                    <div class="field_form">
+                        <div class="row">
+                            <?php if ($message == "success") : ?>
+                                <div class="alert alert-success">
+                                    <strong>Gửi thành công !</strong> Vui lòng liên hệ email CSKH@gear16.com hoặc số điện thoại 0981173413 để thêm thông tin.
+                                </div>
+                            <?php elseif ($message == "fail") : ?>
+                                <div class="alert alert-danger">
+                                    <strong>Gửi không thành công !</strong> Vui lòng liên hệ email CSKH@gear16.com hoặc số điện thoại 0981173413 để thêm thông tin.
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                        <form action="<?= base_url() ?>/contact" method="POST">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <input placeholder="Họ và tên *" class="form-control" name="name" type="text" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input required placeholder="Số điện thoại *" class="form-control" name="phone" required>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <input required placeholder="Địa chỉ email *" class="form-control" name="email" type="email" required>
+                                </div>
+
+                                <!-- <div class="form-group col-md-6">
+                                    <input placeholder="Enter Subject" id="subject" class="form-control" name="subject">
+                                </div> -->
+                                <div class="form-group col-md-12">
+                                    <textarea required placeholder="Nội dung *" class="form-control" name="message" rows="4"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" title="Gửi" class="btn btn-fill-out" name="submit" value="Submit">Gửi nội dung</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-2 pt-lg-0 mt-4 mt-lg-0">
+                    <div id="map" class="contact_map2" data-zoom="16" data-latitude="20.984583284623014" data-longitude="105.79826772654529" data-icon="assets/images/marker.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION CONTACT -->
+    <?= $this->endSection('content') ?>
+    <?= $this->Section('_maps') ?>
+    <!-- Google Map Js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7TypZFTl4Z3gVtikNOdGSfNTpnmq-ahQ&amp;callback=initMap"></script>
+    <?= $this->endSection('_maps') ?>

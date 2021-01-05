@@ -11,7 +11,7 @@ class OrdersModel extends Model
     protected $primaryKey = 'id';
 
     protected $returnType     = 'array';
-    protected $allowedFields = ['id', 'user_id', 'paid_status', 'note', 'create_on', 'shipping_status', 'bill_address'];
+    protected $allowedFields = ['id', 'user_id', 'fullname', 'phone', 'email', 'paid_status', 'note', 'create_on', 'shipping_status', 'bill_address'];
     // protected $createField = '';
     // protected $updatedField = '';
     public function getAll()
