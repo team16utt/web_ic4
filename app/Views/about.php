@@ -45,7 +45,9 @@
                 <div class="col-lg-2 col-sm-6">
                     <div class="team_box team_style1">
                         <div class="team_img">
-                            <img src="<?= $row1['image'] ?>" alt="team_img1">
+                            <img src="<?php if ($row1['image'][0] == 'h') {
+                                            echo $row1['image'];
+                                        } else echo base_url() . $row1['image']; ?>" alt="team_img1">
                             <ul class="social_icons social_style1">
                                 <li><a href="<?= $row1['facebook'] ?>"><i class="ion-social-facebook"></i></a></li>
                                 <li><a href="<?= $row1['twitter'] ?>"><i class="ion-social-twitter"></i></a></li>
@@ -62,9 +64,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            <?php endforeach; ?>
-            <!-- <div class="col-lg-2 col-sm-6">
+                <?php endforeach; ?>
+                <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
                         <img src="<?= base_url() ?>/public/client/assets/images/team_img1.jpg" alt="team_img1">
@@ -83,7 +84,7 @@
                     </div>
                 </div>
             </div> -->
-            <!-- <div class="col-lg-2 col-sm-6">
+                <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
                         <img src="<?= base_url() ?>/public/client/assets/images/team_img2.jpg" alt="team_img2">
@@ -102,7 +103,7 @@
                     </div>
                 </div>
             </div> -->
-            <!-- <div class="col-lg-2 col-sm-6">
+                <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
                         <img src="<?= base_url() ?>/public/client/assets/images/team_img3.jpg" alt="team_img3">
@@ -121,7 +122,7 @@
                     </div>
                 </div>
             </div> -->
-            <!-- <div class="col-lg-2 col-sm-6">
+                <!-- <div class="col-lg-2 col-sm-6">
                 <div class="team_box team_style1">
                     <div class="team_img">
                         <img src="<?= base_url() ?>/public/client/assets/images/team_img4.jpg" alt="team_img4">
@@ -140,14 +141,14 @@
                     </div>
                 </div>
             </div> -->
+                </div>
         </div>
     </div>
-</div>
-<!-- END SECTION TEAM -->
+    <!-- END SECTION TEAM -->
 
-<!-- START SECTION TESTIMONIAL -->
+    <!-- START SECTION TESTIMONIAL -->
 
-<!-- END SECTION TESTIMONIAL -->
+    <!-- END SECTION TESTIMONIAL -->
 
-<!-- START SECTION SHOP INFO -->
-<?= $this->endSection() ?>
+    <!-- START SECTION SHOP INFO -->
+    <?= $this->endSection() ?>

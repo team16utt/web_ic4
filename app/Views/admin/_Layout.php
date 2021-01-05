@@ -157,7 +157,7 @@
                 <div class="user-profile">
                     <div class="user-pro-body">
                         <?php session_start();?>
-                        <div><img src="<?= base_url().$_SESSION['user']['image'] ?>" alt="user-img" class="img-circle"></div>
+                        <div><img src="<?php if($_SESSION['user']['image'][0] =='h'){echo $_SESSION['user']['image'];} else echo base_url().$_SESSION['user']['image'] ?>" alt="user-img" class="img-circle"></div>
                         <div class="dropdown">
                             <a href="javascript:void(0)" class="dropdown-toggle u-dropdown link hide-menu"
                                 data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['user']['fullname']?><span class="caret"></span></a>
@@ -228,13 +228,30 @@
                         </li>
 
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
+                                aria-expanded="false"><i class="ti-receipt"></i><span
+                                    class="hide-menu">Supplier</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="<?= base_url() ?>/admin/supplier">All Supplier</a></li>
+                                <li><a href="<?= base_url() ?>/admin/supplier/add">Add Supplier</a></li>
+                            </ul>
+                        </li>
+
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
+                                aria-expanded="false"><i class="ti-receipt"></i><span
+                                    class="hide-menu">Comment</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="<?= base_url() ?>/admin/comment">All Comment</a></li>
+                                <li><a href="<?= base_url() ?>/admin/comment/add">Add comment</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false"><i class="ti-receipt"></i><span class="hide-menu">About
                                     page</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="#">Curent</a></li>
                             </ul>
-                        </li>
-
+                        </li> -->
+<!-- 
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false"><i class="ti-settings"></i><span
                                     class="hide-menu">Widgets</span></a>
@@ -243,7 +260,7 @@
                                 <li><a href="widget-apps.html">Apps Widgets</a></li>
                                 <li><a href="widget-charts.html">Charts Widgets</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
 
 
