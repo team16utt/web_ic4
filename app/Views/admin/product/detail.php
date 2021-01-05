@@ -127,8 +127,8 @@
                                         '6' => 'Six slide'
                                     ]; $count= '11';?>
                                          <div class="carousel-item active"> <img class="img-fluid"
-                                         src="<?php if ($image[0]['imageSmall'][0] == 'h') echo $image[1]['imageSmall']; else echo base_url().$image[1]['imageSmall']; ?>" alt="First slide"> </div>
-                                        <?php for($i = 2; $i < count($image); $i++):?>
+                                         src="<?php if ($image[0]['imageSmall'][0] == 'h') echo $image[0]['imageSmall']; else echo base_url().$image[0]['imageSmall']; ?>" alt="First slide"> </div>
+                                        <?php for($i = 1; $i < count($image); $i++):?>
                                         <div class="carousel-item"> <img class="img-fluid"
                                                 src="<?php if ($image[$i]['imageSmall'][0] == 'h') echo $image[$i]['imageSmall']; else echo base_url().$image[$i]['imageSmall']; ?>" alt="<?php echo $array_image[(string) $i];?>"> </div>
                                         

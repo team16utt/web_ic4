@@ -152,30 +152,32 @@ class product extends BaseController
                 'modifiedDate' => date("Y-m-d h:i:s"),
                 'createdBy' => $_SESSION['user']['fullname']
             ];
-            $id = $model->save($insert_product);
-            // die();
             $model_image = new imageModel();
+            $model_image->where('product_id',(int)$id)->delete();
+            $model->save($insert_product);
+            // die();
+            
             if($imagefile = $this->request->getFiles())
             {
-            foreach($imagefile['image_more'] as $img)
-            {
-                if ($img->isValid() && ! $img->hasMoved())
+                foreach($imagefile['image_more'] as $img)
                 {
-                    $newName = $img->getRandomName();
-                    $img->move("./public/client/assets/product/", $newName);
-                    $url = '/public/client/assets/product/'.$newName;
-                    $data_image = [
-                        'product_id' => (int) $id,
-                        'imageThumb' => $url_thumnail,
-                        'imageSmall' => $url,
-                        'createdDate' => date("Y-m-d h:i:s"),
-                        'modifiedDate' => date("Y-m-d h:i:s"),
-                        'createdBy' => $_SESSION['user']['fullname']
-                    ];
-                    $model_image->insert($data_image);
-                    
+                    if ($img->isValid() && ! $img->hasMoved())
+                    {
+                        $newName = $img->getRandomName();
+                        $img->move("./public/client/assets/product/", $newName);
+                        $url = '/public/client/assets/product/'.$newName;
+                        $data_image = [
+                            'product_id' => (int) $id,
+                            'imageThumb' => $url_thumnail,
+                            'imageSmall' => $url,
+                            'createdDate' => date("Y-m-d h:i:s"),
+                            'modifiedDate' => date("Y-m-d h:i:s"),
+                            'createdBy' => $_SESSION['user']['fullname']
+                        ];
+                        $model_image->insert($data_image);
+                        
+                    }
                 }
-            }
             }
             
             return redirect()->to(base_url().'/admin/product');
