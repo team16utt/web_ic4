@@ -46,7 +46,7 @@ class product extends BaseController
             }
             
             
-            $url_thumnail = "/public/client/assets/product/".$newName;
+            $url_thumnail = base_url()."/public/client/assets/product/".$newName;
             // echo $url_thumnail;
             // die();
             $desc_key = $this->request->getVar('name');
@@ -83,7 +83,7 @@ class product extends BaseController
                 {
                     $newName = $img->getRandomName();
                     $img->move("./public/client/assets/product/", $newName);
-                    $url = '/public/client/assets/product/'.$newName;
+                    $url = base_url().'/public/client/assets/product/'.$newName;
                     $data_image = [
                         'product_id' => (int) $id,
                         'imageThumb' => $url_thumnail,
@@ -129,7 +129,7 @@ class product extends BaseController
             }
             
             
-            $url_thumnail = "/public/client/assets/product/".$newName;
+            $url_thumnail = base_url()."/public/client/assets/product/".$newName;
             $desc_key = $this->request->getVar('name');
             $desc_value = $this->request->getVar('value');
             $description = [];
@@ -165,7 +165,7 @@ class product extends BaseController
                     {
                         $newName = $img->getRandomName();
                         $img->move("./public/client/assets/product/", $newName);
-                        $url = '/public/client/assets/product/'.$newName;
+                        $url = base_url().'/public/client/assets/product/'.$newName;
                         $data_image = [
                             'product_id' => (int) $id,
                             'imageThumb' => $url_thumnail,
