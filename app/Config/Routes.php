@@ -36,6 +36,8 @@ $routes->get('/', 'Home::index');
 $routes->get('admin', 'admin/dashboard::index');
 $routes->get('loai-hang/(:any)', 'category::index/$1');
 $routes->get('product/(:num)', 'product::index/$1');
+$routes->get('san-pham-hot', 'product::hotProduct');
+$routes->get('san-pham-moi', 'product::newProduct');
 
 /**
  * --------------------------------------------------------------------

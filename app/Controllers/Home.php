@@ -18,8 +18,8 @@ class Home extends BaseController
 		$productModel = new ProductModel();
 		$supplierModel = new supplierModel();
 		$data['suppliers'] = $supplierModel->getAllSupplier();
-		$data['newsProduct'] = $productModel->getNewsProduct();
-		$data['hotProduct'] = $productModel->getHotProduct();
+		$data['newsProduct'] = $productModel->getNewsProduct(12, 0);
+		$data['hotProduct'] = $productModel->getHotProduct(12, 0);
 		$data['comment'] = $commentModel->getAllComment();
 		$data['banner'] = $bannerModel->getAllBanner();
 		$data['category'] = $categoryModel->getAllCategory();

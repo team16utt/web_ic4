@@ -50,7 +50,7 @@ class signup extends BaseController
             $checkEmail = $db->table('users')->where('email', $email)->countAllResults();
             $checkPassword = $password != $repassword;
             $txtError = '';
-            if ($checkPassword || $checkUsername || $checkEmail) {
+            if ($checkPassword || $checkUsername) {
                 $data['message'] = 'fail';
                 if ($checkPassword) {
                     $txtError = '2 mật khẩu không trùng khớp !';
@@ -60,10 +60,10 @@ class signup extends BaseController
                     $txtError = 'Đã có người đăng ký username này, vui lòng nhập tên username khác !';
                     array_push($data['error'], $txtError);
                 }
-                if ($checkEmail != 0) {
-                    $txtError = 'Đã có người đăng ký email này, vui lòng nhập tên email khác !';
-                    array_push($data['error'], $txtError);
-                }
+                // if ($checkEmail != 0) {
+                //     $txtError = 'Đã có người đăng ký email này, vui lòng nhập tên email khác !';
+                //     array_push($data['error'], $txtError);
+                // }
                 return view('signup', $data);
             }
             $data_insert = [

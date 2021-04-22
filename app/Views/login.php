@@ -14,6 +14,11 @@
                             <div class="heading_s1">
                                 <h3 style="text-align: center;">Đăng nhập</h3>
                             </div>
+                            <?php if ($message == "fail") : ?>
+                                <div class="alert alert-danger">
+                                    <strong><?= $error ?></strong>
+                                </div>
+                            <?php endif; ?>
                             <form method="post">
                                 <div class="form-group">
                                     <input type="text" required="" class="form-control" name="username" placeholder="Username">

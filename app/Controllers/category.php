@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Models\categoryModel;
 use App\Models\ProductModel;
-use LocDau;
 
 class category extends BaseController
 {
@@ -21,7 +20,7 @@ class category extends BaseController
         } else {
             $page = 1;
         }
-        $records_per_page = 8;
+        $records_per_page = 12;
         $offset = ($page - 1) * $records_per_page;
 
 
@@ -35,7 +34,16 @@ class category extends BaseController
         // $result = $this->$db->query($sql);
         // $product = $result->getResult();
         $product = $productModel->paginationResult($cid, $offset, $records_per_page);
-
+        if (isset($_GET['price'])) {
+            $sortKey = $_GET['price'];
+            if ($sortKey == 'asc') {
+                $prices = array_column($product, 'price');
+                array_multisort($prices, SORT_ASC, $product);
+            } else if ($sortKey == 'desc') {
+                $prices = array_column($product, 'price');
+                array_multisort($prices, SORT_DESC, $product);
+            }
+        }
 
         $data['total_pages'] = $total_pages;
         $data['page'] = $page;

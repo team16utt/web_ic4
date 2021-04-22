@@ -11,7 +11,7 @@ class ProductModel extends Model
     protected $primaryKey = 'product_id';
 
     protected $returnType     = 'array';
-    protected $allowedFields = ['product_id', 'category_id','supplier_id', 'name', 'price', 'link', 'image', 'productCode', 'featureData', 'createdDate', 'totalView', 'quantity', 'modifiedDate', 'createdBy'];
+    protected $allowedFields = ['product_id', 'category_id', 'supplier_id', 'name', 'price', 'link', 'image', 'productCode', 'featureData', 'createdDate', 'totalView', 'quantity', 'modifiedDate', 'createdBy'];
     // protected $createField = '';
     // protected $updatedField = '';
 
@@ -23,13 +23,13 @@ class ProductModel extends Model
     {
         return $this->where('category_id', $cid)->where('product_id !=', $pid)->findAll(8, 0);
     }
-    public function getNewsProduct()
+    public function getNewsProduct(int $records_per_page, int $offset)
     {
-        return $this->orderBy('createdDate', 'asc')->findAll(6, 0);
+        return $this->orderBy('createdDate', 'desc')->findAll($records_per_page, $offset);
     }
-    public function getHotProduct()
+    public function getHotProduct(int $records_per_page, int $offset)
     {
-        return $this->orderBy('totalView', 'desc')->findAll(6, 0);
+        return $this->orderBy('totalView', 'desc')->findAll($records_per_page, $offset);
     }
     public function getProductByKey(string $key)
     {

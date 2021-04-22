@@ -11,7 +11,7 @@
     <meta name="keywords" content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
 
     <!-- SITE TITLE -->
-    <title>1st Gear - Nhom2</title>
+    <title>1st Gear - Nhom1</title>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url() ?>/public/client/assets/images/favicon.png">
     <!-- Animation CSS -->
@@ -178,7 +178,7 @@
                                 </ul>
                                 <div class="cart_footer">
                                     <p class="cart_total"></p>
-                                    <p class="cart_buttons"><a href="<?= base_url() ?>/checkout" class="btn btn-fill-out checkout">Checkout</a></p>
+                                    <p class="cart_buttons"><a href="<?= base_url() ?>/checkout" class="btn btn-fill-out checkout">Thanh toán</a></p>
                                 </div>
                             </div>
                         </li>
@@ -357,6 +357,9 @@
                                     <div class="heading_s2">
                                         <h4>Sản phẩm mới nhất</h4>
                                     </div>
+                                    <div class="view_all">
+                                        <a href="<?= base_url() ?>/san-pham-moi" class="text_default"><i class="linearicons-power"></i> <span>Xem tất cả</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -377,8 +380,9 @@
                                                         <div class="product_info">
                                                             <h6 class="product_title"><a href="<?= base_url() ?>/product/<?= $item['product_id'] ?>"><?= $item['name'] ?></a></h6>
                                                             <div class="product_price">
-                                                                <span class="price"><?php if (intval($item['price']) == 0) echo $item['price'];
-                                                                                    else echo $item['price'] . ' đ' ?></span>
+                                                                <!-- <span class="price"><?php if (intval($item['price']) == 0) echo $item['price'];
+                                                                                            else echo $item['price'] . ' đ' ?></span> -->
+                                                                <span class="price"><?= $item['price'] ?></span>
                                                                 <!-- <del>$55.25</del>
                                                                 <div class="on_sale">
                                                                     <span>35% Off</span>
@@ -961,7 +965,7 @@
                                         <h4>Sản phẩm hot</h4>
                                     </div>
                                     <div class="view_all">
-                                        <a href="#" class="text_default"><i class="linearicons-power"></i> <span>Xem tất cả</span></a>
+                                        <a href="<?= base_url() ?>/san-pham-hot" class="text_default"><i class="linearicons-power"></i> <span>Xem tất cả</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -981,8 +985,9 @@
                                                 <div class="product_info">
                                                     <h6 class="product_title"><a href="<?= base_url() ?>/product/<?= $item['product_id'] ?>"><?= $item['name'] ?></a></h6>
                                                     <div class="product_price">
-                                                        <span class="price"><?php if (intval($item['price']) == 0) echo $item['price'];
-                                                                            else echo $item['price'] . ' đ' ?></span>
+                                                        <!-- <span class="price"><?php if (intval($item['price']) == 0) echo $item['price'];
+                                                                                    else echo $item['price'] . ' đ' ?></span> -->
+                                                        <span class="price"><?= $item['price'] ?></span>
                                                         <!-- <del>$55.25</del>
                                                                 <div class="on_sale">
                                                                     <span>35% Off</span>
@@ -1166,7 +1171,6 @@
         <script src="<?= base_url() ?>/public/client/assets/js/scripts.js"></script>
 
         <script src="<?= base_url() ?>/public/client/assets/js/cart-handler.js"></script>
-
 </body>
 
 </html>

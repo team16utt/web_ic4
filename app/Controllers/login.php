@@ -23,17 +23,21 @@ class login extends BaseController
                 'password' => $hashed_password
             ];
             $user = $model->where($data)->first();
-            if ($user["role_id"] != 1) {
-                $_SESSION['customer'] = $user;
-                // var_dump($_SESSION['customer']);
-                return redirect()->to(base_url() . '/');
-                // return view('index');
+            if ($user) {
+                if ($user["role_id"] != 1) {
+                    $_SESSION['customer'] = $user;
+                    // var_dump($_SESSION['customer']);
+                    return redirect()->to(base_url() . '/');
+                    // return view('index');
+                } else {
+                    $_SESSION['user'] = $user;
+                    return redirect()->to('admin');
+                }
             } else {
-                $_SESSION['user'] = $user;
-                return redirect()->to('admin');
+                $data['message'] = 'fail';
+                $data['error'] = 'Tên tài khoản hoặc mật khẩu không đúng!';
+                return view('login', $data);
             }
-
-            die();
         }
         return view('login');
     }

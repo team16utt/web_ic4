@@ -42,4 +42,68 @@ class product extends BaseController
         }
         return json_encode(['status' => 400, 'data' => null]);
     }
+    public function hotProduct()
+    {
+        $limitProductValue = 56;
+        $productModel = new ProductModel();
+        if (isset($_GET['page'])) {
+            $page = $_GET['page'];
+        } else {
+            $page = 1;
+        }
+        $records_per_page = 12;
+        $offset = ($page - 1) * $records_per_page;
+        $allProduct = $productModel->getHotProduct($limitProductValue, 0);
+
+        $total_rows = $limitProductValue;
+        $total_pages = ceil($total_rows / $records_per_page);
+        $product =  $productModel->getHotProduct($records_per_page, $offset);
+        if (isset($_GET['price'])) {
+            $sortKey = $_GET['price'];
+            if ($sortKey == 'asc') {
+                $prices = array_column($product, 'price');
+                array_multisort($prices, SORT_ASC, $product);
+            } else if ($sortKey == 'desc') {
+                $prices = array_column($product, 'price');
+                array_multisort($prices, SORT_DESC, $product);
+            }
+        }
+
+        $data['total_pages'] = $total_pages;
+        $data['page'] = $page;
+        $data['products'] = $product;
+        return view('category', $data);
+    }
+    public function newProduct()
+    {
+        $limitProductValue = 56;
+        $productModel = new ProductModel();
+        if (isset($_GET['page'])) {
+            $page = $_GET['page'];
+        } else {
+            $page = 1;
+        }
+        $records_per_page = 12;
+        $offset = ($page - 1) * $records_per_page;
+        $allProduct = $productModel->getNewsProduct($limitProductValue, 0);
+
+        $total_rows = $limitProductValue;
+        $total_pages = ceil($total_rows / $records_per_page);
+        $product =  $productModel->getNewsProduct($records_per_page, $offset);
+        if (isset($_GET['price'])) {
+            $sortKey = $_GET['price'];
+            if ($sortKey == 'asc') {
+                $prices = array_column($product, 'price');
+                array_multisort($prices, SORT_ASC, $product);
+            } else if ($sortKey == 'desc') {
+                $prices = array_column($product, 'price');
+                array_multisort($prices, SORT_DESC, $product);
+            }
+        }
+
+        $data['total_pages'] = $total_pages;
+        $data['page'] = $page;
+        $data['products'] = $product;
+        return view('category', $data);
+    }
 }

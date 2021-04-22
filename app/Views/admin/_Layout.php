@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php session_start()?>
+<?php session_start() ?>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/public/admin/assets/images/favicon.png">
-    <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/public/client/assets/images/logo_dark.png">
+    <title>1stGear Admin - Nhom1</title>
     <!-- This page CSS -->
     <!-- chartist CSS -->
     <link href="<?= base_url() ?>/public/admin/assets/node_modules/morrisjs/morris.css" rel="stylesheet">
@@ -23,10 +24,8 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!-- more CSS -->
-    <link rel="stylesheet" type="text/css"
-        href="<?= base_url() ?>/public/admin/assets/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css">
-    <link rel="stylesheet" type="text/css"
-        href="<?= base_url() ?>/public/admin/assets/node_modules/datatables.net-bs4/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/public/admin/assets/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/public/admin/assets/node_modules/datatables.net-bs4/css/responsive.dataTables.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/public/admin/crm/dist/css/duongCustomStyle.css">
     <link rel="stylesheet" href="<?= base_url() ?>/public/admin/assets/node_modules/dropify/dist/css/dropify.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/public/admin/crm/dist/css/duongCustomStyle.css">
@@ -53,16 +52,17 @@
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="<?= base_url() ?>/public/admin/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <img style="height: 70px; margin: 0 auto;" src="<?= base_url() ?>/public/client/assets/images/logo_dark.png" alt="homepage" class="dark-logo" />
                             <!-- Light Logo icon -->
-                            <img src="<?= base_url() ?>/public/admin/assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                            <img style="height: 70px;" src="<?= base_url() ?>/public/client/assets/images/logo_dark.png" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text --><span>
                             <!-- dark Logo text -->
-                            <img src="<?= base_url() ?>/public/admin/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- <img src="<?= base_url() ?>/public/admin/assets/images/logo-text.png" alt="homepage" class="dark-logo" /> -->
                             <!-- Light Logo text -->
-                            <img src="<?= base_url() ?>/public/admin/assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                            <!-- <img src="<?= base_url() ?>/public/admin/assets/images/logo-light-text.png" class="light-logo" alt="homepage" /> -->
+                        </span>
                     </a>
                 </div>
                 <!-- ============================================================== -->
@@ -74,11 +74,8 @@
                     <!-- ============================================================== -->
                     <ul class="navbar-nav mr-auto">
                         <!-- This is  -->
-                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark"
-                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                        <li class="nav-item"> <a
-                                class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark"
-                                href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
                         <!-- ============================================================== -->
                         <!-- Search -->
                         <!-- ============================================================== -->
@@ -96,8 +93,7 @@
                         <!-- Comment -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"> <i class="ti-email"></i>
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ti-email"></i>
                                 <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown">
@@ -111,22 +107,19 @@
                                             <a href="#">
                                                 <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
                                                 <div class="mail-contnet">
-                                                    <h5>Đơn hàng</h5> <span class="mail-desc">Đơn hàng mới</span> <span
-                                                        class="time">9:30 AM</span>
+                                                    <h5>Đơn hàng</h5> <span class="mail-desc">Đơn hàng mới</span> <span class="time">9:30 AM</span>
                                                 </div>
                                             </a>
                                             <a href="#">
                                                 <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
                                                 <div class="mail-contnet">
-                                                    <h5>Đơn hàng</h5> <span class="mail-desc">Đơn hàng mới</span> <span
-                                                        class="time">9:30 AM</span>
+                                                    <h5>Đơn hàng</h5> <span class="mail-desc">Đơn hàng mới</span> <span class="time">9:30 AM</span>
                                                 </div>
                                             </a>
                                             <a href="#">
                                                 <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
                                                 <div class="mail-contnet">
-                                                    <h5>Đơn hàng</h5> <span class="mail-desc">Đơn hàng mới</span> <span
-                                                        class="time">9:30 AM</span>
+                                                    <h5>Đơn hàng</h5> <span class="mail-desc">Đơn hàng mới</span> <span class="time">9:30 AM</span>
                                                 </div>
                                             </a>
 
@@ -140,8 +133,7 @@
                         </li>
 
                         <!-- ============================================================== -->
-                        <li class="nav-item right-side-toggle"> <a class="nav-link  waves-effect waves-light"
-                                href="javascript:void(0)"><i class="ti-settings"></i></a></li>
+                        <li class="nav-item right-side-toggle"> <a class="nav-link  waves-effect waves-light" href="javascript:void(0)"><i class="ti-settings"></i></a></li>
                     </ul>
                 </div>
             </nav>
@@ -156,14 +148,15 @@
                 <!-- User Profile-->
                 <div class="user-profile">
                     <div class="user-pro-body">
-                        <?php session_start();?>
-                        <div><img src="<?php if($_SESSION['user']['image'][0] =='h'){echo $_SESSION['user']['image'];} else echo base_url().$_SESSION['user']['image'] ?>" alt="user-img" class="img-circle"></div>
+                        <?php session_start(); ?>
+                        <div><img src="<?php if ($_SESSION['user']['image'][0] == 'h') {
+                                            echo $_SESSION['user']['image'];
+                                        } else echo base_url() . $_SESSION['user']['image'] ?>" alt="user-img" class="img-circle"></div>
                         <div class="dropdown">
-                            <a href="javascript:void(0)" class="dropdown-toggle u-dropdown link hide-menu"
-                                data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['user']['fullname']?><span class="caret"></span></a>
+                            <a href="javascript:void(0)" class="dropdown-toggle u-dropdown link hide-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['user']['fullname'] ?><span class="caret"></span></a>
                             <div class="dropdown-menu animated flipInY">
                                 <!-- text-->
-                                <a href="<?php echo base_url().'/admin/profile?id='.$_SESSION['user']['id'];?>" class="dropdown-item"><i class="ti-user"></i> My
+                                <a href="<?php echo base_url() . '/admin/profile?id=' . $_SESSION['user']['id']; ?>" class="dropdown-item"><i class="ti-user"></i> My
                                     Profile</a>
                                 <!-- text-->
                                 <a href="<?= base_url() ?>/admin/logout" class="dropdown-item"><i class="fas fa-power-off"></i>
@@ -183,43 +176,33 @@
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="<?= base_url() ?>/admin/mailbox"
-                                aria-expanded="false"><i class="icon-envelope"></i><span
-                                    class="hide-menu">Mailbox</span></a>
-                            
+                        <li> <a class="waves-effect waves-dark" href="<?= base_url() ?>/admin/mailbox" aria-expanded="false"><i class="icon-envelope"></i><span class="hide-menu">Mailbox</span></a>
+
                         </li>
 
                         <li class="nav-small-cap">--- QUẢN LÝ</li>
 
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><i class="icon-people"></i><span
-                                    class="hide-menu">Admin</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="icon-people"></i><span class="hide-menu">Admin</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?= base_url() ?>/admin/admin">All Admin</a></li>
                                 <li><a href="<?= base_url() ?>/admin/admin/add">Add Admin</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><i class="icon-docs"></i><span
-                                    class="hide-menu">Products</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="icon-docs"></i><span class="hide-menu">Products</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?= base_url() ?>/admin/product">All Product</a></li>
                                 <li><a href="<?= base_url() ?>/admin/product/add">Add Product</a></li>
-                                
+
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><i class="fab fa-cuttlefish"></i><span
-                                    class="hide-menu">Category</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fab fa-cuttlefish"></i><span class="hide-menu">Category</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?= base_url() ?>/admin/category">All Category</a></li>
                                 <li><a href="<?= base_url() ?>/admin/category/add">Add Category</a></li>
                             </ul>
                         </li>
 
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><i class="ti-receipt"></i><span
-                                    class="hide-menu">Invoice</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-receipt"></i><span class="hide-menu">Invoice</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?= base_url() ?>/admin/invoice">All new Invoice</a></li>
                                 <li><a href="<?= base_url() ?>/admin/invoice/add">Add Invoice</a></li>
@@ -227,18 +210,14 @@
                             </ul>
                         </li>
 
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><i class="ti-receipt"></i><span
-                                    class="hide-menu">Supplier</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-receipt"></i><span class="hide-menu">Supplier</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?= base_url() ?>/admin/supplier">All Supplier</a></li>
                                 <li><a href="<?= base_url() ?>/admin/supplier/add">Add Supplier</a></li>
                             </ul>
                         </li>
 
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><i class="ti-receipt"></i><span
-                                    class="hide-menu">Comment</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-receipt"></i><span class="hide-menu">Comment</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?= base_url() ?>/admin/comment">All Comment</a></li>
                                 <li><a href="<?= base_url() ?>/admin/comment/add">Add comment</a></li>
@@ -251,7 +230,7 @@
                                 <li><a href="#">Curent</a></li>
                             </ul>
                         </li> -->
-<!-- 
+                        <!-- 
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
                                 aria-expanded="false"><i class="ti-settings"></i><span
                                     class="hide-menu">Widgets</span></a>
@@ -283,7 +262,7 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h4 class="text-themecolor">Dashboard 1</h4>
+                        <h4 class="text-themecolor">category</h4>
                     </div>
                     <div class="col-md-7 align-self-center text-right">
                         <div class="d-flex justify-content-end align-items-center">
@@ -291,8 +270,7 @@
                                 <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                                 <li class="breadcrumb-item active"><?= $title ?></li>
                             </ol>
-                            <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i
-                                    class="fa fa-plus-circle"></i> Create New</button>
+                            <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New</button>
                         </div>
                     </div>
                 </div>
@@ -323,18 +301,13 @@
                                 <li><a href="javascript:void(0)" data-skin="skin-purple" class="purple-theme">5</a></li>
                                 <li><a href="javascript:void(0)" data-skin="skin-megna" class="megna-theme">6</a></li>
                                 <li class="d-block m-t-30"><b>With Dark sidebar</b></li>
-                                <li><a href="javascript:void(0)" data-skin="skin-default-dark"
-                                        class="default-dark-theme working">7</a></li>
-                                <li><a href="javascript:void(0)" data-skin="skin-green-dark"
-                                        class="green-dark-theme">8</a></li>
+                                <li><a href="javascript:void(0)" data-skin="skin-default-dark" class="default-dark-theme working">7</a></li>
+                                <li><a href="javascript:void(0)" data-skin="skin-green-dark" class="green-dark-theme">8</a></li>
                                 <li><a href="javascript:void(0)" data-skin="skin-red-dark" class="red-dark-theme">9</a>
                                 </li>
-                                <li><a href="javascript:void(0)" data-skin="skin-blue-dark"
-                                        class="blue-dark-theme">10</a></li>
-                                <li><a href="javascript:void(0)" data-skin="skin-purple-dark"
-                                        class="purple-dark-theme">11</a></li>
-                                <li><a href="javascript:void(0)" data-skin="skin-megna-dark"
-                                        class="megna-dark-theme ">12</a></li>
+                                <li><a href="javascript:void(0)" data-skin="skin-blue-dark" class="blue-dark-theme">10</a></li>
+                                <li><a href="javascript:void(0)" data-skin="skin-purple-dark" class="purple-dark-theme">11</a></li>
+                                <li><a href="javascript:void(0)" data-skin="skin-megna-dark" class="megna-dark-theme ">12</a></li>
                             </ul>
 
                         </div>
@@ -355,7 +328,7 @@
         <!-- footer -->
         <!-- ============================================================== -->
         <footer class="footer">
-          © 2020 tình yêu là duy tâm hay là duy vật
+            © Nhom1 2020
         </footer>
         <!-- ============================================================== -->
         <!-- End footer -->
@@ -393,16 +366,16 @@
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/peity/jquery.peity.min.js"></script>
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/peity/jquery.peity.init.js"></script>
 
-    
+
     <!--JS import file -->
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/dropify/dist/js/dropify.min.js"></script>
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/dff/dff.js" type="text/javascript"></script>
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/dff/test.js" type="text/javascript"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             // Basic
             $('.dropify').dropify();
-            
+
 
             // Translated
             $('.dropify-fr').dropify({
@@ -417,21 +390,21 @@
             // Used events
             var drEvent = $('#input-file-events').dropify();
 
-            drEvent.on('dropify.beforeClear', function (event, element) {
+            drEvent.on('dropify.beforeClear', function(event, element) {
                 return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
             });
 
-            drEvent.on('dropify.afterClear', function (event, element) {
+            drEvent.on('dropify.afterClear', function(event, element) {
                 alert('File deleted');
             });
 
-            drEvent.on('dropify.errors', function (event, element) {
+            drEvent.on('dropify.errors', function(event, element) {
                 console.log('Has Errors');
             });
 
             var drDestroy = $('#input-file-to-destroy').dropify();
             drDestroy = drDestroy.data('dropify')
-            $('#toggleDropify').on('click', function (e) {
+            $('#toggleDropify').on('click', function(e) {
                 e.preventDefault();
                 if (drDestroy.isDropified()) {
                     drDestroy.destroy();
@@ -446,10 +419,10 @@
     <!-- Js phan trang  -->
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/datatables.net-bs4/js/dataTables.responsive.min.js"></script>
-  
+
 
     <script>
-        $(function () {
+        $(function() {
             $('#myTable').DataTable();
             var table = $('#example').DataTable({
                 "columnDefs": [{
@@ -460,7 +433,7 @@
                     [2, 'asc']
                 ],
                 "displayLength": 25,
-                "drawCallback": function (settings) {
+                "drawCallback": function(settings) {
                     var api = this.api();
                     var rows = api.rows({
                         page: 'current'
@@ -468,7 +441,7 @@
                     var last = null;
                     api.column(2, {
                         page: 'current'
-                    }).data().each(function (group, i) {
+                    }).data().each(function(group, i) {
                         if (last !== group) {
                             $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
                             last = group;
@@ -477,7 +450,7 @@
                 }
             });
             // Order by the grouping
-            $('#example tbody').on('click', 'tr.group', function () {
+            $('#example tbody').on('click', 'tr.group', function() {
                 var currentOrder = table.order()[0];
                 if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
                     table.order([2, 'desc']).draw();
@@ -497,18 +470,17 @@
             });
             $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
         });
-
     </script>
 
-     <!-- js-comfirm-delete -->
-     <script src="<?= base_url() ?>/public/admin/assets/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <!-- js-comfirm-delete -->
+    <script src="<?= base_url() ?>/public/admin/assets/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/sweetalert2/sweet-alert.init.js"></script>
 
 
     <!-- js-toast -->
     <script src="<?= base_url() ?>/public/admin/assets/node_modules/toast-master/js/jquery.toast.js"></script>
     <script src="<?= base_url() ?>/public/admin/crm/dist/js/pages/toastr.js"></script>
-    
+
 </body>
 
 </html>

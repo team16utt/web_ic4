@@ -8,7 +8,11 @@
                 <div class="product-image">
 
                     <div class="product_img_box">
-                        <img id="product_img" src="<?php if($productDetail['images'][0]['imageThumb'][0]=='h'){ echo $productDetail['images'][0]['imageThumb']; } else echo base_url().$productDetail['images'][0]['imageThumb']; ?>" data-zoom-image="<?php if($productDetail['images'][0]['imageThumb'][0]=='h'){ echo $productDetail['images'][0]['imageThumb']; } else echo base_url().$productDetail['images'][0]['imageThumb']; ?>" alt="<?= $productDetail['name'] ?>">
+                        <img id="product_img" src="<?php if ($productDetail['images'][0]['imageThumb'][0] == 'h') {
+                                                        echo $productDetail['images'][0]['imageThumb'];
+                                                    } else echo base_url() . $productDetail['images'][0]['imageThumb']; ?>" data-zoom-image="<?php if ($productDetail['images'][0]['imageThumb'][0] == 'h') {
+                                                                                                                                                    echo $productDetail['images'][0]['imageThumb'];
+                                                                                                                                                } else echo base_url() . $productDetail['images'][0]['imageThumb']; ?>" alt="<?= $productDetail['name'] ?>">
                         <!-- <img id="product_img" src='<?= $productDetail['images'][0]['imageThumb'] ?>' data-zoom-image="<?= $productDetail['images'][0]['imageThumb'] ?>" alt="<?= $productDetail['name'] ?>"> -->
 
                         <a href="#" class="product_img_zoom" title="Zoom">
@@ -16,10 +20,17 @@
                         </a>
                     </div>
                     <div id="pr_item_gallery" class="product_gallery_item slick_slider" data-slides-to-show="4" data-slides-to-scroll="2" data-infinite="false">
+
                         <?php foreach ($productDetail['images'] as $image) : ?>
                             <div class="item">
-                                <a href="#" class="product_gallery_item" data-image="<?= $image['imageThumb'] ?>" data-zoom-image="<?= $image['imageThumb'] ?>">
-                                    <img src="<?php if($image['imageSmall'][0]=='h'){ echo $image['imageSmall'];} else echo base_url().$image['imageSmall']; ?>" alt="<?= $productDetail['name'] ?>" />
+                                <a href="#" class="product_gallery_item" data-image="<?php if ($image['imageThumb'][0] == 'h') {
+                                                                                            echo $image['imageThumb'];
+                                                                                        } else echo base_url() . $image['imageThumb']; ?>" data-zoom-image="<?php if ($image['imageThumb'][0] == 'h') {
+                                                                                                                                                                echo $image['imageThumb'];
+                                                                                                                                                            } else echo base_url() . $image['imageThumb']; ?>">
+                                    <img src="<?php if ($image['imageThumb'][0] == 'h') {
+                                                    echo $image['imageThumb'];
+                                                } else echo base_url() . $image['imageThumb']; ?>" alt="<?= $productDetail['name'] ?>" />
                                 </a>
                             </div>
                         <?php endforeach; ?>
@@ -154,8 +165,8 @@
                                 <div class="product_info">
                                     <h6 class="product_title"><a href="<?= base_url() ?>/product/<?= $item['product_id'] ?>"><?= $item['name'] ?></a></h6>
                                     <div class="product_price">
-                                        <span class="price"><?php if (intval($item['price']) == 0) echo $item['price'];
-                                                            else echo $item['price'] . ' đ' ?></span>
+                                        <span class="price"><?= $item['price'] ?></span>
+
                                         <!-- <del>$55.25</del>
                                             <div class="on_sale">
                                                 <span>35% Off</span>
@@ -175,5 +186,4 @@
     </div>
 </div>
 <!-- END SECTION SHOP -->
-
 <?= $this->endSection() ?>
